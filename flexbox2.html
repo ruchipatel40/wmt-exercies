@@ -68,47 +68,6 @@
         text-align: center;
         flex: 1;
         }
-        /* .box2 {
-        position: relative;
-        background: rgb(221, 216, 216);
-        padding: 30px;
-        border: 1px solid black;
-        z-index: -1;
-        height: 320px;
-        }
-        .child-box1,
-        .child-box2,
-        .child-box3,
-        .child-box4 {
-        border: 3px solid rgb(136, 136, 253);
-        background: rgb(192, 226, 238);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 70px;
-        height: 70px;
-        z-index: 1;
-        }
-        .child-box1 {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        }
-        .child-box2 {
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        }
-        .child-box3 {
-        position: absolute;
-        bottom: 25px;
-        left: 25px;
-        }
-        .child-box4 {
-        position: absolute;
-        bottom: 25px;
-        right: 25px;
-        } */
 
         .box3 {
         background: rgb(24, 177, 24);
@@ -139,6 +98,7 @@
             margin-right: 500px;
 
         }
+      
         }
         @media (max-width: 450px){
             .box1{
@@ -178,50 +138,48 @@
         }
         .child2{
             margin-top: 60px;
-            padding :100px 15px;
+            flex-wrap: wrap; 
+            padding :40px 15px ; 
             
         }
-        /* .box2{
-          height: 200px;
-        } */
-        /* .child-box1,
-        .child-box2,
-        .child-box3,
-        .child-box4{
-          height: 50px;
-          width: 50px;
-        }
-        .box1{
-          height: 200px;
-        } */
-        /* .aa{
+      }
+      
+.parent2{
+        background-color: rgb(221, 216, 216);
+        height: 300px;
+        font-size: 21px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 32px;
+        border: 1px solid black; 
 
-            margin-right: 700px;
-            align-self: center;
-            justify-content: center;
-            position: relative;
-        } */
 }
-/* .aa{
-    position: relative;
-    display: flex;
-  justify-content: center;
+.leftside{
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+.b1 , .b3 {
   align-items: center;
-  color: white;
-   align-self: center;
-   margin-right: 200px;
-} */
-.b1,.b2,.b3,.b4{
-    width: 60px;
-    height:60px;
-    background-color:rgb(192, 226, 238);
-    border: 3px solid rgb(136, 136, 253);
-    margin: 6px 90px 30px 80px;
-    color: rgb(0, 0, 0);
-    display: flex;
-    padding: 40px;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  height: 80px;
+  width: 80px;
+  background-color: rgb(192, 226, 238);
+  border: 3px solid rgb(136, 136, 253);
+  justify-content: space-around;
+  margin: 10px 1px 60px 1px;
+
+}
+.b2 , .b4 {
+  align-items: center;
+  display: flex;
+  height: 80px;
+  width: 80px;
+  background-color: rgb(192, 226, 238);
+  border: 3px solid rgb(136, 136, 253);
+  justify-content: space-around;
+  margin: 10px 1px 60px 1px;
 
 }
    </style>
@@ -234,31 +192,21 @@
           <p>Search Text</p>
         </div>
         <div class="button">Button</div>
-        <!-- <div class="aa">A</div> -->
-      </div>
-      <!-- <div class="box2">
-        <div class="child-box1">
-          <p>B1</p>
-        </div>
-        <div class="child-box2">
-          <p>B2</p>
-        </div>
-        <div class="child-box3">
-          <p>B3</p>
-        </div>
-        <div class="child-box4">
-          <p>B4</p>
-        </div>
-        <div>B</div>
-      </div> -->
-      <div class="child2" style="height: 290px;background-color: rgb(221, 216, 216); display: flex;justify-content: space-around;
-      margin:5px 2px 5px 2px ;flex-wrap: wrap; padding :40px 15px ; ">
        
+      </div>
+     
+    
+        <div class="parent2">
+          <div class="leftside">
             <div class="b1">B1</div>
-            <div class="b2">B2</div>        
             <div class="b3">B3</div>
+          </div>
+          <div class="rightside">
+            <div class="b2">B2</div>
             <div class="b4">B4</div>
+          </div>
         </div>
+        
       <div class="box3">
         
         <div class="child3-box1"></div>
