@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox 2</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+        font-size: 21px;
+        overflow-x: hidden;
+        background-color: #000;
+        }
+        .container {
+        border: 2px solid black;
+        width: 100vw;
+        }
+        .box {
+        border: 2px solid black ;
+        /* border-bottom: 1px solid black ; */
+        height: 50px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white !important;
+        }
+        .box1 {
+        background: rgb(255, 201, 101);
+        height: 300px;
+        font-size: 21px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 32px;
+        border: 1px solid black; 
+        z-index: -1;
+        }
+        .search {
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        margin-right: 32px;
+        flex: 2;
+        text-align: center;
+        flex-wrap: wrap;
+        
+       
+        }
+        .button {
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        /* font-weight: 200 !important; */
+        border: 2px solid black;
+        padding: 0 16px;
+        text-align: center;
+        flex: 1;
+        }
+        /* .box2 {
+        position: relative;
+        background: rgb(221, 216, 216);
+        padding: 30px;
+        border: 1px solid black;
+        z-index: -1;
+        height: 320px;
+        }
+        .child-box1,
+        .child-box2,
+        .child-box3,
+        .child-box4 {
+        border: 3px solid rgb(136, 136, 253);
+        background: rgb(192, 226, 238);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 70px;
+        z-index: 1;
+        }
+        .child-box1 {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        }
+        .child-box2 {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        }
+        .child-box3 {
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+        }
+        .child-box4 {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        } */
+
+        .box3 {
+        background: rgb(24, 177, 24);
+        padding: 32px;
+        height: 300px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        }
+
+        .child3-box1,
+        .child3-box2,
+        .child3-box3 {
+        width: 120px;
+        height: 120px;
+        background: #eee;
+        border: 1px solid black;
+        
+        }
+
+        @media (max-width: 330px){
+            .box{
+                height: 40px;
+                font-size: 25px;
+            }
+            .aa{
+            margin-right: 500px;
+
+        }
+        }
+        @media (max-width: 450px){
+            .box1{
+                flex-direction: column;
+            }
+            .search{
+                margin-bottom: 1.5rem;
+            }
+            .search, .button{
+                flex: 1;
+                width: 100%;
+                font-size: 5px;
+            }
+            .box3{
+                padding: 10px;
+                
+            }
+            .aa{
+            margin-right: 500px;
+
+        }
+        }
+        @media (max-width: 850px){
+            .child3-box1,
+            .child3-box2,
+            .child3-box3{
+                width: 85px;
+                height: 85px;
+               
+        }
+        .box1{
+            height: 300;
+        }
+        .box3{
+          height: 250px;
+          
+        }
+        .child2{
+            margin-top: 60px;
+            padding :100px 15px;
+            
+        }
+        /* .box2{
+          height: 200px;
+        } */
+        /* .child-box1,
+        .child-box2,
+        .child-box3,
+        .child-box4{
+          height: 50px;
+          width: 50px;
+        }
+        .box1{
+          height: 200px;
+        } */
+        /* .aa{
+
+            margin-right: 700px;
+            align-self: center;
+            justify-content: center;
+            position: relative;
+        } */
+}
+/* .aa{
+    position: relative;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+   align-self: center;
+   margin-right: 200px;
+} */
+.b1,.b2,.b3,.b4{
+    width: 60px;
+    height:60px;
+    background-color:rgb(192, 226, 238);
+    border: 3px solid rgb(136, 136, 253);
+    margin: 6px 90px 30px 80px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+   </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="box">Design 2</div>
+      <div class="box1">
+        <div class="search">
+          <p>Search Text</p>
+        </div>
+        <div class="button">Button</div>
+        <!-- <div class="aa">A</div> -->
+      </div>
+      <!-- <div class="box2">
+        <div class="child-box1">
+          <p>B1</p>
+        </div>
+        <div class="child-box2">
+          <p>B2</p>
+        </div>
+        <div class="child-box3">
+          <p>B3</p>
+        </div>
+        <div class="child-box4">
+          <p>B4</p>
+        </div>
+        <div>B</div>
+      </div> -->
+      <div class="child2" style="height: 290px;background-color: rgb(221, 216, 216); display: flex;justify-content: space-around;
+      margin:5px 2px 5px 2px ;flex-wrap: wrap; padding :40px 15px ; ">
+       
+            <div class="b1" >B1</div>
+            <div class="b2" >B2</div>        
+            <div class="b3" >B3</div>
+            <div class="b4" >B4</div>
+        </div>
+      <div class="box3">
+        
+        <div class="child3-box1"></div>
+        <div class="child3-box2"></div>
+        <div class="child3-box3"></div>
+        
+      </div>
+      
+    </div>
+  </body>
+</html>
