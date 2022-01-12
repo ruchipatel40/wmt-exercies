@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Design-2</title>
+    <style>
+        body{
+            margin:0
+        }
+
+
+	.child {
+	height: 187px;
+    margin: 0;	    
+}
+
+
+
+.b1,.b2,.b3,.b4{
+    width: 60px;
+    height:60px;
+    background-color: blue;
+    padding: 10px;
+    color: white;
+}
+
+
+
+      
+    </style>
+     <div class="child" style="background-color: #f8f8f8ea;display: flex;flex-direction: column;justify-content:space-between;margin: 5px;flex-wrap: wrap;">
+        <div style="display: flex;justify-content: flex-start;">
+            <div class="b1"><p>B1</p></div>
+        </div>
+        <div style="display: flex;justify-content: flex-start;">
+            <div class="b2"><p>B3</p></div>
+        </div>
+        
+        <div style="display: flex;justify-content: flex-end;">
+            <div class="b3"><p>B2</p></div>
+        </div>
+        <div style="display: flex;justify-content: flex-end;">
+            <div class="b4"><p>B4</p></div>
+        </div>
+        
+  </div>
