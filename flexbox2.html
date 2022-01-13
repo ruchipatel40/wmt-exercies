@@ -34,7 +34,7 @@
       /* hello  */
         .box1 {
         background: rgb(255, 201, 101);
-        height: 300px;
+        height: 330px;
         font-size: 21px;
         display: flex;
         align-items: flex-start;
@@ -62,43 +62,22 @@
         align-items: center;
         justify-content: center;
         border-radius: 8px;
-        /* font-weight: 200 !important; */
         border: 2px solid black;
         padding: 0 16px;
         text-align: center;
         flex: 1;
         }
-
-        .box3 {
-        background: rgb(24, 177, 24);
-        padding: 32px;
-        height: 300px;
-        border: 1px solid black;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        }
-
-        .child3-box1,
-        .child3-box2,
-        .child3-box3 {
-        width: 120px;
-        height: 120px;
-        background: #eee;
-        border: 1px solid black;
-        
-        }
-
-        @media (max-width: 330px){
+       @media (max-width: 330px){
             .box{
                 height: 40px;
                 font-size: 25px;
             }
-            .aa{
-            margin-right: 500px;
 
-        }
-      
+            .spacebox{
+            width: 40px;
+            height: 40px;
+
+           }
         }
         @media (max-width: 450px){
             .box1{
@@ -112,19 +91,18 @@
                 width: 100%;
                
             }
-            .box3{
+            .parent3{
                 padding: 10px;
                 
             }
-            .aa{
-            margin-right: 500px;
+            .spacebox{
+            width: 40px;
+            height: 40px;
 
-        }
+            }
         }
         @media (max-width: 850px){
-            .child3-box1,
-            .child3-box2,
-            .child3-box3{
+            .spacebox{
                 width: 85px;
                 height: 85px;
                
@@ -132,21 +110,15 @@
         .box1{
             height: 300;
         }
-        .box3{
-          height: 250px;
+        .parent3{
+          height: 400px;
           
-        }
-        .child2{
-            margin-top: 60px;
-            flex-wrap: wrap; 
-            padding :40px 15px ; 
-            
-        }
+        }        
       }
       
 .parent2{
         background-color: rgb(221, 216, 216);
-        height: 300px;
+        height: 340px;
         font-size: 21px;
         display: flex;
         justify-content: space-around;
@@ -193,7 +165,7 @@
 }
 .parent3{
         background-color: rgb(24, 177, 24);
-        height: 300px;
+        height: 340px;
         font-size: 21px;
         display: flex;
         align-items: flex-start;
@@ -224,7 +196,6 @@
         <div class="button">Button</div>
        
       </div>
-     
     
         <div class="parent2">
           <div class="leftside">
@@ -241,15 +212,7 @@
             <div class="b4">B4</div>
           </div>
         </div>
-        
-      <!-- <div class="box3">
-        
-        <div class="child3-box1"></div>
-        <div class="child3-box2"></div>
-        <div class="child3-box3"></div>
-        
-      </div>
-       -->
+      
        <div class="parent3">
          <div class="spacebox"></div>
          <div class="spacebox"></div>
