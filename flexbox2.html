@@ -149,16 +149,15 @@
         height: 300px;
         font-size: 21px;
         display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        padding: 32px;
+        justify-content: space-around;
+        padding: 10px;
         border: 1px solid black; 
-
+        align-items: center;
 }
-.leftside{
-  flex-direction: column;
+.leftside ,.rightside{
+  flex-direction:column;
   justify-content: space-around;
-  
+ 
 }
 .b1 , .b3 {
   align-items: center;
@@ -168,8 +167,8 @@
   background-color: rgb(192, 226, 238);
   border: 3px solid rgb(136, 136, 253);
   justify-content: space-around;
-  margin: 10px 1px 60px 1px;
-
+ 
+  
 }
 .b2 , .b4 {
   align-items: center;
@@ -179,13 +178,39 @@
   background-color: rgb(192, 226, 238);
   border: 3px solid rgb(136, 136, 253);
   justify-content: space-around;
-  margin: 10px 1px 60px 1px;
+  
 
+}
+.b1top,.b2top{
+  display: flex;
+  padding: 10px 0px 70px 0px;
+  justify-content: space-around;
 }
 .a{
  align-self: center;
   color: black;
   font-weight: bold;
+}
+.parent3{
+        background-color: rgb(24, 177, 24);
+        height: 300px;
+        font-size: 21px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 32px;
+        border: 1px solid black; 
+}
+.spacebox{
+        align-items: center;
+        display: flex;
+        width: 100px;
+        height: 100px;
+        background: #eee;
+        border: 1px solid black;
+        justify-content: space-evenly;
+       margin: 70px 0px;
+
 }
    </style>
   </head>
@@ -203,24 +228,33 @@
     
         <div class="parent2">
           <div class="leftside">
-            <div class="b1">B1</div>
-            <div class="b3">B3</div>
+            <div class="b1top">
+                <div class="b1">B1</div>
+            </div>
+              <div class="b3">B3</div>
           </div>
           <div class="a">A</div>
           <div class="rightside">
-            <div class="b2">B2</div>
+            <div class="b2top">
+              <div class="b2">B2</div>
+          </div>
             <div class="b4">B4</div>
           </div>
         </div>
         
-      <div class="box3">
+      <!-- <div class="box3">
         
         <div class="child3-box1"></div>
         <div class="child3-box2"></div>
         <div class="child3-box3"></div>
         
       </div>
-      
+       -->
+       <div class="parent3">
+         <div class="spacebox"></div>
+         <div class="spacebox"></div>
+         <div class="spacebox"></div>
+       </div>
     </div>
   </body>
 </html>
