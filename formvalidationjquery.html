@@ -25,22 +25,8 @@
        }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-             
-            
-        });
-    </script>
    
-      
     <script>
-        $(document).ready(function(){
-      
-            
-        });
-    </script>
-    <script>
-        
         $(document).ready(function() {
             
                 $("input").hover(function(){
@@ -382,7 +368,7 @@
     <span id="lastnamevalidate" style="color:red; margin-left: 40px;">Please enter lastname</span><br><br>
 
     <label for="dob" id="dobirth">Date Of Birth:</label>
-    <select class="dob" id="month" name="Month" style="padding-right: 30px;" required >
+    <select class="dob" id="month" name="Month" style="padding-right: 30px;"  >
         <option value="" name="Month" >Month</option>
         <option value="January" name="Month" >January</option>
         <option value="February" name="Month" >February</option>
@@ -394,7 +380,7 @@
         <option value="August" name="Month" >August</option>
         <option value="September" name="Month" >September</option>
     </select>
-    <select class="dob" id="day" name="day" style="margin-left: 10px; padding-right: 20px;" required>
+    <select class="dob" id="day" name="day" style="margin-left: 10px; padding-right: 20px;" >
         <option value="">Day</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -405,7 +391,7 @@
         <option value="7">7</option>
 
     </select>
-    <select class="dob" id="year" name="Year" style="margin-left: 10px;" required>
+    <select class="dob" id="year" name="Year" style="margin-left: 10px;" >
         <option value="">Year</option>
         <option value="2000">2000</option>
         <option value="2001">2001</option>
@@ -418,7 +404,7 @@
     <span id="validatedob" style="color:red; margin-left: 40px;">Please select month</span><br><br>
 
     <label for="gender" id="gen" >Gender:</label>
-    <select id="gender" class="gendr" name="gender" style="padding-right: 100px;" onclick="gendervalidate()" required>
+    <select id="gender" class="gendr" name="gender" style="padding-right: 100px;" onclick="gendervalidate()" >
         <option value="" name="gender" class="gender">Choose a gender</option>
         <option value="female" name="gender" class="gender">Female</option>
         <option value="male"  name="gender" class="gender">Male</option>
@@ -461,11 +447,11 @@
         <span id="validateaddress" style="color:red; margin-left: 40px;">Please enter address</span><br><br>
 
         <label for="city" style="text-align: end; margin-left: 90px;">City:</label>
-        <input id="city" type="text"name="your_city" required >
+        <input id="city" type="text"name="your_city"  >
         <span id="cityvalidate" style="color:red; margin-left: 40px;">Please enter city</span><br><br>
 
         <label for="state"  style="text-align: end; margin-left: 85px; padding-right: 20px;" >State:</label>
-        <select id="state" class="select" name="state" required>
+        <select id="state" class="select" name="state" >
             <option value="">Choose a state:</option>
             <option value="gujarat">Gujarat</option>
             <option value="hariyana">Hariyana</option>
@@ -474,7 +460,7 @@
         <span id="validatestate" style="color:red; margin-left: 40px;">Please select state</span><br><br>
         
         <label for="zipcode"  style="text-align: end; margin-left: 58px;">Zip Code:</label>
-        <input id="zipcode" type="number" name="zipnum"  required>
+        <input id="zipcode" type="number" name="zipnum"  >
         <span id="validatezipcode" style="color:red; margin-left: 40px;">Please enter zipcode</span><br><br>
         
         <label for="phone"  style="text-align: end; margin-left: 75px;">Phone:</label>
