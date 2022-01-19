@@ -27,10 +27,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-             $("#submitButton").click(function (e) {
-                ValidateAll();
-                return false;
-            });
+             
+            
+        });
+    </script>
+   
+      
+    <script>
+        $(document).ready(function(){
+      
+            
         });
     </script>
     <script>
@@ -92,33 +98,34 @@
                         }
                     }
                     // validate dob
-                    // $("#validatedob").hide();
-                    // $('.dob').keyup(function () {
-                    //     dobvalidate();
-                    // });
-                    // function dobvalidate(){
-                    //    var monthval = $("#month");
-                    //    var dayval = $("#day");
-                    //    var yearval = $("#year");
+                    $("#validatedob").hide();
+                    $('#month').click(function () {
+                        dobvalidate();
+                    });
+                    function dobvalidate(){
+                       var monthval = $("#month");
+                       var dayval = $("#day");
+                       var yearval = $("#year");
 
-                    //    if ((monthval.val() == "") ||(dayval.val() == "") || (yearval.val() == "")){
-                    //         $("#validatedob").show();
-                    //      }
-                    //     else{
-                    //         $("#validatedob").hide();
-                    //     }
+                       if ((monthval.val() == "") || (yearval.val() == "") || (dayval.val() == "")){
+                            $("#validatedob").show().html("select date of birth...");
+                         }
+                        else{
+                            $("#validatedob").hide();
+                        }
                     
-                    //}
+                    }
 
-                     // validate gender
+                    // validate gender
                      $("#validategender").hide();
-                    $('#gender').keydown(function () {
+                    $('#gender').click(function () {
                         gendervalidate();
                     });
                     function gendervalidate(){
+                        
                        var genderval = $("#gender");
                        if (genderval.val() == "") {
-                            $("#validategender").show();
+                            $("#validategender").show().html("please select gender ...");
                          }
 
                         else{
@@ -126,7 +133,7 @@
                             
                         }
                     }
-                   
+                  
                    // validate emailid 
                     $("#emailvalidate").hide();
                     $('#email').keyup(function () {
@@ -325,8 +332,41 @@
                             $('#validatephonenumber').hide();
                         }
                     }     
+                    // validate state
+                    $("#validatestate").hide();
+                    $('#state').click(function () {
+                        statevalidate();
+                    });
+                    function statevalidate(){
+                        
+                       var stateval = $("#state");
+                       if (stateval.val() == "") {
+                            $("#validatestate").show().html("please select state ...");
+                         }
+
+                        else{
+                            $("#validatestate").hide();
+                            
+                        }
+                    }
+                    $("#submitButton").click(function () {
+                        validatefirstname();
+                        validatelastname(); 
+                        dobvalidate();
+                        gendervalidate();
+                        validateemailid(); 
+                        revalidateemailid(); 
+                        validatepassword(); 
+                        validatetwopassword(); 
+                        validateaddress(); 
+                        validatecity();
+                        zipcodeValidate();
+                        phonenumbervalidate();
+                        statevalidate();
+                    });
               
         });
+
     </script>
 </head>
 <body>
@@ -342,7 +382,7 @@
     <span id="lastnamevalidate" style="color:red; margin-left: 40px;">Please enter lastname</span><br><br>
 
     <label for="dob" id="dobirth">Date Of Birth:</label>
-    <select class="dob" id="month" name="Month" style="padding-right: 30px;"  >
+    <select class="dob" id="month" name="Month" style="padding-right: 30px;" required >
         <option value="" name="Month" >Month</option>
         <option value="January" name="Month" >January</option>
         <option value="February" name="Month" >February</option>
@@ -374,11 +414,11 @@
         <option value="2004">2004</option>
         <option value="2005">2005</option>
         <option value="2006">2006</option>
-    </select><br><br>
-    <!-- <span id="validatedob" style="color:red; margin-left: 40px;">Please select month</span><br><br> -->
+    </select>
+    <span id="validatedob" style="color:red; margin-left: 40px;">Please select month</span><br><br>
 
     <label for="gender" id="gen" >Gender:</label>
-    <select id="gender" name="gender" style="padding-right: 100px;" required>
+    <select id="gender" class="gendr" name="gender" style="padding-right: 100px;" onclick="gendervalidate()" required>
         <option value="" name="gender" class="gender">Choose a gender</option>
         <option value="female" name="gender" class="gender">Female</option>
         <option value="male"  name="gender" class="gender">Male</option>
@@ -387,16 +427,16 @@
     </div>
     <div>
         <h3>Account Information</h3>
-        <label for="email" style="text-align: end; margin-left: 80px;">Email:</label>
+        <label for="email" style="text-align: end; margin-left: 90px;">Email:</label>
         <input id="email" type="email" name="email" aria-describedby="emil">
         <span id="emailvalidate" style="color:red; margin-left: 40px;">(Your email address will be your username)</span><br><br>
 
-        <label for="Re-type-email" style="text-align: end; margin-left: 30px;">Re-type Email:</label>
+        <label for="Re-type-email" style="text-align: end; margin-left: 35px;">Re-type Email:</label>
         <input id="retypeemail" type="email" name="retypeemail" >
         <span id="reemailvalidate" style="color:red; margin-left: 40px;">(please re-enter email address )</span><br><br>
 
 
-        <label for="password" style="text-align: end; margin-left: 60px;">Password:</label>
+        <label for="password" style="text-align: end; margin-left: 65px;">Password:</label>
         <input id="password" type="password" name="password" aria-describedby="passwrd" >
         <span id="passwordvalidate" style="color:red; margin-left: 40px;">(please enter password)</span><br><br>
 
@@ -409,7 +449,7 @@
             <option >Choose a security Question:</option>
         </select><br><br>
 
-        <label for="security-ans" style="text-align: end; margin-left: 15px;">Security Answer:</label>
+        <label for="security-ans" style="text-align: end; margin-left: 17px;">Security Answer:</label>
         <input id="security-ans" type="text" name="securityanswer" aria-describedby="securityans"><br>
         <span id="securityans">(Not case-sensitive)</span><br><br>
     </div>
@@ -424,13 +464,14 @@
         <input id="city" type="text"name="your_city" required >
         <span id="cityvalidate" style="color:red; margin-left: 40px;">Please enter city</span><br><br>
 
-        <label for="state" style="text-align: end; margin-left: 85px; padding-right: 20px;">State:</label>
-        <select id="state" name="state">
+        <label for="state"  style="text-align: end; margin-left: 85px; padding-right: 20px;" >State:</label>
+        <select id="state" class="select" name="state" required>
             <option value="">Choose a state:</option>
             <option value="gujarat">Gujarat</option>
             <option value="hariyana">Hariyana</option>
             <option value="panjab">Panjab</option>
-        </select><br><br>
+        </select>
+        <span id="validatestate" style="color:red; margin-left: 40px;">Please select state</span><br><br>
         
         <label for="zipcode"  style="text-align: end; margin-left: 58px;">Zip Code:</label>
         <input id="zipcode" type="number" name="zipnum"  required>
@@ -441,7 +482,7 @@
         <span id="validatephonenumber" style="color:red; margin-left: 40px;">Please enter phone number</span><br><br>
 
         <button type="submit" value="submit" id="submitButton"  style="margin-left: 140px; margin-top: 20px;background-color: green; color: white; padding: 10px;" >Submit</button>
-    
+        
     </div>
 </form>
 </body>
