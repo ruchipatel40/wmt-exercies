@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch data and display into table</title>
+    <script>
+        let file = "https://jsonplaceholder.typicode.com/todos";
+           fetch(file)
+           .then(x => x.json())
+           .then(jsondata => {
+                 let genratetable = "<table border='1' style='width:650px;'><tr><th>UserId</th><th>Id</th><th>Title</th><th>Completed</th></tr>"
+                     for (let i = 0; i < jsondata.length; i++) {
+                         let arr = jsondata[i];
+                         genratetable += "<tr><td>" + arr.userId + "</td><td>" + arr.id + "</td><td>" + arr.title +
+                                         "</td><td>" + arr.completed + "</td></tr>";
+                         }
+                         document.getElementById("table").innerHTML = genratetable;
+             })
+           .catch(error => {
+               document.getElementById("table").innerHTML = error;
+           });
+     </script>
+</head>
+<body>
+    <p id="table"></p>
+   
+</body>
+</html>
