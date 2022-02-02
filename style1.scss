@@ -1,0 +1,110 @@
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// $utilities : (
+//   "text-color":(
+//     property :color,
+//     class :text-color,
+//     css-var: true,
+//     state : hover,
+//     values :(
+//       "white":rgba(255,255,255,1),
+//       "yellow":rgb(245, 158, 11, 1),
+//     )
+//   )
+// );
+// $utilities: (
+//   "text-decoration": (
+//     property: text-decoration,
+//     values: none underline line-through
+//   ),
+//   "opacity": (
+//     property: opacity,
+//     class: opacity,
+//     state: hover,
+//     values: (
+//       0: 0,
+//       25: .25,
+//       50: .5,
+//       75: .75,
+//       100: 1,
+//     )
+//   )
+//   "text-opacity": (
+//     css-var: true,
+//     class: text-opacity,
+//     values: (
+//       25: .25,
+//       50: .5,
+//       75: .75,
+//       100: 1
+//     )
+//   ),
+  
+//     "background-color": (
+//       property: background-color,
+//       class: bg,
+//       local-vars: (
+//         "bg-opacity": 1
+//       ),
+//       values: map-merge(
+//         $utilities-bg-colors,
+//         (
+//           "transparent": transparent
+//         )
+//       )
+//     )
+ 
+// );
+$utilities: (
+  "opacity": (
+    property: opacity,
+    print: true,
+    values: (
+      0: 0,
+      25: .25,
+      50: .5,
+      75: .75,
+      100: 1,
+    )
+  ),
+  "overflow": (
+    responsive: true,
+    property: overflow,
+    values: visible hidden scroll auto,
+  ),
+  "cursor": (
+    property: cursor,
+    class: cursor,
+    responsive: true,
+    values: auto pointer grab,
+  ),
+  "border": (
+    property: border,
+    values: (
+      null: $border-width solid $border-color,
+      1: 1,
+    )
+  ),
+  "float": (
+    responsive: true,
+    property: float,
+    values: (
+      start: left,
+      end: right,
+      none: none,
+    )
+  ),
+  "user-select": (
+    property: user-select,
+    values: all auto none
+  ),
+  "pointer-events": (
+    property: pointer-events,
+    class: pe,
+    values:   none,auto,
+  ),
+  
+  
+);
+
