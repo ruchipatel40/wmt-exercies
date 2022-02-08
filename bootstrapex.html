@@ -2925,6 +2925,7 @@ myAlert.addEventListener('closed.bs.alert', function () {
   </ul>
 </nav>
 </div> -->
+<!-- <div class="container-fluid">
 <div class="card">
   <img src="..." class="card-img-top" alt="...">
 
@@ -2951,5 +2952,305 @@ myAlert.addEventListener('closed.bs.alert', function () {
     <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
   </div>
 </div>
+</div> -->
+<!-- <div class="container-fluid">
+  <p aria-hidden="true">
+    <span class="placeholder col-6"></span>
+    <span class="placeholder w-75"></span>
+    <span class="placeholder col-11 bg-primary"></span>
+    <span class="placeholder col-11 bg-secondary placeholder-lg"></span>
+    <span class="placeholder col-11 bg-secondary placeholder-md"></span>
+    <span class="placeholder col-11 bg-secondary placeholder-xs"></span>
+  <p class="placeholder-glow">
+    <span class="placeholder col-11 bg-dark "></span>
+  </p>
+  </p>
+  <h2> popover example</h2><br>
+  <button class="btn btn-primary" type="button" data-bs-toggle="popover" data-bs-placement="right" title="popover title"
+    data-bs-content="Hello this is popover example">popover button</button>
+  <button class="btn btn-primary" type="button" data-bs-toggle="popover" data-bs-placement="bottom"
+    title="popover title" data-bs-content="Hello this is popover example">popover button</button>
+  <button class="btn btn-primary" type="button" data-bs-toggle="popover" data-bs-placement="left" title="popover title"
+    data-bs-content="Hello this is popover example">popover button</button>
+  <button class="btn btn-primary" type="button" data-bs-toggle="popover" data-bs-placement="top" title="popover title"
+    data-bs-content="Hello this is popover example">popover button</button>
+  <button class="btn btn-primary" type="button" data-bs-toggle="popover" data-bs-offset="10,20" tabindex="0"
+    data-bs-trigger="focus" data-bs-placement="top" title="popover title"
+    data-bs-content="Hello this is popover example">popover click outside</button>
+  <span class="d-inline-block" data-bs-toggle="popover" tabindex="0" data-bs-trigger="hover focus"
+    data-bs-content="popover disabled button">
+    <button type="button" class="btn btn-primary" disabled>Disabled button</button>
+  </span><br>
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+  </script>
+  <br>
+</div> -->
+<!-- <div class="container-fluid">
+  <div class="progress mb-2" style="height:5px;">
+    <div class="progress-bar w-75" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75">75%</div>
+  </div>
+  <div class="progress" style="height: 20px;">
+    <div class="progress-bar w-25" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25">25%</div>
+  </div>
+  <div class="progress" style="height: 20px;">
+    <div class="progress-bar bg-success progress-bar-striped w-50" role="progressbar" aria-valuemin="0"
+      aria-valuemax="100" aria-valuenow="50">50%</div>
+  </div>
+  <div class="progress" style="height: 20px;">
+    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated w-75" role="progressbar"
+      aria-valuemin="0" aria-valuemax="100" aria-valuenow="75">75%</div>
+  </div>
+</div> -->
+<!-- <div class="container-fluid">
+  <nav id="navbar-example2" class="navbar navbar-light bg-light px-3 fixed-top ">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a href="#heading1" class="nav-link active">First</a>
+      </li>
+      <li class="nav-item">
+        <a href="#heading2" class="nav-link">Second</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">dropdown</a>
+        <ul class="dropdown-menu">
+          <li><a href="#heading3" class="dropdown-item">Action</a></li>
+          <li><a href="#heading4" class="dropdown-item">Action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a href="#heading5" class="dropdown-item">Action</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div  data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0">
+    <h4 id="heading1">first heading</h4>
+    <p >This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+      the appropriate navigation link is highlighted. It's repeated throughout the component example. 
+      We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+  
+  <h4 id="heading2">second heading</h4>
+    <p >This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+      the appropriate navigation link is highlighted. It's repeated throughout the component example. 
+      We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+  
+  <h4 id="heading3">dropdown1 heading</h4>
+    <p >This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+      the appropriate navigation link is highlighted. It's repeated throughout the component example. 
+      We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+  
+  <h4 id="heading4">dropdown2 heading</h4>
+    <p >This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+      the appropriate navigation link is highlighted. It's repeated throughout the component example. 
+      We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+  
+  <h4 id="heading5">dropdown3 heading</h4>
+    <p >This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+      the appropriate navigation link is highlighted. It's repeated throughout the component example. 
+      We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+  </div>
+</div> -->
+ <!-- <nav id="navbar-example2" class="navbar navbar-light bg-light px-3 " style="position: sticky; top: 0;" >
+  <a class="navbar-brand" href="#">Navbar</a>
+  <ul class="nav nav-pills" id="pillstab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading1" data-bs-toggle="pill" role="tab" data-bs-target="#scrollspyHeading1">First</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading2"  data-bs-toggle="pill" role="tab">Second</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+  <h4 id="scrollspyHeading1">First heading</h4>
+  <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+    the appropriate navigation link is highlighted. It's repeated throughout the component example. 
+   </p>
+  <h4 id="scrollspyHeading2">Second heading</h4>
+  <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+    the appropriate navigation link is highlighted. It's repeated throughout the component example. 
+    </p>
+  <h4 id="scrollspyHeading3">Third heading</h4>
+  <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+    the appropriate navigation link is highlighted. It's repeated throughout the component example. 
+    </p>
+  <h4 id="scrollspyHeading4">Fourth heading</h4>
+  <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+    the appropriate navigation link is highlighted. It's repeated throughout the component example. 
+    </p>
+  <h4 id="scrollspyHeading5">Fifth heading</h4>
+  <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+    the appropriate navigation link is highlighted. It's repeated throughout the component example. 
+   </p>
+</div> 
+<style>
+  body{
+    position: relative;
+  }
+</style> -->
+<!-- <div id="list-example" class="list-group" style="position: sticky; top: 0;">
+  <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+  <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+  <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+  <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+</div>
+<div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+  <h4 id="list-item-1">Item 1</h4>
+  <p>...This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+    the appropriate navigation link is highlighted. It's repeated throughout the component example. 
+    We keep adding some more example copy here to emphasize the scrolling and highlighting.
+    This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+    the appropriate navigation link is highlighted. It's repeated throughout the component example. 
+    We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+  <h4 id="list-item-2">Item 2</h4>
+  <p>...This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+    the appropriate navigation link is highlighted. It's repeated throughout the component example. 
+    We keep adding some more example copy here to emphasize the scrolling and highlighting.
+    This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+    the appropriate navigation link is highlighted. It's repeated throughout the component example. 
+    We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+  <h4 id="list-item-3">Item 3</h4>
+  <p>...This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+    the appropriate navigation link is highlighted. It's repeated throughout the component example. 
+    We keep adding some more example copy here to emphasize the scrolling and highlighting.
+    This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+    the appropriate navigation link is highlighted. It's repeated throughout the component example. 
+    We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+  <h4 id="list-item-4">Item 4</h4>
+  <p>...This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+    the appropriate navigation link is highlighted. It's repeated throughout the component example. 
+    We keep adding some more example copy here to emphasize the scrolling and highlighting.
+    This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+    the appropriate navigation link is highlighted. It's repeated throughout the component example. 
+    We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+</div> -->
+<!-- <div class="container-fluid">
+  <div class="spinner-border">
+    <span class="visually-hidden">Loading..</span>
+  </div>
+  <div class="spinner-border text-primary">
+    <span class="visually-hidden">loadng</span>
+  </div>
+  <div class="spinner-grow text-danger">
+    <span class="visually-hidden">Loading..</span>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div class="spinner-border">
+      <span class="visually-hidden">Loading..</span>
+    </div>
+  </div>
+  <div class="d-flex align-items-center">
+    <strong>loading..</strong>
+    <div class="spinner-border ms-auto " aria-hidden="true" style="width: 3rem; height: 3rem;"></div>
+  </div>
+</div> -->
+<div class="container-fluid">
+  <button type="button" class="btn btn-primary" id="toastbutton">toast button</button>
+  <div class="position-fixed bottom-0 end-0" style="z-index: 11;">
+    <div class="toast" id="livetoast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="flex1.png" style="width: 30px; height: 30px;">
+        <strong class="me-auto">Bootstrap toast</strong>
+        <small>11 min ago</small>
+        <button type="button" class="btn btn-close" data-bs-dismiss="toast" aria-label="close"></button>
+      </div>
+      <div class="toast-body">
+        hello ,ruchi
+      </div>
+    </div>
+    <script>
+      var toastbuttontrigger = document.getElementById("toastbutton");
+      var toastlive = document.getElementById("livetoast");
+      if (toastbuttontrigger) {
+        toastbuttontrigger.addEventListener('click', function () {
+          var toast = new bootstrap.Toast(toastlive)
+          toast.show();
+        })
+      }
+    </script>
+  </div>
+  <button type="button" class="btn btn-primary" id="toastbutton1">toast button</button>
+  <div class="toast-container">
+    <div class="position-fixed bottom-30 end-0" style="z-index: 11;">
+      <div class="toast text-white bg-primary" id="livetoast1" role="alert" aria-live="assertive" aria-atomic="true"
+        data-bs-autohide="false" data-bs-delay="7000">
+        <div class="toast-header">
+          <img src="flex1.png" style="width: 30px; height: 30px;">
+          <strong class="me-auto">Bootstrap toast</strong>
+          <small>11 min ago</small>
+          <button type="button" class="btn btn-close" data-bs-dismiss="toast" aria-label="close"></button>
+        </div>
+        <div class="toast-body">
+          hello ,ruchi
+        </div>
+      </div>
+      <div class="position-fixed bottom-0 end-0" style="z-index: 11;">
+        <div class="toast" id="livetoast2" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="flex1.png" style="width: 30px; height: 30px;">
+            <strong class="me-auto">Bootstrap toast</strong>
+            <small>11 min ago</small>
+            <button type="button" class="btn btn-close" data-bs-dismiss="toast" aria-label="close"></button>
+          </div>
+          <div class="toast-body">
+            hello ,world!
+          </div>
+        </div>
+        </div>
+        </div>
+        <script>
+
+          var toastbuttontrigger = document.getElementById("toastbutton1");
+          var toastlive1 = document.getElementById("livetoast1");
+          var toastlive2 = document.getElementById("livetoast2");
+          if (toastbuttontrigger) {
+            toastbuttontrigger.addEventListener('click', function () {
+              var toast1 = new bootstrap.Toast(toastlive1)
+              toast1.show();
+              var toast2 = new bootstrap.Toast(toastlive2)
+              toast2.show();
+            })
+          }
+        </script>
+      </div>
+</div>
+
+<div class="container-fluid">
+ 
+  <h4>tooltip example</h4>
+  <a href="#" role="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="right" title="tooltip">tooltip</a>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="tooltip example">Tooltip button</button>
+</div>
+<a href="#" data-bs-toggle="tooltip" title="Some tooltip text!">Hover over me</a>
+
+<!-- Generated markup by the plugin -->
+<div class="tooltip bs-tooltip-top" role="tooltip">
+  <div class="tooltip-arrow"></div>
+  <div class="tooltip-inner">
+    Some tooltip text!
+  </div>
+</div>
+<span class="d-inline-block" data-bs-toggle="tooltip" title="Tooltip" data-bs-placement="bottom">
+  <button type="button" class="btn btn-primary" disabled>Disabled btn</button>
+</span>
+<div class="d-inline-block " data-bs-placement="bottom" data-bs-toggle="tooltip" title="tooltip" disabled>div</div>
+<script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+</script>
 </body>
 </html>
