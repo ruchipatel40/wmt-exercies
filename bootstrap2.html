@@ -1,301 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BS5 template 2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    @media only screen and (max-width:960px){
-    .py-7{
-        padding-top: 8rem!important;
-        padding-bottom: 8rem!important;
-    }
-    .pl-sm-0{
-      padding-left: 0.55rem !important;
-  }
-  .fw-fs{
-      font-weight: 400;
-      font-size: 60px;
-  }
-  .table > :not(caption) > * > * {
-    padding: 1rem 0 !important;
-}
-.fs-lg-1{
-    font-size: 1.33rem !important;
-}
-}
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-@media only screen and (max-width:768px){
-    .fw-fs{
-      font-weight: 450;
-      font-size: 50px;
-  }
-  .fs-md-5 {
-            font-size: 2.5rem !important;
-        }
-}
-@media only screen and (min-width: 960px){
-        .fs-md-5 {
-            font-size: 3.5rem !important;
-        }
-        .mx-lg-7{
-       margin-left: 7rem !important;
-       margin-right: 7rem !important;
-   }
-   .px-md-6{
-       padding-right: 5rem !important;
-       padding-left: 5rem !important;
-   }
-   .mt-lg-6{
-       margin-top: 5rem !important;
-   }
-   .table > :not(caption) > * > * {
-    padding: 1rem 1.5rem !important;
-}
-.fw-fs{
-      font-weight: 500;
-      font-size: 70px;
-  }
-}
-    .nav-item{
-        padding: 10px 0 ;
-        margin-left: 13px;
-        margin-right: 13px;
-    }
-    .py-lg-9{
-        padding-top:10rem ;
-        padding-bottom: 10rem ;
-    }
-    section{
-        padding: 7rem 0 7rem 0;
-    }
-    .container{
-        width: 100%;
-        padding: 0 1rem 0 1rem;
-    }
 
-   .fs-4{
-       font-size: 1.33 rem !important;
-   }
-.fs-1{
-       font-size: 1.33rem !important;
-   }
-   .btn{
-       position: relative;
-       border-radius: 0.2rem;
-   }
-   .btn-lg{
-       padding: 0.720rem 0.857rem;
-   }
-   .btn-block{
-       display: block;
-       width: 100%;
-   }
-  .mt-6{
-      margin-top: 5.55rem !important;
-  }
-  .pl-lg-5{
-      padding-left: 3rem ;
-  }
-  .fs-sm-3{
-    font-size: 2rem;
-  }
-  .text-dark{
-      color: rgb(28, 10, 61) !important;
-      
-  }
-  .progress-lg{
-      height: 0.7rem !important;
-  }
-  .fs-0{
-        font-size: 1.22rem !important;
-    }
-    .fh-400{
-        height: 400px !important;
-    }
-    .container1{
-        position: relative;
+    <style>
+        .end-50 {
+            right: -8% !important;
+        }
+
+        .bottom-50 {
+            bottom: 56% !important;
+        }
+
+        .start-50 {
+            left: 80% !important;
+        }
         
-    }
-    .image{
-        opacity: 1;
-        display: block;
-        width: 100%;
-        height: auto;
-        transition: .5s ease;
-        backface-visibility: hidden;
-    }
-    .middle{
-        transition: .5s ease;
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center;
-    }
-    .container1:hover .image {
-  opacity: 0.5;
-}
-.middle {
-  opacity: 1;
-}
-.fh-300{
-    height: 200px;
-}
-.ml-2{
-    margin-left: 0.5rem !important;
-}
-.bg-light-color{
-    background-color: rgba(240, 240, 240, 0.746);
-}
-.py-lg-6{
-    padding-top: 5rem !important;
-    padding-bottom: 5rem !important;
-}
-.shape{
-    width: 6rem;
-    height: 6rem;
-    background-color: rgb(167, 213, 251);
-    justify-content: center;
-    align-items: center;
-    padding: 0 10px;
-    
-}
+
+        @media only screen and (max-width:960px) {
+            .py-7 {
+                padding-top: 8rem !important;
+                padding-bottom: 8rem !important;
+            }
+
+            .pl-sm-0 {
+                padding-left: 0.55rem !important;
+            }
+
+            .fw-fs {
+                font-weight: 400;
+                font-size: 60px;
+            }
+
+            .table> :not(caption)>*>* {
+                padding: 1rem 0 !important;
+            }
+
+            .fs-lg-1 {
+                font-size: 1.33rem !important;
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            .fw-fs {
+                font-weight: 450;
+                font-size: 50px;
+            }
+
+            .fs-md-5 {
+                font-size: 2.5rem !important;
+            }
+
+        }
+
+        @media only screen and (min-width: 960px) {
+            .fs-md-5 {
+                font-size: 3.5rem !important;
+            }
+
+            .mx-lg-7 {
+                margin-left: 7rem !important;
+                margin-right: 7rem !important;
+            }
+
+            .px-md-6 {
+                padding-right: 5rem !important;
+                padding-left: 5rem !important;
+            }
+
+            .mt-lg-6 {
+                margin-top: 5rem !important;
+            }
+
+            .table> :not(caption)>*>* {
+                padding: 1rem 1.5rem !important;
+            }
+
+            .fw-fs {
+                font-weight: 500;
+                font-size: 70px;
+            }
+        }
+
+        .nav-item {
+            padding: 10px 0;
+            margin-left: 13px;
+            margin-right: 13px;
+        }
+
+        .py-lg-9 {
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+        }
+
+        section {
+            padding: 7rem 0 7rem 0;
+        }
+
+        .container {
+            width: 100%;
+            padding: 0 1rem 0 1rem;
+        }
+
+        .fs-4 {
+            font-size: 1.33 rem !important;
+        }
+
+        .fs-1 {
+            font-size: 1.33rem !important;
+        }
+
+        .btn {
+            position: relative;
+            border-radius: 0.2rem;
+        }
+
+        .btn-lg {
+            padding: 0.720rem 0.857rem;
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+
+        .mt-6 {
+            margin-top: 5.55rem !important;
+        }
+
+        .pl-lg-5 {
+            padding-left: 3rem;
+        }
+
+        .fs-sm-3 {
+            font-size: 2rem;
+        }
+
+        .text-dark {
+            color: rgb(28, 10, 61) !important;
+
+        }
+
+        .progress-lg {
+            height: 0.7rem !important;
+        }
+
+        .fs-0 {
+            font-size: 1.22rem !important;
+        }
+
+        .fh-400 {
+            height: 400px !important;
+        }
+
+        .container1 {
+            position: relative;
+
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .container1:hover .image {
+            opacity: 0.5;
+        }
+
+        .middle {
+            opacity: 1;
+        }
+
+        .fh-300 {
+            height: 200px;
+        }
+
+        .ml-2 {
+            margin-left: 0.5rem !important;
+        }
+
+        .bg-light-color {
+            background-color: rgba(240, 240, 240, 0.746);
+        }
+
+        .py-lg-6 {
+            padding-top: 5rem !important;
+            padding-bottom: 5rem !important;
+        }
+
+        .shape {
+            width: 6rem;
+            height: 6rem;
+            background-color: rgb(167, 213, 251);
+            justify-content: center;
+            align-items: center;
+            padding: 5px 23px;
+
+        }
 
 
-.table-striped>tbody>tr:nth-child(even)>td, 
-.table-striped>tbody>tr:nth-child(even)>th {
-   background-color: rgb(225, 227, 238); 
- }
- .table-striped>tbody>tr:nth-child(odd)>td, 
-.table-striped>tbody>tr:nth-child(odd)>th {
-   background-color: white; 
-   color: #6c757d;
- }
- .px-5{
-     padding: 6rem 0 3rem 0 !important;
- }
- .bg-footer{
-     background-color: rgb(4 19 64 / 87%);
- }
- .pb-4{
-     padding-bottom: 0.2 !important;
+        .table-striped>tbody>tr:nth-child(even)>td,
+        .table-striped>tbody>tr:nth-child(even)>th {
+            background-color: rgb(225, 227, 238);
+        }
 
- }
- .card-body{
-     padding: 1rem 1rem !important;
- }
- .ulimg{
-     list-style-image: url("circle-check-solid.svg");
-     margin-left: 20px;
-     padding-left: 20px;
- }
-</style>
+        .table-striped>tbody>tr:nth-child(odd)>td,
+        .table-striped>tbody>tr:nth-child(odd)>th {
+            background-color: white;
+            color: #6c757d;
+        }
+
+        .px-5 {
+            padding: 6rem 0 3rem 0 !important;
+        }
+
+        .bg-footer {
+            background-color: rgb(4 19 64 / 87%);
+        }
+
+        .pb-4 {
+            padding-bottom: 0.2 !important;
+
+        }
+
+        .card-body {
+            padding: 1rem 1rem !important;
+        }
+
+        .ulimg {
+            list-style-image: url("circle-check-solid.svg");
+            margin-left: 30px;
+            padding-left: 20px;
+        }
+
+        .banner-image {
+            background-image: url('hotel3.jpg');
+            background-size: cover;
+            image-rendering: high-quality;
+        }
+    </style>
+
 </head>
+
 <body>
+
     <main class="main">
-        <div style="background-image: url(hotel1.jpg); position: relative; opacity: 0.8; background-repeat: no-repeat; background-size: cover;">
-        <nav class="navbar navbar-expand-lg bg-tansparent navbar-scroll">
+        <!-- <div style="background-image: url(hotel1.jpg); position: relative; opacity: 0.8; background-repeat: no-repeat; background-size: cover;"> -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container d-flex">
-              <a class="navbar-brand" href="#">
-                <img src="space.png" width="50" height="50">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active text-light fs-0" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light fs-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                     Pages
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <a class="navbar-brand" href="#">
+                    <img src="space.png" width="50" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light fs-0" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light fs-0" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light fs-0 " href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Support
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light fs-0 " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                     Support
-                    </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                    <button class="btn btn-primary me-2 " type="submit">Login</button>
-                    <button class="btn btn-light me-2" type="submit">Signup</button>
-                    <button class="btn  text-light fs-0" type="button" style="border: 2px solid white;" ><span class="me-2"><i class="fa fa-plus"></i></span>List a space</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-          <section class="py-7 py-lg-9 " >
-            <div class="container">
-            <div class="row align-items-center justify-content-center mb-4 mb-xl-5">
-                <div class="col-12 col-lg-10 text-center">
-                    <h1 class="fs-md-5 text-light fs-sm-2" style="font-weight: 400;">Find your perfect <strong>coworking</strong> space.</h1>
-                    <p style=" font-weight: 400; " class="px-md-6 text-light fs-1">
-                        <span class="fw-bold">12,000+</span>
-                        coworking spaces with desks, offices & meeting rooms in
-                        <span class="fw-bold">165+</span> countries.
-                        Discover and reserve space today.
-                    </p>
+                    <form class="d-flex">
+                        <button class="btn btn-primary me-2 " type="submit">Login</button>
+                        <button class="btn btn-light me-2" type="submit">Signup</button>
+                        <button class="btn  text-light fs-0" type="button" style="border: 2px solid white;"><span
+                                class="me-2"><i class="fa fa-plus"></i></span>List a space</button>
+                    </form>
                 </div>
             </div>
-             <div class="row mb-5 d-flex bg-light align-items-center justify-content-center" >
-                 <form class="row align-items-center">
-                    <div class="col-12 col-lg-5">
-                    <div class="form-group form-group-lg" style="position: relative;">
-                        <div class="input-group input-group-lg my-3" style=" border: 1px solid #c1c0c091;">
-                                <span class="input-group-text bg-light border-0" style="font-size: 30px;">
-                                    <i class="bi bi-search"></i>
-                                </span>
-                            <input type="text" class="form-control border-0" placeholder="Search location" required>
+        </nav>
+        <div class="banner-image w-100 d-flex justify-content-center align-items-center" style="opacity: 0.8;">
+            <section class="py-7 py-lg-9">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center mb-4 mb-xl-5">
+                        <div class="col-12 col-lg-10 text-center">
+                            <h1 class="fs-md-5 text-light fs-sm-2" style="font-weight: 400;">Find your perfect
+                                <strong>coworking</strong> space.</h1>
+                            <p style=" font-weight: 400; " class="px-md-6 text-light fs-1">
+                                <span class="fw-bold">12,000+</span>
+                                coworking spaces with desks, offices & meeting rooms in
+                                <span class="fw-bold">165+</span> countries.
+                                Discover and reserve space today.
+                            </p>
                         </div>
                     </div>
+                    <div class="row mb-5 d-flex bg-light align-items-center justify-content-center">
+                        <form class="row align-items-center">
+                            <div class="col-12 col-lg-5">
+                                <div class="form-group form-group-lg" style="position: relative;">
+                                    <div class="input-group input-group-lg my-3" style=" border: 1px solid #c1c0c091;">
+                                        <span class="input-group-text bg-light border-0" style="font-size: 30px;">
+                                            <i class="bi bi-search"></i>
+                                        </span>
+                                        <input type="text" class="form-control border-0" placeholder="Search location"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="form-group form-group-lg" style="position: relative;">
+                                    <div class="input-group input-group-lg my-3" style=" border: 1px solid #c1c0c091;">
+                                        <span class="input-group-text bg-light border-0" style="font-size: 30px;">
+                                            <i class="bi bi-calendar-date"></i>
+                                        </span>
+                                        <input type="text" class="form-control border-0" placeholder="Select Date"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3">
+                                <button type="button" class="btn btn-primary btn-lg btn-block py-3 px-3 my-3"
+                                    type="submit">Find a desk</button>
+                            </div>
+                        </form>
                     </div>
-                 <div class="col-12 col-lg-4">
-                    <div class="form-group form-group-lg" style="position: relative;">
-                     <div class="input-group input-group-lg my-3" style=" border: 1px solid #c1c0c091;">
-                        <span class="input-group-text bg-light border-0" style="font-size: 30px;">
-                            <i class="bi bi-calendar-date"></i>
-                        </span>
-                        <input type="text" class="form-control border-0" placeholder="Select Date" required>
-                     </div>
-                    </div>
-                 </div>
-                 <div class="col-12 col-lg-3">
-                     <button type="button" class="btn btn-primary btn-lg btn-block py-3 px-3 my-3" type="submit">Find a desk</button>
-                 </div>
-                 </form>
-             </div>
-            </div>
-          </section>
+                </div>
+            </section>
+        </div>
         </div>
         <section>
             <div class="container">
                 <div class="row d-flex flex-wrap">
                     <div class="col-12 col-sm-6 col-md-3 text-center px-lg-4 mb-md-0 mb-4">
-        
+
                         <svg width="90px" height="90px" style="margin-bottom: 10px;" fill="#3a4afc"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -332,7 +418,7 @@
                         <h5 class="text-muted">Mordern Building</h5>
                     </div>
                 </div>
-        
+
                 <div class="row mt-6">
                     <div class="col-md-3 col-12">
                         <h1 class="fs-md-5 fs-sm-3 pb-lg-0 pb-3" style="font-weight: 300;">Explore our
@@ -340,27 +426,31 @@
                         </h1>
                     </div>
                     <div class="col-md-4 col-12 text-muted">
-                        <p class="pl-lg-5 pl-sm-0" style="font-size: 1.33rem; font-weight: 300;">Coworking is not only about the
+                        <p class="pl-lg-5 pl-sm-0" style="font-size: 1.33rem; font-weight: 300;">Coworking is not only
+                            about the
                             physical place, but about establishing the coworking community first.
                             Its benefits can already be experienced outside of its places, and it is recommended<br><br>
-                            To start with building a coworking community first before considering opening a Coworking place.
+                            To start with building a coworking community first before considering opening a Coworking
+                            place.
                         </p>
                     </div>
                     <div class="col-md-4 col-12 text-muted">
-                        <p style="font-size: 1.33rem; font-weight: 300;">However, some coworking places don't build a community:
+                        <p style="font-size: 1.33rem; font-weight: 300;">However, some coworking places don't build a
+                            community:
                             they just get a part of an existing one by combining their opening with<br><br>
-                            An event which attracts their target group. Real-estate centric coworking spaces are about selling
+                            An event which attracts their target group. Real-estate centric coworking spaces are about
+                            selling
                             desks first, with building community as a secondary goal.
                         </p>
                     </div>
                 </div>
-        
+
                 <div class="row mt-6">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body p-3 p-md-5">
                                 <div class="progress-group mb-3 mb-md-5" style="position: relative;">
-                                    <div class="d-block d-lg-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center justify-content-between">
                                         <div class="progress-label mb-2">
                                             <h4 style="font-weight: 400;" class="text-gray ">Space occupancy level</h4>
                                         </div>
@@ -370,30 +460,33 @@
                                             </span>
                                         </div>
                                     </div>
-        
+
                                     <div class="progress progress-lg">
                                         <div class="progress-bar bg-primary" role="progressbar" style="width: 25%"
                                             aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
-        
-        
-                                <div class="d-lg-flex  justify-content-between align-items-center flex-lg-row flex-column">
+
+
+                                <div
+                                    class="d-lg-flex  justify-content-between align-items-center flex-lg-row flex-column">
                                     <div class="mb-5 mb-lg-0">
                                         <h4 style="font-weight:400;" class="fs-2">Book your tour experience today!</h4>
-                                        <p class="fs-1 text-muted" style="font-weight: 300;">Schedule a tour, make an appointment to rent
+                                        <p class="fs-1 text-muted" style="font-weight: 300;">Schedule a tour, make an
+                                            appointment to rent
                                             space<br class="d-none d-lg-inline">
                                             at Themesberg, or ask for more information.</p>
                                     </div>
                                     <div class="align-content-end">
-                                        <button type="button" class="btn btn-primary  text-center">Schedule a tour</button>
+                                        <button type="button" class="btn btn-primary  text-center">Schedule a
+                                            tour</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-        
+
                     </div>
-        
+
                 </div>
                 <div class="row mt-6 d-flex flex-wrap">
                     <div class="col-12">
@@ -406,7 +499,7 @@
                         <div class="d-flex justify-content-center middle">
                             <div class="text text-light fs-1 fw-bold">NEW YORK</div>
                         </div>
-        
+
                     </div>
                     <div class="col-12 col-lg-3 col-sm-6 mb-lg-0 mb-4 container1 ">
                         <div class="bg-dark">
@@ -426,22 +519,26 @@
                     </div>
                     <div class="col-12 col-lg-3 col-sm-6 mb-lg-0 mb-4 container1 ">
                         <div class="bg-dark">
-                             <img src="tokyo.jpg" class="w-100 image fh-400 rounded">
+                            <img src="tokyo.jpg" class="w-100 image fh-400 rounded">
                         </div>
                         <div class="d-flex justify-content-center middle">
                             <div class="text text-light fs-1 fw-bold">TOKYO</div>
                         </div>
                     </div>
                 </div>
-        
-                <div class="row mt-6 d-flex flex-wrap">
+
+                <div class="row mt-6 d-flex flex-wrap ">
                     <div class="col-12">
                         <h4 class="mb-5">Trending Space</h4>
                     </div>
-                    <div class="col-12 col-lg-4 col-md-6">
+                    <div class="col-12 col-lg-4 col-md-6 ">
                         <div class="card mb-4 border-light shadow">
-                            <img class="card-img-top p-2 fh-300 w-100" src="newyork.jpeg">
-        
+                            <span
+                                class="position-absolute p-2 bottom-50 translate-middle end-50 bg-primary badge">Office
+                                space</span>
+                            <img class="card-img-top fh-300 w-100" src="newyork.jpeg">
+
+
                             <div class="card-body">
                                 <h4>Collaborative Workspace</h4>
                                 <div class="my-3">
@@ -490,7 +587,7 @@
                                         class="badge rounded-pill bg-success ml-2 px-3 py-1  d-flex align-items-center fs-7 my-2">
                                         5.0 </span>
                                 </div>
-        
+
                             </div>
                             <div class="card-footer border-light" style="background-color: white;">
                                 <div class="d-flex justify-content-between">
@@ -506,15 +603,18 @@
                                         <span class="d-block text-muted pb-3">Sq.Ft</span>
                                         <h4>1200</h4>
                                     </div>
-        
+
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 col-md-6">
                         <div class="card mb-4  border-light shadow">
-                            <img class="card-img-top p-2 fh-300 w-100" src="newyork.jpeg">
-        
+                            <span
+                                class="position-absolute p-2 bottom-50 translate-middle end-50 bg-success badge">Coworking
+                                space</span>
+                            <img class="card-img-top fh-300 w-100" src="coworking.jpeg">
+
                             <div class="card-body">
                                 <h4>Coworking Workspace</h4>
                                 <div class="my-3">
@@ -563,7 +663,7 @@
                                         class="badge rounded-pill bg-success ml-2 px-3 py-1  d-flex align-items-center fs-7 my-2">
                                         3.0 </span>
                                 </div>
-        
+
                             </div>
                             <div class="card-footer border-light" style="background-color: white;">
                                 <div class="d-flex justify-content-between">
@@ -579,15 +679,17 @@
                                         <span class="d-block text-muted pb-3">Sq.Ft</span>
                                         <h4>3000</h4>
                                     </div>
-        
+
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 col-md-6">
                         <div class="card mb-4  border-light shadow">
-                            <img class="card-img-top p-2 fh-300 w-100" src="newyork.jpeg">
-        
+                            <span class="position-absolute p-2 bottom-50 translate-middle end-50 badge"
+                                style="background-color: orange;">Meeting space</span>
+                            <img class="card-img-top fh-300 w-100" src="meeting.jpg">
+
                             <div class="card-body">
                                 <h4>Meeting Office Space</h4>
                                 <div class="my-3">
@@ -636,7 +738,7 @@
                                         class="badge rounded-pill bg-success ml-2 px-3 py-1  d-flex align-items-center fs-7 my-2">
                                         4.0 </span>
                                 </div>
-        
+
                             </div>
                             <div class="card-footer border-light" style="background-color: white;">
                                 <div class="d-flex justify-content-between">
@@ -652,16 +754,19 @@
                                         <span class="d-block text-muted pb-3">Sq.Ft</span>
                                         <h4>400</h4>
                                     </div>
-        
+
                                 </div>
                             </div>
                         </div>
-        
+
                     </div>
                     <div class="col-12 col-lg-4 col-md-6">
                         <div class="card mb-4 border-light shadow">
-                            <img class="card-img-top p-2 fh-300 w-100" src="newyork.jpeg">
-        
+                            <span
+                                class="position-absolute p-2 bottom-50 translate-middle end-50 bg-primary badge">Conference
+                                room</span>
+                            <img class="card-img-top fh-300 w-100" src="conference.jpg">
+
                             <div class="card-body">
                                 <h4>Conference Room</h4>
                                 <div class="my-3">
@@ -710,7 +815,7 @@
                                         class="badge rounded-pill bg-success ml-2 px-3 py-1  d-flex align-items-center fs-7 my-2">
                                         4.7 </span>
                                 </div>
-        
+
                             </div>
                             <div class="card-footer border-light" style="background-color: white;">
                                 <div class="d-flex justify-content-between">
@@ -726,15 +831,18 @@
                                         <span class="d-block text-muted pb-3">Sq.Ft</span>
                                         <h4>200</h4>
                                     </div>
-        
+
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 col-md-6">
                         <div class="card mb-4 border-light shadow">
-                            <img class="card-img-top p-2 fh-300 w-100" src="newyork.jpeg">
-        
+                            <span
+                                class="position-absolute p-2 bottom-50 translate-middle end-50 bg-success badge">Lifestyle
+                                Space</span>
+                            <img class="card-img-top fh-300 w-100" src="lifestyle.jpg">
+
                             <div class="card-body">
                                 <h4>Lifestyle Space</h4>
                                 <div class="my-3">
@@ -783,7 +891,7 @@
                                         class="badge rounded-pill bg-success ml-2 px-3 py-1  d-flex align-items-center fs-7 my-2">
                                         5.0 </span>
                                 </div>
-        
+
                             </div>
                             <div class="card-footer border-light" style="background-color: white;">
                                 <div class="d-flex justify-content-between">
@@ -799,25 +907,27 @@
                                         <span class="d-block text-muted pb-3">Sq.Ft</span>
                                         <h4>100</h4>
                                     </div>
-        
+
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 col-md-6">
                         <div class="card mb-4 border-light shadow">
-                            <img class="card-img-top p-2 fh-300 w-100" src="newyork.jpeg">
-        
+                            <span class="position-absolute p-2 bottom-50 translate-middle end-50 badge"
+                                style="background-color: orange;">Private Space</span>
+                            <img class="card-img-top fh-300 w-100" src="private.jpeg">
+
                             <div class="card-body">
-                                <h4 class="fs-lg-1 ">Collaborative Workspace</h4>
+                                <h4 class="fs-lg-1 ">Private Space</h4>
                                 <div class="my-3 ">
-                                    <span class="text-muted" ><svg width="20px" height="20px" fill="#6c757d"
+                                    <span class="text-muted"><svg width="20px" height="20px" fill="#6c757d"
                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                             <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
                                             <path
                                                 d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" />
                                         </svg>
-                                        New York, Manhattan, USA
+                                        Budapest, Ferencvaros, Hungary
                                     </span>
                                 </div>
                                 <div class="d-flex">
@@ -856,7 +966,7 @@
                                         class="badge rounded-pill bg-success ml-2 px-3 py-1  d-flex align-items-center fs-7 my-2">
                                         4.0 </span>
                                 </div>
-        
+
                             </div>
                             <div class="card-footer border-light" style="background-color: white;">
                                 <div class="d-flex justify-content-between">
@@ -872,12 +982,12 @@
                                         <span class="d-block text-muted pb-3">Sq.Ft</span>
                                         <h4>10</h4>
                                     </div>
-        
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col d-flex flex-column mt-3 mt-lg-6 text-center">
+                    <div class="col d-flex flex-column mt-3 mt-lg-6 text-center py-lg-0 py-5">
                         <div>
                             <button type="button" class="btn btn-primary btn-lg mb-2">Browse All</button>
                             <div class="text-muted">142 spaces in 6 countries</div>
@@ -892,40 +1002,41 @@
                 <div class="row d-flex justify-content-center mb-lg-5 mb-4">
                     <div class="col-md-8 col-12 text-center">
                         <h1 style="font-weight:400;"><strong>How</strong> it works?</h1>
-                        <p class="mt-4 fs-1 text-muted" >All you'll need are the details of the building
+                        <p class="mt-4 fs-1 text-muted">All you'll need are the details of the building
                             and location, types of space, pricing and some good quality photographs.</p>
                     </div>
                 </div>
-        
+
                 <div class="row">
                     <div class="col-12 col-lg-6 mx-auto">
                         <div class="py-3 text-center">
                             <ul class="list-unstyled flex-column flex-sm-row d-flex justify-content-evenly">
-                                <li class="align-items-center d-flex py-2">
-                                    <button type="button" class="btn px-md-5 px-sm-3 btn-lg" style="background-color: white;">
-                                        <div class="d-inline me-2"><svg width="20px" height="20px" fill="#384df2" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 384 512">
-                                            <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                            <path
-                                                d="M336 0C362.5 0 384 21.49 384 48V464C384 490.5 362.5 512 336 512H240V432C240 405.5 218.5 384 192 384C165.5 384 144 405.5 144 432V512H48C21.49 512 0 490.5 0 464V48C0 21.49 21.49 0 48 0H336zM64 272C64 280.8 71.16 288 80 288H112C120.8 288 128 280.8 128 272V240C128 231.2 120.8 224 112 224H80C71.16 224 64 231.2 64 240V272zM176 224C167.2 224 160 231.2 160 240V272C160 280.8 167.2 288 176 288H208C216.8 288 224 280.8 224 272V240C224 231.2 216.8 224 208 224H176zM256 272C256 280.8 263.2 288 272 288H304C312.8 288 320 280.8 320 272V240C320 231.2 312.8 224 304 224H272C263.2 224 256 231.2 256 240V272zM80 96C71.16 96 64 103.2 64 112V144C64 152.8 71.16 160 80 160H112C120.8 160 128 152.8 128 144V112C128 103.2 120.8 96 112 96H80zM160 144C160 152.8 167.2 160 176 160H208C216.8 160 224 152.8 224 144V112C224 103.2 216.8 96 208 96H176C167.2 96 160 103.2 160 112V144zM272 96C263.2 96 256 103.2 256 112V144C256 152.8 263.2 160 272 160H304C312.8 160 320 152.8 320 144V112C320 103.2 312.8 96 304 96H272z" />
-                                        </svg></div>
+                                <li class="align-items-center d-flex py-2 justify-content-center">
+                                    <button type="button" class="btn px-md-5 px-sm-3 btn-lg"
+                                        style="background-color: white;">
+                                        <div class="d-inline me-2"><svg width="20px" height="20px" fill="#0d6efd"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M336 0C362.5 0 384 21.49 384 48V464C384 490.5 362.5 512 336 512H240V432C240 405.5 218.5 384 192 384C165.5 384 144 405.5 144 432V512H48C21.49 512 0 490.5 0 464V48C0 21.49 21.49 0 48 0H336zM64 272C64 280.8 71.16 288 80 288H112C120.8 288 128 280.8 128 272V240C128 231.2 120.8 224 112 224H80C71.16 224 64 231.2 64 240V272zM176 224C167.2 224 160 231.2 160 240V272C160 280.8 167.2 288 176 288H208C216.8 288 224 280.8 224 272V240C224 231.2 216.8 224 208 224H176zM256 272C256 280.8 263.2 288 272 288H304C312.8 288 320 280.8 320 272V240C320 231.2 312.8 224 304 224H272C263.2 224 256 231.2 256 240V272zM80 96C71.16 96 64 103.2 64 112V144C64 152.8 71.16 160 80 160H112C120.8 160 128 152.8 128 144V112C128 103.2 120.8 96 112 96H80zM160 144C160 152.8 167.2 160 176 160H208C216.8 160 224 152.8 224 144V112C224 103.2 216.8 96 208 96H176C167.2 96 160 103.2 160 112V144zM272 96C263.2 96 256 103.2 256 112V144C256 152.8 263.2 160 272 160H304C312.8 160 320 152.8 320 144V112C320 103.2 312.8 96 304 96H272z" />
+                                            </svg></div>
                                         <div class="d-inline text-primary">Find your Space</div>
                                     </button>
                                 </li>
-                                <li class="py-2 align-items-center d-flex text-muted">
-                                   
-                                        <div class="d-inline me-2"><svg width="20px" height="20px" fill="#384df2" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 448 512">
+                                <li class="py-2 align-items-center d-flex text-muted justify-content-center">
+
+                                    <div class="d-inline me-2"><svg width="20px" height="20px" fill="#6c757d"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                             <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                             <path
                                                 d="M50.73 58.53C58.86 42.27 75.48 32 93.67 32H208V160H0L50.73 58.53zM240 160V32H354.3C372.5 32 389.1 42.27 397.3 58.53L448 160H240zM448 416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V192H448V416z" />
                                         </svg></div>
-                                        <div class="d-inline">Submit your Space</div>
-                                   
+                                    <div class="d-inline fs-0">Submit your Space</div>
+
                                 </li>
                             </ul>
                         </div>
-        
+
                     </div>
                     <div class="col-12">
                         <div class="row">
@@ -933,15 +1044,16 @@
                                 <div class="card mb-lg-0 mb-4 text-center">
                                     <div class="card-body px-lg-4 py-lg-6 p-4">
                                         <div class="mb-4 shape mx-auto rounded-circle">
-                                            <svg width="50px" height="50px" class="mb-4" style="margin-top:1rem;" fill="#0760ed"
-                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <svg width="50px" height="50px" class="mb-4" style="margin-top:1rem;"
+                                                fill="#0760ed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
                                                 <path
                                                     d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
                                             </svg>
                                         </div>
                                         <h3 class="my-3" style="font-weight: 400;">1. Choose a workspace</h3>
-                                        <p class="fs-0 text-muted">It takes no longer than 15 minutes to list your space on themesberg. Our
+                                        <p class="fs-0 text-muted">It takes no longer than 15 minutes to your space on
+                                            themesberg. Our
                                             user friendly onboarding process.</p>
                                     </div>
                                 </div>
@@ -950,18 +1062,19 @@
                                 <div class="card mb-lg-0 mb-4 text-center">
                                     <div class="card-body px-lg-4 py-lg-6 p-4 ">
                                         <div class="mb-4 shape mx-auto rounded-circle">
-                                            <svg width="50px" height="50px" class="mb-4" style="margin-top:1rem;" fill="#0760ed"
-                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <svg width="50px" height="50px" class="mb-4" style="margin-top:1rem;"
+                                                fill="#0760ed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                                 <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
                                                 <path
                                                     d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z" />
                                             </svg>
-        
+
                                         </div>
                                         <h3 class="my-3 " style="font-weight: 400;">2. Schedule a tour</h3>
-                                        <p class="fs-0 text-muted">After you have uploaded your space-our website makes it easy for you to
+                                        <p class="fs-0 text-muted">After you have uploaded your space-our website makes
+                                            it easy for you to
                                             keep the details up to date.</p>
-        
+
                                     </div>
                                 </div>
                             </div>
@@ -969,25 +1082,26 @@
                                 <div class="card mb-lg-0 mb-4 text-center">
                                     <div class="card-body px-lg-4 py-lg-6 p-4">
                                         <div class="mb-4 shape mx-auto rounded-circle">
-                                            <svg width="50px" height="50px" class="mb-4" style="margin-top:1rem;" fill="#0760ed"
-                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                            <svg width="50px" height="50px" class="mb-4" style="margin-top:1rem;"
+                                                fill="#0760ed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                                 <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                                 <path
                                                     d="M318.4 304.5c-3.531 9.344-12.47 15.52-22.45 15.52h-105l45.15 94.82c9.496 19.94 1.031 43.8-18.91 53.31c-19.95 9.504-43.82 1.035-53.32-18.91L117.3 351.3l-75 88.25c-4.641 5.469-11.37 8.453-18.28 8.453c-2.781 0-5.578-.4844-8.281-1.469C6.281 443.1 0 434.1 0 423.1V56.02c0-9.438 5.531-18.03 14.12-21.91C22.75 30.26 32.83 31.77 39.87 37.99l271.1 240C319.4 284.6 321.1 295.1 318.4 304.5z" />
                                             </svg>
                                         </div>
-                                        <h3 class="my-3"  style="font-weight: 400;">3. Book your workspace</h3>
-                                        <p class="fs-0 text-muted">Orders coming from themesberg are 100% prepaid. We will bring you not
+                                        <h3 class="my-3" style="font-weight: 400;">3. Book your workspace</h3>
+                                        <p class="fs-0 text-muted">Orders coming from themesberg are 100% prepaid. We
+                                            will bring you not
                                             just leads but new clients.</p>
-        
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 mt-lg-6 mt-3 text-center">
-                            <button type="button" class="btn btn-primary">
-                                <svg width="20px" height="20px" fill="#ffffff" class="me-2" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 512 512">
+                            <button type="button" class="btn btn-primary btn-lg">
+                                <svg width="20px" height="20px" fill="#ffffff" class="me-2"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                     <path
                                         d="M236 176c0 15.46-12.54 28-28 28S180 191.5 180 176S192.5 148 208 148S236 160.5 236 176zM500.3 500.3c-15.62 15.62-40.95 15.62-56.57 0l-119.7-119.7c-40.41 27.22-90.9 40.65-144.7 33.46c-91.55-12.23-166-87.28-177.6-178.9c-17.24-136.2 97.29-250.7 233.4-233.4c91.64 11.6 166.7 86.07 178.9 177.6c7.19 53.8-6.236 104.3-33.46 144.7l119.7 119.7C515.9 459.3 515.9 484.7 500.3 500.3zM294.1 182.2C294.1 134.5 255.6 96 207.1 96C160.4 96 121.9 134.5 121.9 182.2c0 38.35 56.29 108.5 77.87 134C201.8 318.5 204.7 320 207.1 320c3.207 0 6.26-1.459 8.303-3.791C237.8 290.7 294.1 220.5 294.1 182.2z" />
@@ -1005,10 +1119,11 @@
                 <div class="row d-flex justify-content-center mb-lg-5 mb-4">
                     <div class="col-md-8 col-12 text-center">
                         <h1 style="font-weight:400;">Choose a <strong>plan </strong>for your space</h1>
-                        <p class="mt-4 fs-1 text-muted" style="color:rgb(125, 125, 128);">Upgrade your space for higher ranking, powerful
+                        <p class="mt-4 fs-1 text-muted" style="color:rgb(125, 125, 128);">Upgrade your space for higher
+                            ranking, powerful
                             features & more ways to connect with potential customers.</p>
                     </div>
-        
+
                 </div>
                 <div class="row">
                     <div class="col-12">
@@ -1018,20 +1133,21 @@
                                     <div class="card-body px-lg-4 py-lg-5 p-4">
                                         <h1 class="text-center text-muted">Free</h1>
                                         <div class="row d-flex justify-content-center pb-4">
-                                            <div class="col-2 align-items-end p-0 position-relative "
+                                            <div class="col-2 col-md-2 align-items-end p-0 position-relative "
                                                 style="color: rgb(24, 114, 197);"><span
                                                     class="position-absolute  top-0 start-0 translate-middle-x fs-2">$
                                                 </span><span class="fw-fs">0</span><span
-                                                    class="position-absolute start-100 translate-middle-y bottom-0 ">/month</span>
+                                                    class="position-absolute start-100 translate-middle-y bottom-0 text-muted">/month</span>
                                             </div>
                                         </div>
-                                        <div class="row justify-content-lg-start  justify-content-center px-lg-2 text-muted">
+                                        <div
+                                            class="row justify-content-lg-start  justify-content-center px-lg-2 text-muted">
                                             <h5 class="mb-4">Get listed in the directory:</h5>
-                                            <ul class="text-left list-unstyled fs-0 ulimg">
-                                                <li class="mb-3">Unlimited photos</li>
-                                                <li class="mb-3">Unlimited videos</li>
-                                                <li class="mb-3">Receive messages</li>
-                                                <li class="mb-3">Dispaly your contact info</li>
+                                            <ul class="text-left list-unstyled fs-0 ">
+                                                <li class="mb-3 ulimg">Unlimited photos</li>
+                                                <li class="mb-3 ulimg">Unlimited videos</li>
+                                                <li class="mb-3 ulimg">Receive messages</li>
+                                                <li class="mb-3 ulimg">Dispaly your contact info</li>
                                             </ul>
                                         </div>
                                         <div class="row justify-content-center">
@@ -1052,25 +1168,26 @@
                                     <div class="card-body px-lg-4 py-lg-5 p-4">
                                         <h1 class="text-center text-muted">Sliver</h1>
                                         <div class="row d-flex justify-content-center pb-4">
-                                            <div class="col-4 align-items-end p-0 position-relative "
+                                            <div class="col-3 col-xs-3 col-md-4 align-items-end p-0 position-relative "
                                                 style="color: rgb(24, 114, 197);"><span
                                                     class="position-absolute  top-0 start-0 translate-middle-x fs-2">$</span><span
                                                     class="fw-fs">19</span><span
-                                                    class="position-absolute start-100 translate-middle-y bottom-0 ">/month</span>
+                                                    class="position-absolute start-100 translate-middle-y bottom-0 text-muted">/month</span>
                                             </div>
                                         </div>
-                                        <div class="row justify-content-lg-start  justify-content-center px-lg-2 text-muted">
+                                        <div
+                                            class="row justify-content-lg-start  justify-content-center px-lg-2 text-muted">
                                             <h5 class="mb-4">Everything in the free Plane:</h5>
-                                            <ul class="text-left list-unstyled fs-0 ulimg">
-                                                <li class="mb-3">Rank booster</li>
-                                                <li class="mb-3">Lead capturing buttons</li>
-                                                <li class="mb-3">Connect your social media</li>
-                                                <li class="mb-3">Dispaly your contact info</li>
-                                                <li class="mb-3">Link to your website</li>
-                                                <li class="mb-3">Promote your best review</li>
-                                                <li class="mb-3">Booking & Lead Logs</li>
-                                                <li class="mb-3">Priority customer support </li>
-        
+                                            <ul class="text-left list-unstyled fs-0 ">
+                                                <li class="mb-3 ulimg">Rank booster</li>
+                                                <li class="mb-3 ulimg">Lead capturing buttons</li>
+                                                <li class="mb-3 ulimg">Connect your social media</li>
+                                                <li class="mb-3 ulimg">Dispaly your contact info</li>
+                                                <li class="mb-3 ulimg">Link to your website</li>
+                                                <li class="mb-3 ulimg">Promote your best review</li>
+                                                <li class="mb-3 ulimg">Booking & Lead Logs</li>
+                                                <li class="mb-3 ulimg">Priority customer support </li>
+
                                             </ul>
                                         </div>
                                         <div class="row justify-content-center">
@@ -1091,22 +1208,25 @@
                                     <div class="card-body px-lg-4 py-lg-5 p-4">
                                         <h1 class="text-center text-muted">Gold</h1>
                                         <div class="row d-flex justify-content-center pb-4">
-                                            <div class="col-4 align-items-end p-0 position-relative "
+                                            <div class="col-3 col-xs-3 col-md-4  align-items-end p-0 position-relative "
                                                 style="color: rgb(24, 114, 197);"><span
-                                                    class="position-absolute  top-0 start-0 translate-middle-x fs-2">$</span><span class="fw-fs">49</span><span
-                                                    class="position-absolute start-100 translate-middle-y bottom-0 ">/month</span>
+                                                    class="position-absolute  top-0 start-0 translate-middle-x fs-2">$</span><span
+                                                    class="fw-fs">49</span><span
+                                                    class="position-absolute start-100 translate-middle-y bottom-0 text-muted">/month</span>
                                             </div>
                                         </div>
-                                        <div class="row justify-content-lg-start  justify-content-center px-lg-2 text-muted">
+                                        <div
+                                            class="row justify-content-lg-start  justify-content-center px-lg-2 text-muted">
                                             <h5 class="mb-4">Everything in the other Plans:</h5>
-                                            <ul class="text-left list-unstyled fs-0 ulimg">
-                                                <li class="mb-3">Appear at top of your city's search page</li>
-                                                <li class="mb-3">Appear at top of popular spaces page</li>
-                                                <li class="mb-3">Receive a special "Popular Now" banner</li>
-                                                <li class="mb-3">A custom pin drop on the map</li>
-                                                <li class="mb-3">Spaces Instagram takeover (*annual subscriber)</li>
-                                                <li class="mb-3">Advertising campaign</li>
-        
+                                            <ul class="text-left list-unstyled fs-0 ">
+                                                <li class="mb-3 ulimg">Appear at top of your city's search page</li>
+                                                <li class="mb-3 ulimg">Appear at top of popular spaces page</li>
+                                                <li class="mb-3 ulimg">Receive a special "Popular Now" banner</li>
+                                                <li class="mb-3 ulimg">A custom pin drop on the map</li>
+                                                <li class="mb-3 ulimg">Spaces Instagram takeover (*annual subscriber)
+                                                </li>
+                                                <li class="mb-3 ulimg">Advertising campaign</li>
+
                                             </ul>
                                         </div>
                                         <div class="row justify-content-center">
@@ -1123,147 +1243,166 @@
                                 </div>
                             </div>
                         </div>
-        
-        
+
+
                     </div>
         </section>
 
         <section class="bg-light-color">
-            <div class="container" >
+            <div class="container">
                 <div class="row align-items-center justify-content-center d-flex">
                     <div class="col-12 col-lg-8 text-center">
                         <div class="py-3 ">
-                            <ul class="nav nav-pills nav-pill-circle list-unstyled d-flex flex-sm-row justify-content-center" role="tablist">
-                                <li class="me-4 nav-item"><a href="#girlreview1content" class="nav-link active bg-light " id="girl1review" data-bs-toggle="tab" data-bs-target="#girlreview1content" aria-controls="girlreview1content"><img src="girl1.jpeg" width="60px" height="60px" class="rounded-circle"></a></li>
-                                <li class="me-4 nav-item"><a href="#girlreview2content" class="nav-link  bg-light " id="girl2review" data-bs-toggle="tab" data-bs-target="#girlreview2content" aria-controls="girlreview2content"><img src="girl2.jpeg" width="60px" height="60px" class="rounded-circle"></a></li>
-                                <li class="me-4 nav-item"><a href="#girlreview3content" class="nav-link  bg-light " id="girl3review" data-bs-toggle="tab" data-bs-target="#girlreview3content" aria-controls="girlreview3content"><img src="girl3.jpg" width="60px" height="60px" class="rounded-circle"></a></li>
+                            <ul class="nav nav-pills nav-pill-circle list-unstyled d-flex flex-sm-row justify-content-center"
+                                role="tablist">
+                                <li class="me-4 nav-item"><a href="#girlreview1content"
+                                        class="nav-link active bg-light " id="girl1review" data-bs-toggle="tab"
+                                        data-bs-target="#girlreview1content" aria-controls="girlreview1content"><img
+                                            src="girl1.jpeg" width="60px" height="60px" class="rounded-circle"></a></li>
+                                <li class="me-4 nav-item"><a href="#girlreview2content" class="nav-link  bg-light "
+                                        id="girl2review" data-bs-toggle="tab" data-bs-target="#girlreview2content"
+                                        aria-controls="girlreview2content"><img src="girl2.jpeg" width="60px"
+                                            height="60px" class="rounded-circle"></a></li>
+                                <li class="me-4 nav-item"><a href="#girlreview3content" class="nav-link  bg-light "
+                                        id="girl3review" data-bs-toggle="tab" data-bs-target="#girlreview3content"
+                                        aria-controls="girlreview3content"><img src="girl3.jpg" width="60px"
+                                            height="60px" class="rounded-circle"></a></li>
                             </ul>
                         </div>
                         <div class="card bg-light-color border-0">
                             <div class="card-body">
-                                <div class="tab-content" id="tabcontent"> 
-                                <div class="tab-pane fade active show" id="girlreview1content" role="tabpanel" aria-labelledby="girl1review">
-                                <span class="d-block my-3 justify-content-center ">
-                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 576 512">
-                                        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
-                                    </svg>
-                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 576 512">
-                                        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
-                                    </svg>
-                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 576 512">
-                                        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
-                                    </svg>
-                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 576 512">
-                                        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
-                                    </svg>
-                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 576 512">
-                                        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
-                                    </svg>
-                                </span>
-                                <p>I used Themesberg's logo creation services along with their website devlopment services. They
-                                    have benn a pleasure to work with and have been responsive to all question asked. I have recommanded them to some of my clients.</p> 
-                               </p>
-                               <span>-- Oana Calota</span>
+                                <div class="tab-content" id="tabcontent">
+                                    <div class="tab-pane fade active show" id="girlreview1content" role="tabpanel"
+                                        aria-labelledby="girl1review">
+                                        <span class="d-block my-3 justify-content-center ">
+                                            <svg width="20px" height="20px" fill="#f0b400"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
+                                            </svg>
+                                            <svg width="20px" height="20px" fill="#f0b400"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
+                                            </svg>
+                                            <svg width="20px" height="20px" fill="#f0b400"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
+                                            </svg>
+                                            <svg width="20px" height="20px" fill="#f0b400"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
+                                            </svg>
+                                            <svg width="20px" height="20px" fill="#f0b400"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
+                                            </svg>
+                                        </span>
+                                        <p>I used Themesberg's logo creation services along with their website
+                                            devlopment services. They
+                                            have benn a pleasure to work with and have been responsive to all question
+                                            asked. I have recommanded them to some of my clients.</p>
+                                        </p>
+                                        <span>-- Oana Calota</span>
+                                    </div>
+                                    <div class="tab-pane fade " id="girlreview2content" role="tabpanel"
+                                        aria-labelledby="girl2review">
+                                        <span class="d-block my-3 justify-content-center ">
+                                            <svg width="20px" height="20px" fill="#f0b400"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
+                                            </svg>
+                                            <svg width="20px" height="20px" fill="#f0b400"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
+                                            </svg>
+                                            <svg width="20px" height="20px" fill="#f0b400"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
+                                            </svg>
+                                            <svg width="20px" height="20px" fill="#f0b400"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
+                                            </svg>
+                                            <svg width="20px" height="20px" fill="#f0b400"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
+                                            </svg>
+                                        </span>
+                                        <p>I used Themesberg's logo creation services along with their website
+                                            devlopment services. They
+                                            have benn a pleasure to work with and have been responsive to all question
+                                            asked. I have recommanded them to some of my clients.</p>
+                                        </p>
+                                        <span>-- abc</span>
+                                    </div>
+                                    <div class="tab-pane fade " id="girlreview3content" role="tabpanel"
+                                        aria-labelledby="girl3review">
+                                        <span class="d-block my-3 justify-content-center ">
+                                            <svg width="20px" height="20px" fill="#f0b400"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
+                                            </svg>
+                                            <svg width="20px" height="20px" fill="#f0b400"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
+                                            </svg>
+                                            <svg width="20px" height="20px" fill="#f0b400"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
+                                            </svg>
+                                            <svg width="20px" height="20px" fill="#f0b400"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
+                                            </svg>
+                                            <svg width="20px" height="20px" fill="#f0b400"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
+                                            </svg>
+                                        </span>
+                                        <p>I used Themesberg's logo creation services along with their website
+                                            devlopment services. They
+                                            have benn a pleasure to work with and have been responsive to all question
+                                            asked. I have recommanded them to some of my clients.</p>
+                                        </p>
+                                        <span>-- xyz</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="tab-pane fade " id="girlreview2content" role="tabpanel" aria-labelledby="girl2review">
-                                <span class="d-block my-3 justify-content-center ">
-                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 576 512">
-                                        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
-                                    </svg>
-                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 576 512">
-                                        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
-                                    </svg>
-                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 576 512">
-                                        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
-                                    </svg>
-                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 576 512">
-                                        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
-                                    </svg>
-                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 576 512">
-                                        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
-                                    </svg>
-                                </span>
-                                <p>I used Themesberg's logo creation services along with their website devlopment services. They
-                                    have benn a pleasure to work with and have been responsive to all question asked. I have recommanded them to some of my clients.</p> 
-                               </p>
-                               <span>-- abc</span>
-                            </div>
-                            <div class="tab-pane fade " id="girlreview3content" role="tabpanel" aria-labelledby="girl3review">
-                                <span class="d-block my-3 justify-content-center ">
-                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 576 512">
-                                        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
-                                    </svg>
-                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 576 512">
-                                        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
-                                    </svg>
-                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 576 512">
-                                        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
-                                    </svg>
-                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 576 512">
-                                        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
-                                    </svg>
-                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 576 512">
-                                        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
-                                    </svg>
-                                </span>
-                                <p>I used Themesberg's logo creation services along with their website devlopment services. They
-                                    have benn a pleasure to work with and have been responsive to all question asked. I have recommanded them to some of my clients.</p> 
-                               </p>
-                               <span>-- xyz</span>
-                            </div>
-                        </div>
-                        </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <section>
             <div class="container">
                 <div class="row d-flex justify-content-center mb-lg-5 mb-4 ">
@@ -1274,40 +1413,93 @@
                 </div>
                 <div class="row">
                     <table class="table table-striped table-borderless text-muted">
-                        <tr >
+                        <tr>
                             <th>Features</th>
                             <th>Standard License</th>
                             <th>Extended License</th>
                         </tr>
                         <tr style="padding: 10px 0;">
                             <td>Create single website for client</td>
-                            <td><svg width="20px" height="20px" fill="#198754" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg></td>
-                            <td><svg width="20px" height="20px" fill="#198754" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg></td>
+                            <td><svg width="20px" height="20px" fill="#198754" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512">
+                                    <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z" />
+                                </svg></td>
+                            <td><svg width="20px" height="20px" fill="#198754" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512">
+                                    <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z" />
+                                </svg></td>
                         </tr>
                         <tr>
                             <td>Create single personal website</td>
-                            <td><svg width="20px" height="20px" fill="#198754" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg></td>
-                            <td><svg width="20px" height="20px" fill="#198754" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg></td>
+                            <td><svg width="20px" height="20px" fill="#198754" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512">
+                                    <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z" />
+                                </svg></td>
+                            <td><svg width="20px" height="20px" fill="#198754" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512">
+                                    <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z" />
+                                </svg></td>
                         </tr>
                         <tr>
                             <td>6 month support included</td>
-                            <td><svg width="20px" height="20px" fill="#198754" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg></td>
-                            <td><svg width="20px" height="20px" fill="#198754" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg></td>
+                            <td><svg width="20px" height="20px" fill="#198754" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512">
+                                    <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z" />
+                                </svg></td>
+                            <td><svg width="20px" height="20px" fill="#198754" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512">
+                                    <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z" />
+                                </svg></td>
                         </tr>
                         <tr>
                             <td>Create multiple personal websites</td>
-                            <td><svg width="20px" height="20px" fill="#dc3545" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg></td>
-                            <td><svg width="20px" height="20px" fill="#198754" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg></td>
+                            <td><svg width="20px" height="20px" fill="#dc3545" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 320 512">
+                                    <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
+                                </svg></td>
+                            <td><svg width="20px" height="20px" fill="#198754" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512">
+                                    <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z" />
+                                </svg></td>
                         </tr>
                         <tr>
                             <td>Create multiple websites for clients</td>
-                            <td><svg width="20px" height="20px" fill="#dc3545" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg></td>
-                            <td><svg width="20px" height="20px" fill="#198754" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg></td>
+                            <td><svg width="20px" height="20px" fill="#dc3545" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 320 512">
+                                    <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
+                                </svg></td>
+                            <td><svg width="20px" height="20px" fill="#198754" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512">
+                                    <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z" />
+                                </svg></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><button type="button" class="btn btn-primary me-2">Buy Standard License - $49</button></td>
-                            <td><button type="button" class="btn border-secondary btn-outline-secondary btn-light border-2">Buy Extened License - $49</button></td>
+                            <td><button type="button" class="btn btn-primary me-2">Buy Standard License - $49</button>
+                            </td>
+                            <td><button type="button"
+                                    class="btn border-secondary btn-outline-secondary btn-light border-2">Buy Extened
+                                    License - $49</button></td>
                         </tr>
                     </table>
                 </div>
@@ -1319,12 +1511,13 @@
             <div class="row">
                 <div class="col-lg-3 mb-3 mb-lg-0">
                     <img src="space.png" width="60" height="40" class="mb-4">
-                    <p class="fs-1 text-lg-start text-center" style="color: #a1abdfb3;">For those seeking the finest in servicesand technology in a dowbtown business center. without the high cost.</p>
-                    <div class="d-flex justify-content-lg-start justify-content-center " >
+                    <p class="fs-1 text-lg-start text-center" style="color: #a1abdfb3;">For those seeking the finest in
+                        servicesand technology in a dowbtown business center. without the high cost.</p>
+                    <div class="d-flex justify-content-lg-start justify-content-center ">
                         <a href="#" class="me-3 text-white fs-1"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="me-3 text-white fs-1" ><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="me-3 text-white fs-1" ><i class="fab fa-github"></i></a>
-                        <a href="#" class="me-3 text-white fs-1"><i class="fas fa-globe"></i></a>    
+                        <a href="#" class="me-3 text-white fs-1"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3 text-white fs-1"><i class="fab fa-github"></i></a>
+                        <a href="#" class="me-3 text-white fs-1"><i class="fas fa-globe"></i></a>
                     </div>
                 </div>
                 <div class="col-12 col-lg-2 mb-3 mb-lg-0 ">
@@ -1335,7 +1528,7 @@
                         <li class="mb-3" style="color: #a1abdfb3;">Products</li>
                         <li class="mb-3" style="color: #a1abdfb3;">Contact Us</li>
                     </ul>
-                </div> 
+                </div>
                 <div class="col-12 col-lg-3 mb-3 mb-lg-0">
                     <h4 class="mb-4 text-center text-lg-start fs-sm-2 ">Market</h4>
                     <ul class="list-unstyled  text-muted fs-1 text-center text-lg-start">
@@ -1349,19 +1542,34 @@
                 </div>
                 <div class="col-12 col-lg-4 mb-3 mb-lg-0">
                     <h4 class="mb-4 text-center text-lg-start fs-sm-2">Subscriber</h4>
-                    <p class="fs-1 text-center text-lg-start" style="color: #a1abdfb3;">Join our mailing list.We write rarely but only the best content.</p>
-                    <input type="email" class="form-control form-control-lg w-100 mb-lg-2 mb-3 text-center text-lg-start" placeholder="Email Address">
-                    <button type="button" class="btn btn-success  w-100 btn-lg mb-3 mb-lg-2">Subscriber</button> 
-                    <p  style="color: #a1abdfb3; font-size: 15px;">We'll never share your details. See our <span class="text-light">Privacy Policy</span></p>
+                    <p class="fs-1 text-center text-lg-start" style="color: #a1abdfb3;">Join our mailing list.We write
+                        rarely but only the best content.</p>
+                    <input type="email"
+                        class="form-control form-control-lg w-100 mb-lg-2 mb-3 text-center text-lg-start"
+                        placeholder="Email Address">
+                    <button type="button" class="btn btn-success  w-100 btn-lg mb-3 mb-lg-2">Subscriber</button>
+                    <p style="color: #a1abdfb3; font-size: 15px;">We'll never share your details. See our <span
+                            class="text-light">Privacy Policy</span></p>
                 </div>
             </div>
             <div class="row text-center d-flex py-5">
                 <p class="fs-1">@2020 Themesberg. All right reserved.</p>
             </div>
-        
+
         </div>
-        
+
     </footer>
-    
+    <script>
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 10) {
+                nav.classList.add('bg-dark', 'shadow');
+            } else {
+                nav.classList.remove('bg-dark', 'shadow');
+            }
+        });
+    </script>
 </body>
+
 </html>
