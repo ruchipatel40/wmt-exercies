@@ -23,13 +23,15 @@
         }
 
         .bottom-50 {
-            bottom: 56% !important;
+            bottom: 60% !important;
         }
 
         .start-50 {
             left: 80% !important;
         }
-        
+        .mb-lg-5{
+            margin-bottom: 6rem !important  ;
+        }
 
         @media only screen and (max-width:960px) {
             .py-7 {
@@ -53,6 +55,7 @@
             .fs-lg-1 {
                 font-size: 1.33rem !important;
             }
+            
         }
 
         @media only screen and (max-width:768px) {
@@ -64,12 +67,13 @@
             .fs-md-5 {
                 font-size: 2.5rem !important;
             }
+           
 
         }
 
         @media only screen and (min-width: 960px) {
             .fs-md-5 {
-                font-size: 3.5rem !important;
+                font-size: 3rem !important;
             }
 
             .mx-lg-7 {
@@ -94,6 +98,7 @@
                 font-weight: 500;
                 font-size: 70px;
             }
+          
         }
 
         .nav-item {
@@ -113,7 +118,7 @@
 
         .container {
             width: 100%;
-            padding: 0 1rem 0 1rem;
+            padding: 0 1.2rem 0 1.2rem;
         }
 
         .fs-4 {
@@ -121,7 +126,7 @@
         }
 
         .fs-1 {
-            font-size: 1.33rem !important;
+            font-size: 1.11rem !important;
         }
 
         .btn {
@@ -164,7 +169,7 @@
         }
 
         .fh-400 {
-            height: 400px !important;
+            height: 450px !important;
         }
 
         .container1 {
@@ -181,7 +186,7 @@
             backface-visibility: hidden;
         }
 
-        .middle {
+        .middle {   
             transition: .5s ease;
             opacity: 0;
             position: absolute;
@@ -218,12 +223,12 @@
         }
 
         .shape {
-            width: 6rem;
-            height: 6rem;
+            width: 5rem;
+            height: 5rem;
             background-color: rgb(167, 213, 251);
             justify-content: center;
             align-items: center;
-            padding: 5px 23px;
+            padding: -1px 20px;
 
         }
 
@@ -235,7 +240,7 @@
 
         .table-striped>tbody>tr:nth-child(odd)>td,
         .table-striped>tbody>tr:nth-child(odd)>th {
-            background-color: white;
+            background-color: rgb(255, 255, 255);
             color: #6c757d;
         }
 
@@ -252,10 +257,6 @@
 
         }
 
-        .card-body {
-            padding: 1rem 1rem !important;
-        }
-
         .ulimg {
             list-style-image: url("circle-check-solid.svg");
             margin-left: 30px;
@@ -266,6 +267,23 @@
             background-image: url('hotel3.jpg');
             background-size: cover;
             image-rendering: high-quality;
+        }
+        .card-body {
+            padding: 1.33rem 1.33rem 1rem 1.33rem !important;
+        }
+        .card-footer{
+            padding: 0.9rem 1.33rem 1.33rem 1.33rem !important;
+        }
+        .card-body2{
+            padding: 5rem 1.55rem !important;
+        }
+        .card-body1{
+            padding: 2rem !important;
+        }
+        @media only screen and (max-width:576px) {
+            .card-body1{
+            padding: 1rem !important;
+        }
         }
     </style>
 
@@ -319,11 +337,11 @@
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <button class="btn btn-primary me-2 " type="submit">Login</button>
-                        <button class="btn btn-light me-2" type="submit">Signup</button>
-                        <button class="btn  text-light fs-0" type="button" style="border: 2px solid white;"><span
-                                class="me-2"><i class="fa fa-plus"></i></span>List a space</button>
+                    <form >
+                        <button class="btn btn-primary me-3 btn-sm" type="submit">Login</button>
+                        <button class="btn btn-light me-3 btn-sm text-muted" type="submit">Signup</button>
+                        <button class="btn  text-light btn-sm" type="button" style="border: 2px solid white;"><span
+                                class="me-3"><i class="fa fa-plus"></i></span>List a space</button>
                     </form>
                 </div>
             </div>
@@ -333,7 +351,7 @@
                 <div class="container">
                     <div class="row align-items-center justify-content-center mb-4 mb-xl-5">
                         <div class="col-12 col-lg-10 text-center">
-                            <h1 class="fs-md-5 text-light fs-sm-2" style="font-weight: 400;">Find your perfect
+                            <h1 class="fs-md-5 text-light fs-sm-2 mb-lg-3" style="font-weight: 400;">Find your perfect
                                 <strong>coworking</strong> space.</h1>
                             <p style=" font-weight: 400; " class="px-md-6 text-light fs-1">
                                 <span class="fw-bold">12,000+</span>
@@ -382,7 +400,7 @@
                 <div class="row d-flex flex-wrap">
                     <div class="col-12 col-sm-6 col-md-3 text-center px-lg-4 mb-md-0 mb-4">
 
-                        <svg width="90px" height="90px" style="margin-bottom: 10px;" fill="#3a4afc"
+                        <svg width="70px" height="70px" style="margin-bottom: 20px;" fill="#3a4afc"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                             <path
@@ -391,7 +409,7 @@
                         <h5 class="text-muted">24 Hr Access</h5>
                     </div>
                     <div class="col-12 col-sm-6 col-md-3 text-center px-lg-4 mb-md-0 mb-4">
-                        <svg width="90px" height="90px" style="margin-bottom: 10px;" fill="#3a4afc"
+                        <svg width="70px" height="70px" style="margin-bottom: 20px;" fill="#3a4afc"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                             <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
                             <path
@@ -400,7 +418,7 @@
                         <h5 class="text-muted">Fast Internet</h5>
                     </div>
                     <div class="col-12 col-sm-6 col-md-3 text-center px-lg-4 mb-md-0 mb-4">
-                        <svg width="90px" height="90px" style="margin-bottom: 10px;" fill="#3a4afc"
+                        <svg width="70px" height="70px" style="margin-bottom: 20px;" fill="#3a4afc"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                             <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
                             <path
@@ -409,7 +427,7 @@
                         <h5 class="text-muted">Good Coworker</h5>
                     </div>
                     <div class="col-12 col-sm-6 col-md-3 text-center px-lg-4 mb-md-0 mb-4">
-                        <svg width="90px" height="90px" style="margin-bottom: 10px;" fill="#3a4afc"
+                        <svg width="70px" height="70px" style="margin-bottom: 20px;" fill="#3a4afc"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                             <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                             <path
@@ -420,7 +438,7 @@
                 </div>
 
                 <div class="row mt-6">
-                    <div class="col-md-3 col-12">
+                    <div class="col-md-4 col-12">
                         <h1 class="fs-md-5 fs-sm-3 pb-lg-0 pb-3" style="font-weight: 300;">Explore our
                             <strong>available</strong> office spaces.
                         </h1>
@@ -435,7 +453,7 @@
                         </p>
                     </div>
                     <div class="col-md-4 col-12 text-muted">
-                        <p style="font-size: 1.33rem; font-weight: 300;">However, some coworking places don't build a
+                        <p class="pl-lg-5 pl-sm-0" style="font-size: 1.33rem; font-weight: 300;">However, some coworking places don't build a
                             community:
                             they just get a part of an existing one by combining their opening with<br><br>
                             An event which attracts their target group. Real-estate centric coworking spaces are about
@@ -448,8 +466,8 @@
                 <div class="row mt-6">
                     <div class="col-12">
                         <div class="card">
-                            <div class="card-body p-3 p-md-5">
-                                <div class="progress-group mb-3 mb-md-5" style="position: relative;">
+                            <div class="card-body card-body1 p-3 p-md-5">
+                                <div class="progress-group mb-5 " style="position: relative;">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="progress-label mb-2">
                                             <h4 style="font-weight: 400;" class="text-gray ">Space occupancy level</h4>
@@ -471,14 +489,14 @@
                                 <div
                                     class="d-lg-flex  justify-content-between align-items-center flex-lg-row flex-column">
                                     <div class="mb-5 mb-lg-0">
-                                        <h4 style="font-weight:400;" class="fs-2">Book your tour experience today!</h4>
+                                        <h4 style="font-weight:400; " class="fs-2">Book your tour experience today!</h4>
                                         <p class="fs-1 text-muted" style="font-weight: 300;">Schedule a tour, make an
                                             appointment to rent
                                             space<br class="d-none d-lg-inline">
                                             at Themesberg, or ask for more information.</p>
                                     </div>
                                     <div class="align-content-end">
-                                        <button type="button" class="btn btn-primary  text-center">Schedule a
+                                        <button type="button" class="btn btn-primary text-center py-2 px-3">Schedule a
                                             tour</button>
                                     </div>
                                 </div>
@@ -551,45 +569,45 @@
                                         New York, Manhattan, USA
                                     </span>
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex " style="padding-top: 9px;">
                                     <!-- <span style="background-color:yellow;"><i class="fa-solid fa-star"></i></span> -->
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
                                     <span
-                                        class="badge rounded-pill bg-success ml-2 px-3 py-1  d-flex align-items-center fs-7 my-2">
+                                        class="badge rounded-pill bg-success ml-2 px-3 py-1  d-flex align-items-center fs-7 mt-1">
                                         5.0 </span>
                                 </div>
 
                             </div>
-                            <div class="card-footer border-light" style="background-color: white;">
+                            <div class="card-footer pt-0 border-light" style="background-color: white;">
                                 <div class="d-flex justify-content-between">
                                     <div class="col">
                                         <span class="d-block text-muted pb-3">Monthly</span>
@@ -627,40 +645,40 @@
                                         Bucharest, sector 2,Romania
                                     </span>
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex" style="padding-top: 9px;">
                                     <!-- <span style="background-color:yellow;"><i class="fa-solid fa-star"></i></span> -->
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#d7dbdb" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#d7dbdb" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#d7dbdb" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#d7dbdb" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
                                     <span
-                                        class="badge rounded-pill bg-success ml-2 px-3 py-1  d-flex align-items-center fs-7 my-2">
+                                        class="badge rounded-pill bg-success ml-2 px-3 py-1  d-flex align-items-center fs-7 mt-1">
                                         3.0 </span>
                                 </div>
 
@@ -702,40 +720,40 @@
                                         Landon, Canary wharf UK
                                     </span>
                                 </div>
-                                <div class="d-flex ">
+                                <div class="d-flex " style="padding-top: 9px;">
                                     <!-- <span style="background-color:yellow;"><i class="fa-solid fa-star"></i></span> -->
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#d7dbdb" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#d7dbdb" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
                                     <span
-                                        class="badge rounded-pill bg-success ml-2 px-3 py-1  d-flex align-items-center fs-7 my-2">
+                                        class="badge rounded-pill bg-success ml-2 px-3 py-1  d-flex align-items-center fs-7 mt-1">
                                         4.0 </span>
                                 </div>
 
@@ -779,40 +797,40 @@
                                         Paris, La Defense, France
                                     </span>
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex" style="padding-top: 9px;">
                                     <!-- <span style="background-color:yellow;"><i class="fa-solid fa-star"></i></span> -->
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
                                     <span
-                                        class="badge rounded-pill bg-success ml-2 px-3 py-1  d-flex align-items-center fs-7 my-2">
+                                        class="badge rounded-pill bg-success ml-2 px-3 py-1  d-flex align-items-center fs-7 mt-1">
                                         4.7 </span>
                                 </div>
 
@@ -855,40 +873,40 @@
                                         Madrid, Hortaleza, Spain
                                     </span>
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex" style="padding-top: 9px;">
                                     <!-- <span style="background-color:yellow;"><i class="fa-solid fa-star"></i></span> -->
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
                                     <span
-                                        class="badge rounded-pill bg-success ml-2 px-3 py-1  d-flex align-items-center fs-7 my-2">
+                                        class="badge rounded-pill bg-success ml-2 px-3 py-1  d-flex align-items-center fs-7 mt-1">
                                         5.0 </span>
                                 </div>
 
@@ -930,40 +948,40 @@
                                         Budapest, Ferencvaros, Hungary
                                     </span>
                                 </div>
-                                <div class="d-flex">
+                                <div class="d-flex" style="padding-top: 9px;">
                                     <!-- <span style="background-color:yellow;"><i class="fa-solid fa-star"></i></span> -->
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#f0b400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
-                                    <svg width="30px" height="30px" fill="#d7dbdb" xmlns="http://www.w3.org/2000/svg"
+                                    <svg width="20px" height="20px" fill="#d7dbdb" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 576 512">
                                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                         <path
                                             d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
                                     </svg>
                                     <span
-                                        class="badge rounded-pill bg-success ml-2 px-3 py-1  d-flex align-items-center fs-7 my-2">
+                                        class="badge rounded-pill bg-success ml-2 px-3 py-1  d-flex align-items-center fs-7 mt-1">
                                         4.0 </span>
                                 </div>
 
@@ -989,7 +1007,7 @@
                     </div>
                     <div class="col d-flex flex-column mt-3 mt-lg-6 text-center py-lg-0 py-5">
                         <div>
-                            <button type="button" class="btn btn-primary btn-lg mb-2">Browse All</button>
+                            <button type="button" class="btn btn-primary py-2 px-4 mb-3">Browse All</button>
                             <div class="text-muted">142 spaces in 6 countries</div>
                         </div>
                     </div>
@@ -1008,10 +1026,10 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-12 col-lg-6 mx-auto">
+                    <div class="col-12 col-lg-6 mx-auto py-lg-6 py-4" >
                         <div class="py-3 text-center">
                             <ul class="list-unstyled flex-column flex-sm-row d-flex justify-content-evenly">
-                                <li class="align-items-center d-flex py-2 justify-content-center">
+                                <li class="align-items-center d-flex py-2 justify-content-center mb-lg-0 " style="margin-bottom: 1rem;">
                                     <button type="button" class="btn px-md-5 px-sm-3 btn-lg"
                                         style="background-color: white;">
                                         <div class="d-inline me-2"><svg width="20px" height="20px" fill="#0d6efd"
@@ -1042,9 +1060,9 @@
                         <div class="row">
                             <div class="col-md-4 col-12">
                                 <div class="card mb-lg-0 mb-4 text-center">
-                                    <div class="card-body px-lg-4 py-lg-6 p-4">
-                                        <div class="mb-4 shape mx-auto rounded-circle">
-                                            <svg width="50px" height="50px" class="mb-4" style="margin-top:1rem;"
+                                    <div class="card-body px-lg-4 py-lg-6 p-4 card-body2" >
+                                        <div class="mb-5 shape mx-auto rounded-circle">
+                                            <svg width="40px" height="40px" class="mb-4" style="margin-top:1rem;"
                                                 fill="#0760ed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
                                                 <path
@@ -1060,9 +1078,9 @@
                             </div>
                             <div class="col-md-4 col-12">
                                 <div class="card mb-lg-0 mb-4 text-center">
-                                    <div class="card-body px-lg-4 py-lg-6 p-4 ">
-                                        <div class="mb-4 shape mx-auto rounded-circle">
-                                            <svg width="50px" height="50px" class="mb-4" style="margin-top:1rem;"
+                                    <div class="card-body px-lg-4 py-lg-6 p-4 card-body2">
+                                        <div class="mb-5 shape mx-auto rounded-circle">
+                                            <svg width="40px" height="40px" class="mb-4" style="margin-top:1rem;"
                                                 fill="#0760ed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                                 <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
                                                 <path
@@ -1073,16 +1091,16 @@
                                         <h3 class="my-3 " style="font-weight: 400;">2. Schedule a tour</h3>
                                         <p class="fs-0 text-muted">After you have uploaded your space-our website makes
                                             it easy for you to
-                                            keep the details up to date.</p>
+                                            keep the details date.</p>
 
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 col-12">
                                 <div class="card mb-lg-0 mb-4 text-center">
-                                    <div class="card-body px-lg-4 py-lg-6 p-4">
-                                        <div class="mb-4 shape mx-auto rounded-circle">
-                                            <svg width="50px" height="50px" class="mb-4" style="margin-top:1rem;"
+                                    <div class="card-body px-lg-4 py-lg-6 p-4 card-body2">
+                                        <div class="mb-5 shape mx-auto rounded-circle">
+                                            <svg width="40px" height="40px" class="mb-4" style="margin-top:1rem;"
                                                 fill="#0760ed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                                 <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                                 <path
@@ -1133,7 +1151,7 @@
                                     <div class="card-body px-lg-4 py-lg-5 p-4">
                                         <h1 class="text-center text-muted">Free</h1>
                                         <div class="row d-flex justify-content-center pb-4">
-                                            <div class="col-2 col-md-2 align-items-end p-0 position-relative "
+                                            <div class="col-1 col-md-2 col-lg-1 align-items-end p-0 position-relative "
                                                 style="color: rgb(24, 114, 197);"><span
                                                     class="position-absolute  top-0 start-0 translate-middle-x fs-2">$
                                                 </span><span class="fw-fs">0</span><span
@@ -1152,7 +1170,7 @@
                                         </div>
                                         <div class="row justify-content-center">
                                             <button type="button" class="btn border-primary col-lg-6">
-                                                <svg width="30px" height="30px" fill="#0d6efd" class="me-3"
+                                                <svg width="20px" height="30px" fill="#0d6efd" class="me-3"
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                                     <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                                     <path
@@ -1168,7 +1186,7 @@
                                     <div class="card-body px-lg-4 py-lg-5 p-4">
                                         <h1 class="text-center text-muted">Sliver</h1>
                                         <div class="row d-flex justify-content-center pb-4">
-                                            <div class="col-3 col-xs-3 col-md-4 align-items-end p-0 position-relative "
+                                            <div class="col-4  col-sm-4 col-md-4  align-items-end p-0 position-relative "
                                                 style="color: rgb(24, 114, 197);"><span
                                                     class="position-absolute  top-0 start-0 translate-middle-x fs-2">$</span><span
                                                     class="fw-fs">19</span><span
@@ -1542,12 +1560,12 @@
                 </div>
                 <div class="col-12 col-lg-4 mb-3 mb-lg-0">
                     <h4 class="mb-4 text-center text-lg-start fs-sm-2">Subscriber</h4>
-                    <p class="fs-1 text-center text-lg-start" style="color: #a1abdfb3;">Join our mailing list.We write
+                    <p class="fs-1 text-center text-lg-start mb-lg-3 mb-3" style="color: #a1abdfb3;">Join our mailing list.We write
                         rarely but only the best content.</p>
                     <input type="email"
-                        class="form-control form-control-lg w-100 mb-lg-2 mb-3 text-center text-lg-start"
-                        placeholder="Email Address">
-                    <button type="button" class="btn btn-success  w-100 btn-lg mb-3 mb-lg-2">Subscriber</button>
+                        class="form-control w-100 mb-lg-3 mb-3 text-center text-lg-start"
+                        placeholder="Email Address" style="padding:10px 13px">
+                    <button type="button" class="btn btn-success  w-100 py-2 mb-3 mb-lg-2">Subscriber</button>
                     <p style="color: #a1abdfb3; font-size: 15px;">We'll never share your details. See our <span
                             class="text-light">Privacy Policy</span></p>
                 </div>
