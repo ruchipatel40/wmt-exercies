@@ -1,370 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap template</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BS5 template 1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-<style>
-    :root{
-        --main-color: rgba(151, 149, 147, 0.904);
-        --font-size : 20px;
-        --border-color:rgb(88, 86, 86);
-    }
-    #bg-image{
-      background-image: url(color.jpg);
-      background-repeat: no-repeat;
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <style>
+    .banner-image {
+      background-image: url('bs1temp.png');
       background-size: cover;
-      padding-bottom: 80px;
+    }
 
-       
+    :root {
+      --main-color: rgba(151, 149, 147, 0.904);
+      --font-size: 23px;
+      --border-color: #6c757d;
     }
+
+    .py-lg-6 {
+      padding: 8rem 0 !important;
+    }
+
     @media only screen and (min-width: 600px) {
-    #widthset{
-      width: 1100px;
-      border: 1px solid red;
-      padding-left: 30px;
-      padding-right: 30px;
+      #widthset {
+        width: 1100px;
+        border: 1px solid red;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      .px-lg-6 {
+        padding: 0 7rem !important;
+      }
     }
-  
-}
-</style>
+  </style>
 </head>
+
 <body>
-      <div class="container-fluid bg-dark px-md-5">
-        <div id="widthset mx-4">
-        <div id="bg-image">
-          <div class="container pt-4 ">
-              <nav class="navbar navbar-expand-lg navbar-light  py-3" >
-                <div class="container d-flex justify-content-between">
-                    <a class="navbar-brand " href="#">
-                        <img src="microsoft.png" class="rounded-circle" width="40" height="40">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Togglenavigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse mt-4 mt-lg-0 " id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto pt-2 pt-lg-0 align-items-center">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link px-3" style="color: var(--main-color);">SECONDARY PAGE</a>
-                            </li>
-                           
-                            <li class="nav-item">
-                                <a href="#" class="nav-link px-3 "><button class="btn btn-primary btn-sm text-center fw-bold px-4" style="line-height: 2.45; vertical-align: middle; background-color: rgb(23, 82, 221); color: white; border: #6f42c1;">Sign Up</button></a>
-                            </li>   
-                        </ul>
-                        
-                    </div>
-                </div>
-            </nav>
-            <!-- </header> -->
-            
-      
-            <!-- Card -->
-            <div class="w-100">
-              <div class="row py-5 my-5">
-                <div class="col-sm-6">
-                  <div class="card text-light bg-transparent border-0 pb-5">
-                    <div class="card-body" style="font-size:50px;">
-                      <h1 class="card-title mb-3">Landing template for Startups</h1>
-                      <p class="card-text mb-5" style="color: var(--main-color); font-size: var(--font-size);">Our landing
-                        page template work on all devices, so you only have
-                        to set it up once, and get beautiful results forever.
-                      </p>
-                      <a href="#" class="btn btn-primary px-4 py-3" style="font-size: small; font-weight: bold; background-color: rgb(44, 106, 238);">GET STARTED
-                        NOW</a>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="col-sm-6">
-                    </div>
-                  </div>
-                </div>
+  <div class="container-fluid w-100 bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container d-flex justify-content-between">
+        <a class="navbar-brand " href="#">
+          <img src="microsoft.png" class="rounded-circle " width="40" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Togglenavigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mt-4 mt-lg-0 " id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto pt-2 pt-lg-0 align-items-center">
+            <li class="nav-item">
+              <a href="#" class="nav-link px-3" style="color:#8d9499 ; font-weight: 400; font-size:19px;">SECONDARY
+                PAGE</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link px-3 "><button class="btn btn-primary btn-sm text-center fw-bold px-4"
+                  style="line-height: 2.45; vertical-align: middle; background-color: rgb(23, 82, 221); color: white; border: #6f42c1;">Sign
+                  Up</button></a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <!-- </header> -->
+
+
+    <!-- Card -->
+    <div class="banner-image w-100  d-flex justify-content-center align-items-center">
+      <div class="w-100">
+        <div class="row py-lg-6 py-4 mt-5">
+          <div class="col-12 col-lg-6 col-sm-8">
+            <div class="card text-light bg-transparent border-0 pb-5 px-md-5 px-2">
+              <div class="card-body" style="font-size:50px;">
+                <h1 class="card-title mb-3">Landing template for Startups</h1>
+                <p class="card-text mb-5 text-muted" style=" font-size: var(--font-size);">Our landing
+                  page template work on all devices, so you only have
+                  to set it up once, and get beautiful results forever.
+                </p>
+                <a href="#" class="btn btn-primary px-4 py-3"
+                  style=" font-weight: bold; background-color: rgb(44, 106, 238);">GET STARTED
+                  NOW</a>
+              </div>
+              <div>
+              </div>
+              <div class="col-sm-6">
               </div>
             </div>
           </div>
         </div>
-        <!-- image -->
-        <div class="container pt-5  ">
-        <div class="w-100 d-flex  border-top border-bottom " style="padding: 20px 20px;">
-          <div class="mt-4 w-100 mb-sm-3 ">
-            <div class="row gy-4 d-flex  justify-content-center text-center">
-              <div class="col-lg-2 align-items-center col-md-3">
-                <img src="facebook.svg">
-              </div>
-              <div class="col-lg-2  col-md-3">
-                <img src="tinder.svg">
-              </div>
-              <div class="col-lg-2  col-md-3">
-                <img src="airbnb.svg">
-              </div>
-              <div class="col-lg-2  col-md-3">
-                <img src="microsoft.svg">
-              </div>
-              <div class="col-lg-2 ">
-                <img src="hubspot.svg">
-              </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- image -->
+  <div class="container-fluid bg-dark px-md-5">
+    <div class="container pt-5  ">
+      <div class="w-100 d-flex  border-top border-bottom " style="padding: 20px 20px;">
+        <div class="mt-4 w-100 mb-sm-3 ">
+          <div class="row gy-4 d-flex  justify-content-center text-center">
+            <div class="col-lg-2 align-items-center col-md-3">
+              <img src="facebook.svg">
+            </div>
+            <div class="col-lg-2  col-md-3">
+              <img src="tinder.svg">
+            </div>
+            <div class="col-lg-2  col-md-3">
+              <img src="airbnb.svg">
+            </div>
+            <div class="col-lg-2  col-md-3">
+              <img src="microsoft.svg">
+            </div>
+            <div class="col-lg-2 ">
+              <img src="hubspot.svg" style="padding-left: 10px;">
             </div>
           </div>
         </div>
-        <!--for text and video  -->
-      
-        <div class="gx-5 ">
-          <div class="py-5 ">
-            <div class="py-5 text-center">
-              <h1 class="mb-4 text-light fw-bolder">Bulid exclusively for you</h1>
-              <p class="px-lg-5 mx-lg-5" style="font-size: var(--font-size); color: var(--main-color);">Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur excepteur sint — occaecat cupidatat non proident, sunt in culpa qui.</p>
-            </div>
+      </div>
+      <!--for text and video  -->
+
+      <div class="gx-5 ">
+        <div class="py-5 ">
+          <div class="py-5 text-center">
+            <h1 class="mb-4 text-light fw-bolder">Bulid exclusively for you</h1>
+            <p class="px-lg-6 mx-lg-5 px-sm-2" style="font-size: var(--font-size); color: var(--main-color);">Duis aute
+              irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur excepteur sint — occaecat cupidatat non proident, sunt in culpa qui.</p>
           </div>
-          <div class="px-lg-3  text-light text-center ">
-            <div class="py-lg-5">
-            <video id="home-page-video" class="text-center w-100 " height="450" preset="true"
-              preload="metadata"
+        </div>
+        <div class="px-lg-3  text-light text-center ">
+          <div class="py-lg-5">
+            <video id="home-page-video" class="text-center w-100 " height="450" preset="true" preload="metadata"
               poster="https://webmobtechcdn.nyc3.cdn.digitaloceanspaces.com/static/videos/webmobtech_video.jpg" loop=""
-              autoplay=""
               data-filename="https://webmobtechcdn.nyc3.cdn.digitaloceanspaces.com/static/videos/webmobtech_gitex_2020.mp4"
               class="w-full" controlslist="nodownload" allowfullscreen>
               Your browser does not support HTML5 video.
-              <source src="https://webmobtechcdn.nyc3.cdn.digitaloceanspaces.com/static/videos/webmobtech_gitex_2020.mp4"
+              <source
+                src="https://webmobtechcdn.nyc3.cdn.digitaloceanspaces.com/static/videos/webmobtech_gitex_2020.mp4"
                 type="video/mp4">
             </video>
           </div>
-          </div>
-        </div>
-        <!-- text and  card-->
-      
-        <div class="w-100 text-light mt-5 border-top">
-          <div class="py-5">
-            <div class="px-5 text-center">
-              <h1 class="mb-4 text-light fw-bolder">Bulid up the whole picture</h1>
-              <p class="px-lg-5 mx-lg-5 " style="font-size: var(--font-size); color: var(--main-color);">Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur excepteur sint — occaecat cupidatat non proident, sunt in culpa qui.</p>
-            </div>
-          </div>
-          <div class="d-flex flex-wrap justify-content-center border-bottom" style="font-size: var(--font-size);">
-            <div class="p-5" style="width: 500px; ">
-              <div class="text-center">
-                <div class="mb-3">
-                  <img src="wrap1.png" class="rounded-circle" style="height: 50px; width: 50px;">
-                </div>
-                <h2 class="fw-bolder">Generate Lead</h2>
-                <p style="color: var(--main-color);">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu
-                  fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat.</p>
-              </div>
-            </div>
-            <div class="p-5" style="width: 500px;">
-              <div class="text-center">
-                <div class="mb-3">
-                  <img src="wrap2.png" class="rounded-circle" style="height: 50px; width: 50px;">
-                </div>
-                <h2 class="fw-bolder">Generate Lead</h2>
-                <p style="color: var(--main-color);">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu
-                  fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat.</p>
-              </div>
-            </div>
-            <div class="p-5 " style="width: 500px;">
-              <div class="text-center">
-                <div class="mb-3">
-                  <img src="wrap3.png" class="rounded-circle" style="height: 50px; width: 50px;">
-                </div>
-                <h2 class="fw-bolder">Generate Lead</h2>
-                <p style="color: var(--main-color);">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu
-                  fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat.</p>
-              </div>
-            </div>
-            <div class="p-5 " style="width: 500px;">
-              <div class="text-center">
-                <div class="mb-3">
-                  <img src="wrap4.png" class="rounded-circle" style="height: 50px; width: 50px;">
-                </div>
-                <h2 class="fw-bolder">Generate Lead</h2>
-                <p style="color: var(--main-color);">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu
-                  fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat.</p>
-              </div>
-            </div>
-            <div class="p-5 " style="width: 500px;">
-              <div class="text-center">
-                <div class="mb-3">
-                  <img src="wrap5.png" class="rounded-circle" style="height: 50px; width: 50px;">
-                </div>
-                <h2 class="fw-bolder">Generate Lead</h2>
-                <p style="color: var(--main-color);">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu
-                  fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat.</p>
-              </div>
-            </div>
-            <div class="p-5" style="width: 500px;">
-              <div class="text-center">
-                <div class="mb-3">
-                  <img src="wrap6.png" class="rounded-circle" style="height: 50px; width: 50px;">
-                </div>
-                <h2 class="fw-bolder">Generate Lead</h2>
-                <p style="color: var(--main-color);">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu
-                  fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- heading and text -->
-        <div class="w-100">
-          <div class="py-5 px-lg-5">
-            <div class="px-lg-5  text-center  ">
-              <div class="px-lg-5 ">
-                <h1 class="mb-4 text-light fw-bolder">Don't take our word for it</h1>
-                <p class="px-md-5  pb-5" style="font-size: var(--font-size); color: var(--main-color);">Duis aute irure dolor
-                  in
-                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                  nulla pariatur excepteur sint — occaecat cupidatat non proident, sunt in culpa qui.</p>
-              </div>
-            </div>
-      
-            <div class="w-100 text-light">
-              <div class="d-flex flex-wrap justify-content-center" style="color: var(--main-color);">
-                <div class="p-md-3">
-                  <div class="p-4"
-                    style="max-width: 330px; background-color: rgba(46, 45, 45, 0.5); font-size: var(--font-size);">
-                    <div class="mt-2 mb-2">
-                      <img src="doublequote.png">
-                    </div>
-                    <div>Duis aute irure dolor in
-                      reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                      nulla pariatur excepteur sint — occaecat cupidatat non proident, sunt in culpa qui.
-                    </div>
-                    <div class="mt-5 border-top">
-                      <div class="pt-4">
-                        <span class="text-light">Diana Rynzhuk</span>
-                        <span style="color: var(--main-color);">/</span>
-                        <span>
-                          <a href="#" class="text-decoration-none">AppName</a>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="p-md-3">
-                  <div class="p-4"
-                    style="max-width: 330px; background-color: rgba(46, 45, 45, 0.5); font-size: var(--font-size);">
-                    <div class="mt-2 mb-2">
-                      <img src="doublequote.png">
-                    </div>
-                    <div>Duis aute irure dolor in
-                      reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                      nulla pariatur excepteur sint — occaecat cupidatat non proident, sunt in culpa qui.
-                    </div>
-                    <div class="mt-5 ">
-                      <div class="pt-4">
-                        <span class="text-light">Roman Level</span>
-                        <span style="color: var(--main-color);">/</span>
-                        <span>
-                          <a href="#" class="text-decoration-none">AppName</a>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="p-md-3">
-                  <div class="p-4" style="max-width: 330px; background-color: rgba(46, 45, 45, 0.5); font-size: var(--font-size);">
-                    <div class="mt-2 mb-2">
-                      <img src="doublequote.png">
-                    </div>
-                    <div>Duis aute irure dolor in
-                      reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                      nulla pariatur excepteur sint — occaecat cupidatat non proident, sunt in culpa qui.
-                    </div>
-                    <div class="mt-5 border-top">
-                      <div class="pt-4">
-                        <span class="text-light">Roman Level</span>
-                        <span style="color: var(--main-color);">/</span>
-                        <span>
-                          <a href="#" class="text-decoration-none">AppName</a>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <!-- grediant color rex and input -->
-        <div class="w-100">
-          <div class="py-lg-5 mx-sm-5 px-lg-3">
-            <div class="p-5  mx-sm-3 text-light" id="ruchi"
-              style=" background: linear-gradient(100deg, rgb(62, 62, 241) 5%, rgb(251, 145, 163) 70%,yellow 100%);">
-              <div class="d-flex justify-content-between flex-wrap flex-lg-row align-items-center">
-                <div class="pr-5 text-lg-center text-start">
-                  <h3 class="fw-bolder">For previewing layouts and visual?</h3>
-                </div>
-                <div class="bg-white px-2 d-flex align-items-center ">
-                  <input type="email" class="py-3 border-0 w-100" placeholder="Your best email">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-arrow-right"
-                    viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer text-light  position-relative" >
-          <div class=" mx-sm-5 px-lg-3">
-            <div class="py-5 px-2">
-              <div class="d-flex justify-content-between">
-                <div>
-                  <img src="microsoft.png" class="rounded-circle" width="40" height="40">
-                </div>
-                <div>
-                  <div class="flex-row">
-                    <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item bg-dark" style="color: rgb(46, 80, 228); border: 0;"><a><i class="fab fa-facebook-f" class></i></a></li>
-                    <li class="list-group-item bg-dark" style="color: rgb(46, 80, 228); border: 0;"><a><i class="fab fa-twitter"></i></a></li>
-                    <li class="list-group-item bg-dark" style="color: rgb(46, 80, 228); border: 0;"><a><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class=" row d-flex align-items-center" style="color: var(--main-color);">
-                <div class="col-md-6 col-lg-8 text-center text-md-start">
-                  <div class="py-3">
-                    © 2019 Neon, all right reserved
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4 ml-lg-0 text-center text-md-end justify-content-between d-flex" >
-                  <a href="#" class="text-decoration-none" style="color: var(--main-color);">Contact</a>
-                  <a href="#" class="text-decoration-none" style="color: var(--main-color);">About us</a>
-                  <a href="#" class="text-decoration-none" style="color: var(--main-color);">FAQ's</a>
-                  <a href="#" class="text-decoration-none"  style="color: var(--main-color);">Support</a>
-                </div>
-              </div>
-            </div>
-          
-        </div>
         </div>
       </div>
+      <!-- text and  card-->
+
+      <div class="w-100 text-light mt-5 border-top">
+        <div class="py-5">
+          <div class="px-5 text-center">
+            <h1 class="mb-4 text-light fw-bolder">Bulid up the whole picture</h1>
+            <p class="px-lg-5 mx-lg-5 " style="font-size: var(--font-size); color: var(--main-color);">Duis aute irure
+              dolor
+              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur excepteur sint — occaecat cupidatat non proident, sunt in culpa qui.</p>
+          </div>
+        </div>
+        <div class="d-flex flex-wrap justify-content-center border-bottom" style="font-size: var(--font-size);">
+          <div class="p-5" style="width: 500px; ">
+            <div class="text-center">
+              <div class="mb-3">
+                <img src="wrap1.png" class="rounded-circle" style="height: 50px; width: 50px;">
+              </div>
+              <h2 class="fw-bolder">Generate Lead</h2>
+              <p style="color: var(--main-color);">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu
+                fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat.</p>
+            </div>
+          </div>
+          <div class="p-5" style="width: 500px;">
+            <div class="text-center">
+              <div class="mb-3">
+                <img src="wrap2.png" class="rounded-circle" style="height: 50px; width: 50px;">
+              </div>
+              <h2 class="fw-bolder">Generate Lead</h2>
+              <p style="color: var(--main-color);">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu
+                fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat.</p>
+            </div>
+          </div>
+          <div class="p-5 " style="width: 500px;">
+            <div class="text-center">
+              <div class="mb-3">
+                <img src="wrap3.png" class="rounded-circle" style="height: 50px; width: 50px;">
+              </div>
+              <h2 class="fw-bolder">Generate Lead</h2>
+              <p style="color: var(--main-color);">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu
+                fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat.</p>
+            </div>
+          </div>
+          <div class="p-5 " style="width: 500px;">
+            <div class="text-center">
+              <div class="mb-3">
+                <img src="wrap4.png" class="rounded-circle" style="height: 50px; width: 50px;">
+              </div>
+              <h2 class="fw-bolder">Generate Lead</h2>
+              <p style="color: var(--main-color);">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu
+                fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat.</p>
+            </div>
+          </div>
+          <div class="p-5 " style="width: 500px;">
+            <div class="text-center">
+              <div class="mb-3">
+                <img src="wrap5.png" class="rounded-circle" style="height: 50px; width: 50px;">
+              </div>
+              <h2 class="fw-bolder">Generate Lead</h2>
+              <p style="color: var(--main-color);">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu
+                fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat.</p>
+            </div>
+          </div>
+          <div class="p-5" style="width: 500px;">
+            <div class="text-center">
+              <div class="mb-3">
+                <img src="wrap6.png" class="rounded-circle" style="height: 50px; width: 50px;">
+              </div>
+              <h2 class="fw-bolder">Generate Lead</h2>
+              <p style="color: var(--main-color);">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu
+                fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat.</p>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- heading and text -->
+      <div class="w-100">
+        <div class="py-5 px-lg-5">
+          <div class="px-lg-5  text-center">
+
+            <h1 class="mb-4 text-light fw-bolder">Don't take our word for it</h1>
+            <p class="px-md-5  pb-5" style="font-size: var(--font-size); color: var(--main-color);">Duis aute irure
+              dolor
+              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur excepteur sint — occaecat cupidatat non proident, sunt in culpa qui.</p>
+
+          </div>
+
+          <div class="w-100 text-light">
+            <div class="d-flex flex-wrap justify-content-center" style="color: var(--main-color);">
+              <div class="p-md-3">
+                <div class="p-4"
+                  style="max-width: 350px; background-color: rgba(46, 45, 45, 0.5); font-size: var(--font-size);">
+                  <div class="mt-2 mb-2">
+                    <img src="doublequote.png">
+                  </div>
+                  <div>Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur excepteur sint — occaecat cupidatat non proident, sunt in culpa qui.
+                  </div>
+                  <div class="mt-5 border-top">
+                    <div class="pt-4">
+                      <span class="text-light">Diana Rynzhuk</span>
+                      <span style="color: var(--main-color);">/</span>
+                      <span>
+                        <a href="#" class="text-decoration-none">AppName</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-md-3">
+                <div class="p-4"
+                  style="max-width: 350px; background-color: rgba(46, 45, 45, 0.5); font-size: var(--font-size);">
+                  <div class="mt-2 mb-2">
+                    <img src="doublequote.png">
+                  </div>
+                  <div>Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur excepteur sint — occaecat cupidatat non proident, sunt in culpa qui.
+                  </div>
+                  <div class="mt-5  border-top">
+                    <div class="pt-4">
+                      <span class="text-light">Ben Stafford</span>
+                      <span style="color: var(--main-color);">/</span>
+                      <span>
+                        <a href="#" class="text-decoration-none">AppName</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-md-3">
+                <div class="p-4"
+                  style="max-width: 350px; background-color: rgba(46, 45, 45, 0.5); font-size: var(--font-size);">
+                  <div class="mt-2 mb-2">
+                    <img src="doublequote.png">
+                  </div>
+                  <div>Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur excepteur sint — occaecat cupidatat non proident, sunt in culpa qui.
+                  </div>
+                  <div class="mt-5 border-top">
+                    <div class="pt-4">
+                      <span class="text-light">Roman Level</span>
+                      <span style="color: var(--main-color);">/</span>
+                      <span>
+                        <a href="#" class="text-decoration-none">AppName</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- grediant color rex and input -->
+      <div class="w-100">
+        <div class="py-lg-5 mx-sm-5 px-lg-3">
+          <div class="p-5  mx-sm-3 text-light" id="ruchi"
+            style=" background: linear-gradient(100deg, rgb(62, 62, 241) 5%, rgb(251, 145, 163) 70%,yellow 100%);">
+            <div class="d-flex justify-content-between flex-wrap flex-lg-row align-items-center">
+              <div class="pr-5 text-lg-center text-start">
+                <h3 class="fw-bolder pb-lg-0 pb-3">For previewing layouts and visual?</h3>
+              </div>
+              <div class="bg-white px-2 d-flex align-items-center ">
+                <input type="email" class="py-3 border-0 w-100" placeholder="Your best email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-arrow-right"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer text-light  position-relative">
+        <div class=" mx-sm-5 px-lg-3">
+          <div class="py-5 px-2">
+            <div class="d-flex justify-content-between">
+              <div>
+                <img src="microsoft.png" class="rounded-circle" width="40" height="40">
+              </div>
+              <div>
+                <div class="flex-row">
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item bg-dark" style="color: rgb(46, 80, 228); border: 0;"><a><i
+                          class="fab fa-facebook-f" class></i></a></li>
+                    <li class="list-group-item bg-dark" style="color: rgb(46, 80, 228); border: 0;"><a><i
+                          class="fab fa-twitter"></i></a></li>
+                    <li class="list-group-item bg-dark" style="color: rgb(46, 80, 228); border: 0;"><a><i
+                          class="fab fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class=" row d-flex align-items-center" style="color: var(--main-color);">
+              <div class="col-md-6 col-lg-8 text-center text-md-start">
+                <div class="py-3">
+                  © 2019 Neon, all right reserved
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 ml-lg-0 text-center text-md-end justify-content-between d-flex">
+                <a href="#" class="text-decoration-none" style="color: var(--main-color);">Contact</a>
+                <a href="#" class="text-decoration-none" style="color: var(--main-color);">About us</a>
+                <a href="#" class="text-decoration-none" style="color: var(--main-color);">FAQ's</a>
+                <a href="#" class="text-decoration-none" style="color: var(--main-color);">Support</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
-      </body>
-      
-      </html>
+  </div>
+  </div>
+  </div>
+  <script>
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 0) {
+        nav.classList.add('bg-dark', 'shadow');
+      } else {
+        nav.classList.remove('bg-dark', 'shadow');
+      }
+    });
+  </script>
+</body>
+
+</html>
