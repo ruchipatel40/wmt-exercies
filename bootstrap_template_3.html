@@ -240,7 +240,7 @@
     <div class="container d-md-none">
         <div>
             <div class="dropdown d-flex justify-content-between ">
-                <a href="#" id="dropdownMenuLink" class="btn dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                <a href="#" id="dropdownMenuLink" class="btn-sm btn dropdown-toggle" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <img src="us.jpg" width="20px" height="15px" class="text-muted me-2 "> United States
                 </a>
@@ -286,7 +286,7 @@
                         <a href="#" role="button" class="text-decoration-none text-muted">Contacts</a>
                     
                 </div>
-                <div class="col-12"><i class="fa fa-search me-sm-4 me-1 text-muted" aria-hidden="true"></i> <i class="fas fa-shopping-cart me-sm-4 me-1 text-muted"></i><i class="fas fa-user text-muted"></i></div>
+                <div class="col-12"><i class="fa fa-search me-sm-4 me-1 text-muted" aria-hidden="true"></i> <i class="fas fa-shopping-cart me-sm-4 me-2 text-muted"></i><i class="fas fa-user text-muted"></i></div>
                 
             </div>
 
@@ -1067,20 +1067,21 @@
                 </div>
             </div>
 
-        </div>
+        
         <div class="row d-flex justify-content-center pt-5 border-top">
             <div class="col-12 text-center">
-                <img src="front.png" width="140px" height="55px" class="mb-3">
+                <img src="front.png"  height="55px" class="mb-3 img">
             </div>
             <div class="col-12 text-center">
-                <p class="small text-muted">@ Front 2019 Htmlstream. ALl right reserved.</p>
+                <p class="text-muted">@ Front 2019 Htmlstream. ALl right reserved.</p>
             </div>
         </div>
+    </div>
     </footer>
     <script>
         document.addEventListener("DOMContentLoaded", function(){
   window.addEventListener('scroll', function() {
-      if (window.scrollY > 40) {
+      if (window.pageYOffset > 50) {
         document.getElementById('navbar_top').classList.add('fixed-top');
         document.getElementById('navbar_top').classList.add('bg-light');
         // add padding top to show content behind navbar
