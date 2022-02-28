@@ -24,43 +24,7 @@
                 font-size: 1rem;
             }
         }
-        @media screen and (max-width:1024px) {
-            .size {
-                font-size: 0.99rem !important;
-            }
-        }
 
-        .fh-300 {
-            height: 180px;
-        }
-
-        .nav-link {
-            padding: 1rem 0.75rem !important;
-        }
-
-        .py-lg-8 {
-            padding-top: 0rem;
-            /* padding-bottom: 10rem; */
-        }
-
-        .fs-5 {
-            font-size: 1.32rem !important;
-        }
-
-        .py-2 {
-            padding-top: 0.8rem !important;
-            padding-bottom: 0.8rem !important;
-        }
-
-        .px-4 {
-            padding-left: 2rem !important;
-            padding-right: 2rem !important;
-        }
-
-        :root {
-            --font-size: 23px;
-            --border-color: #6c757d;
-        }
 
         .top-50 {
             top: 30% !important;
@@ -89,16 +53,7 @@
             margin-left: 30px;
             padding-left: 10px;
         }
-
-        .fs-6 {
-            font-size: 1.33rem !important;
-        }
-
-        .px-md-6 {
-            padding-left: 10rem;
-            padding-right: 10rem;
-        }
-
+        
         .fs-sm-3 {
             font-size: 3rem;
             font-weight: 300;
@@ -135,14 +90,14 @@
             }
         }
 
-        .fw-fs {
-            font-weight: 500;
+        .fs {
+            
             font-size: 70px;
         }
 
         @media only screen and (min-width: 960px) {
-            .fw-fs {
-                font-weight: 500;
+            .fs {
+                
                 font-size: 60px;
             }
 
@@ -157,15 +112,9 @@
 
         }
 
-        /* @media only screen and (max-width:768px) {
-            .fw-fs {
-                font-weight: 450;
-                font-size: 50px;
-            }
-        } */
         @media only screen and (max-width:960px) {
-            .fw-fs {
-                font-weight: 400;
+            .fs {
+                
                 font-size: 60px;
             }
 
@@ -221,12 +170,7 @@
             padding: 1.77rem 1.3rem !important;
 
         }
-
-        .btn-wide {
-            min-width: 8.6875rem;
-        }
-
-        .bg-img {
+       .bg-img {
             background-image: url(girl4.jpg);
             background-size: cover;
         }
@@ -240,7 +184,7 @@
     <div class="container d-md-none">
         <div>
             <div class="dropdown d-flex justify-content-between ">
-                <a href="#" id="dropdownMenuLink" class="btn-sm btn dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                <a href="#" id="dropdownMenuLink" class="btn-sm btn dropdown-toggle text-muted" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <img src="us.jpg" width="20px" height="15px" class="text-muted me-2 "> United States
                 </a>
@@ -297,7 +241,7 @@
     <div class="container d-none d-sm-block">
         <div>
             <div class="dropdown d-flex justify-content-between ">
-                <a href="#" id="dropdownMenuLink" class="btn dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                <a href="#" id="dropdownMenuLink" class="btn dropdown-toggle text-muted" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <img src="us.jpg" width="20px" height="15px" class="text-muted me-2 "> United States
                 </a>
@@ -320,8 +264,8 @@
                 </ul>
                 <!-- for desktop -->
                 <div class="text-muted d-flex justify-content-center align-items-center">
-                    <a href="#" style="text-decoration: none;" class="me-4 text-muted">Help</a>
-                    <a href="#" style="text-decoration: none;" class="me-4 text-muted"> Contacts</a>
+                    <a href="#"  class="me-4 text-muted text-decoration-none">Help</a>
+                    <a href="#"  class="me-4 text-muted text-decoration-none"> Contacts</a>
                     <a href="#" class="me-4 text-muted"><i class="fa fa-search" aria-hidden="true"></i></a>
                     <a href="#" class="me-4 text-muted"><i class="fas fa-shopping-cart"></i></a>
                     <a href="#" class="text-muted"><i class="fas fa-user"></i></a>
@@ -347,7 +291,7 @@
                 <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center ">
                     <!-- home -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle px-2 py-3 me-2"  href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Home
                         </a>
@@ -362,7 +306,7 @@
                     </li>
                     <!-- pages -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle px-2 py-3 me-2" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Pages
                         </a>
@@ -376,7 +320,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle px-2 py-3" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Blogs
                         </a>
@@ -390,7 +334,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle px-2 py-3 me-2" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Shop
                         </a>
@@ -404,7 +348,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle px-2 py-3 me-2" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Demos
                         </a>
@@ -418,7 +362,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle px-2 py-3 me-2" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Docs
                         </a>
@@ -439,36 +383,36 @@
         </div>
     </nav>
    
-        <section class="py-lg-8 bg-img">
-            <div class="container ">
-                <div class="w-100" style="height: 650px;">
+        <section class="py-lg-8 bg-img ">
+            <div class="container">
+                <div class="w-100 vh-100 ">
                     <div class="row pt-5">
-                        <div class="col-lg-5 col-12">
+                        <div class="col-lg-6 col-xl-5 col-md-8 col-12">
                             <div class="mb-4">
                                 <h5 class="fs-md-6 mb-lg-4 fs-sm-3">Introducing Front</h5>
-                                <p class="text-muted mb-3" style="font-size:1.22rem;">
+                                <p class="text-muted mb-3 fs-6">
                                     Your Company will look Attract more visitors, and win more business with Front
                                     template.
                                 </p>
                             </div>
                             <div class="d-flex row justify-content-center justify-content-md-start">
-                                <div class="col-9 col-sm-4 mb-lg-0 mb-4">
-                                    <a class="btn text-primary w-100"
-                                        style="padding: 0.6rem 0rem; font-weight: 400; font-size:1.2rem; background-color: rgb(198 219 255 / 65%);"
+                                <div class="col-9 col-lg-4 col-md-5 mb-md-0 mb-4">
+                                    <a class="btn text-primary w-100 fw-normal bg-col py-2 fs-6 fw-normal"
+                                        style="background-color: rgb(198 219 255 / 65%); "
                                         href="#">Get Started</a>
                                 </div>
                                 <div
-                                    class="col-9 col-sm-6  d-flex justify-content-center justify-content-lg-start align-items-center">
+                                    class="col-9 col-sm-6  d-flex justify-content-center justify-content-lg-start align-items-center mb-md-0 mb-4">
                                     <div class="rounded-circle position-relative me-3 d-inline-block"
-                                        style="width: 55px; height: 55px; background-color: rgb(211 241 211 / 78%);">
-                                        <span class="position-absolute top-50 start-50  badge rounded-pill "><svg
+                                        style=" background-color: rgb(211 241 211 / 78%); width: 50px; height: 50px;">
+                                        <span class="position-absolute top-50 start-50  badge rounded-circle "><svg
                                                 width="13px" height="15px" fill="#00c9a7"
                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                                 <path
                                                     d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z" />
                                             </svg></span>
                                     </div>
-                                    <span class=" mb-0" style="font-size: 1.2rem">Play video</span>
+                                    <div class="py-2 justify-content-center d-inline-block fs-6 fw-normal">Play video</div>
                                 </div>
                             </div>
                         </div>
@@ -481,9 +425,9 @@
         <div class="container mt-4">
             <div class="row d-flex justify-content-center text-center">
                 <div class="col-md-8 col-12 text-center">
-                    <div style="width: 126px; height: 40px; background-color: rgb(215 251 231 / 84%); font-size: 0.9rem;"
-                        class=" pt-2 d-inline-block rounded-pill text-center text-success">What we do?</div>
-                    <p class="mt-4 fs-1 px-lg-5 px-2" style="font-weight: 300;">Front makes designing easy and
+                    <div style=" background-color: rgb(215 251 231 / 84%);"
+                        class=" py-2 d-inline-block rounded-pill text-center text-success px-3 h-25 fs-6">What we do?</div>
+                    <p class="mt-4 fs-1 px-lg-5 px-2 fw-light" >Front makes designing easy and
                         performance fast</p>
                 </div>
             </div>
@@ -492,12 +436,12 @@
                     <div class="card text-center border-0">
                         <div class="card-body">
                             <div style="width: 70px; height: 70px; background-color: aqua;"
-                                class="d-inline-block rounded-circle position-relative mb-4">
+                                class="d-inline-block rounded-circle position-relative mb-4 ">
                                 <div class="position-absolute position"><img src="flower.svg" class="rounded-circle">
                                 </div>
                             </div>
                             <h4 class="card-title mb-2">Professional Design</h4>
-                            <p class="card-text text-muted" style="font-size: 1.22rem;">Achieve virtually any design and
+                            <p class="card-text text-muted fs-6" >Achieve virtually any design and
                                 layout from within the one template.</p>
                         </div>
                     </div>
@@ -511,7 +455,7 @@
                                 </div>
                             </div>
                             <h4 class="card-title">Front Strategy</h4>
-                            <p class="card-text text-muted" style="font-size: 1.22rem;">We strive to figure out ways to
+                            <p class="card-text text-muted fs-6">We strive to figure out ways to
                                 help your business grow through all platforms.</p>
                         </div>
                     </div>
@@ -525,7 +469,7 @@
                                         height="50px" class="rounded-circle"></div>
                             </div>
                             <h4 class="card-title">Unlimited Power</h4>
-                            <p class="card-text text-muted" style="font-size: 1.22rem;">Find what you need in one
+                            <p class="card-text text-muted fs-6">Find what you need in one
                                 template and combine features at will.</p>
                         </div>
                     </div>
@@ -533,11 +477,10 @@
 
 
                 <div class="col-12">
-                    <img src="line.png" class="img-fluid w-100" style="height:250px">
+                    <img src="line.png" class=" w-100 h-md-75 h-100" >
                 </div>
                 <div class="col-12 d-flex justify-content-center">
-                    <p style="font-size:var(--font-size) " class="text-center px-md-7 px-4"><span
-                            style="font-weight:500;">It is fast and easy.</span> Create your first and ongoing website
+                    <p  class="text-center px-md-7 px-4 fs-6"><span class="fw-bold">It is fast and easy.</span> Create your first and ongoing website
                         with Front.</p>
                 </div>
 
@@ -554,25 +497,25 @@
                 <div class="col-lg-4  col-12">
                     <div class="card border-0">
                         <div class="d-flex justify-content-lg-start justify-content-center mx-4">
-                            <div style="width: 110px; height: 35px; background-color: #aceecf70; font-size: 0.8rem;"
-                                class=" d-flex justify-content-center align-items-center rounded-pill text-success">
+                            <div style="background-color: #aceecf70;"
+                                class=" d-flex justify-content-center align-items-center rounded-pill text-success fs-sm h-25 w-50 px-1 py-2" >
                                 Pricing plans
                             </div>
                         </div>
                         <div class="card-body">
-                            <h2 style="font-weight:300" class="h1">No additional costs.</h1>
-                                <h2 style="font-weight:300" class="mb-lg-3 h1">Pay for What you use.</h1>
+                            <h2  class="h1 fw-light">No additional costs.</h1>
+                                <h2 class="mb-lg-3 h1 fw-light">Pay for What you use.</h1>
 
-                                    <p class="text-muted" style="font-size: 1.2rem;">Choose the most suitable service
+                                    <p class="text-muted fs-6">Choose the most suitable service
                                         for you needs with reasonable price.</p>
 
-                                    <div class="btn-group mt-5 " role="group" aria-label="Basic outlined example">
+                                    <div class="btn-group mt-md-5 mt-3 " role="group" aria-label="Basic outlined example">
                                         <button type="button"
                                             class="btn btn-primary px-lg-4 px-sm-3 fs-5 rounded-start border-primary padding">Monthly</button>
                                         <button type="button"
-                                            class="btn px-lg-4 px-sm-3   fs-5 ml-0 position-relative rounded-end border padding text-muted">Yearly
-                                            <div class="position-absolute top-0 start-100 translate-middle text-light rounded-pill"
-                                                style="width: 73px; background-color: #2fc288; font-size: 0.8rem; padding-top: 4px; padding-bottom: 4px;">
+                                            class="btn px-lg-4 px-sm-3 fs-5 ml-0 position-relative rounded-end border padding text-muted">Yearly
+                                            <div class="position-absolute top-0 start-100 translate-middle text-light rounded-pill w-50 h-50 fs-6 "
+                                                style=" background-color: #2fc288;">
                                                 10% OFF</div>
                                         </button>
                                     </div>
@@ -581,35 +524,35 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 mt-4">
                     <div class="card mb-4 border-light shadow-sm">
-                        <img class="card-img-top fh-300 w-100 position-absolute" src="blue.jpeg">
+                        <img class="card-img-top  w-100 position-absolute" src="blue.jpeg" height="180">
                         <div class="row d-flex justify-content-start pb-3 px-4 py-4">
                             <div class="col-12 position-relative justify-content-start">
-                                <p class="text-light fs-lg-3 fs-2 fw-fs">Individual Plan</p>
+                                <p class="text-light  fs-3 fw-md-bold fw-normal mb-0">Individual Plan</p>
                             </div>
-                            <div class="col-4  col-sm-4 col-md-4  align-items-end p-0 position-relative text-light "
-                                style="color: rgb(24, 114, 197); margin-left: 1rem; "><span
-                                    class="position-absolute  top-0 start-0 translate-middle-x fs-6">$</span><span
-                                    class="fw-fs ">22</span><span
+                            <div class="col-4  col-sm-4 col-md-4  align-items-end p-0 position-relative text-light ms-3"
+                                style="color: rgb(24, 114, 197);"><span
+                                    class="position-absolute  top-0 start-0 translate-middle-x fs-5">$</span><span
+                                    class="fw-bolder fs">22</span><span
                                     class="position-absolute translate-middle-y bottom-0 ">/month</span>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="row justify-content-lg-start  justify-content-center px-lg-2 ">
                                 <ul class="text-left list-unstyled fs-0 ">
-                                    <li class="mb-3 ulimg " style="font-weight: 400; font-size: 1.11rem; ">Community
+                                    <li class="mb-3 ulimg fw-normal fs-6">Community
                                         support</li>
-                                    <li class="mb-3 ulimg " style="font-weight: 400; font-size: 1.11rem;">400+ pages
+                                    <li class="mb-3 ulimg fw-normal fs-6">400+ pages
                                     </li>
-                                    <li class="mb-3 ulimg" style="font-weight: 400; font-size: 1.11rem;">100+ variations
+                                    <li class="mb-3 ulimg fw-normal fs-6" >100+ variations
                                     </li>
-                                    <li class="mb-3 ulimg text-muted" style="font-size: 1.11rem;">20+ home page options
+                                    <li class="mb-3 ulimg text-muted fs-6" >20+ home page options
                                     </li>
                                 </ul>
                             </div>
                             <div class="row ">
                                 <div class="col-12 ">
-                                    <a href="#" class="btn btn-primary w-100 py-2 text-primary border-0"
-                                        style="background-color: #b3cef461; font-weight: 500 ;">Get Started</a>
+                                    <a href="#" class="btn btn-primary w-100 py-2 text-primary border-0 fw-normal"
+                                        style="background-color: #b3cef461;">Get Started</a>
                                 </div>
                             </div>
                         </div>
@@ -617,42 +560,38 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="card mb-4 border-light shadow-sm">
-                        <img class="card-img-top fh-300 w-100 position-absolute" src="blue.jpeg">
+                        <img class="card-img-top  w-100 position-absolute" src="blue.jpeg" height="180">
                         <div class="row d-flex justify-content-start pb-3 px-4 py-4">
                             <div class="col-12 position-relative justify-content-start">
-                                <p class="text-light fs-lg-3 fs-2 fw-fs">Enterprise Plan</p>
+                                <p class="text-light fs-3 fw-md-bold fw-normal mb-0">Enterprise Plan</p>
                             </div>
-                            <!-- <div class="col-4  col-sm-4 col-md-4  p-0 position-relative text-light pb-3" style="color: rgb(24, 114, 197); margin-left: 1rem; ">
-                                    <span class="position-absolute  top-0 start-0 translate-middle-x fs-2">$</span><span
-                                        class="fw-fs">99</span><span class="position-absolute translate-middle-y bottom-0">/month</span>
-                                </div> -->
 
-                            <div class="col-4  col-sm-4 col-md-4  align-items-end p-0 position-relative text-light "
-                                style="color: rgb(24, 114, 197); margin-left: 1rem; "><span
-                                    class="position-absolute  top-0 start-0 translate-middle-x fs-6">$</span><span
-                                    class="fw-fs">99</span><span
+                            <div class="col-4  col-sm-4 col-md-4  align-items-end p-0 position-relative text-light ms-3"
+                                style="color: rgb(24, 114, 197);"><span
+                                    class="position-absolute  top-0 start-0 translate-middle-x fs-5">$</span><span
+                                    class="fs fw-bolder">99</span><span
                                     class="position-absolute translate-middle-y bottom-0 ">/month</span>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="row justify-content-lg-start  justify-content-center px-lg-2 ">
-                                <ul class="text-left list-unstyled fs-0 ">
-                                    <li class="mb-3 ulimg " style="font-weight: 400; font-size: 1.11rem; ">24/7 support
+                                <ul class="text-left list-unstyled">
+                                    <li class="mb-3 ulimg fw-normal fs-6">24/7 support
                                     </li>
-                                    <li class="mb-3 ulimg " style="font-weight: 400; font-size: 1.11rem; ">400+ pages
+                                    <li class="mb-3 ulimg fw-normal fs-6">400+ pages
                                     </li>
-                                    <li class="mb-3 ulimg " style="font-weight: 400; font-size: 1.11rem; ">200+ header
+                                    <li class="mb-3 ulimg fw-normal fs-6">200+ header
                                         variations</li>
-                                    <li class="mb-3 ulimg " style="font-weight: 400; font-size: 1.11rem; ">40+ home page
+                                    <li class="mb-3 ulimg fw-normal fs-6">40+ home page
                                         options</li>
-                                    <li class="mb-3 ulimg " style="font-weight: 400; font-size: 1.11rem; ">E-commerce
+                                    <li class="mb-3 ulimg fw-normal fs-6">E-commerce
                                     </li>
                                 </ul>
                             </div>
                             <div class="row ">
                                 <div class="col-12 ">
-                                    <a href="#" class="btn btn-primary w-100 py-2 text-primary border-0"
-                                        style="background-color:  #b3cef461; font-weight: 500 ;">Get Started</a>
+                                    <a href="#" class="btn btn-primary w-100 py-2 text-primary border-0 fw-normal"
+                                        style="background-color:  #b3cef461; ">Get Started</a>
                                 </div>
                             </div>
                         </div>
@@ -669,9 +608,9 @@
 
             <div class="row d-flex justify-content-center align-items-center mt-md-6 mt-4">
                 <div class="col-md-7 col-12 text-center">
-                    <div style="width: 130px; height: 40px; background-color: rgb(215 251 231 / 40%); font-size: 0.9rem;"
-                        class=" pt-2 d-inline-block rounded-pill text-center text-success mb-3">News and Blog</div>
-                    <h1 style="font-weight: 300; margin-bottom: 1rem;">Read our latest news</h1>
+                    <div style=" background-color: rgb(215 251 231 / 40%);"
+                        class=" pt-2 d-inline-block rounded-pill text-center text-success mb-3 w-auto px-3 h-25 pb-2">News and Blog</div>
+                    <h1 class="mb-2 fw-light h1">Read our latest news</h1>
                     <p class="fs-6 text-muted">Our duty towards you is to share our experience we're reaching in our
                         work path with you.</p>
                 </div>
@@ -691,7 +630,7 @@
                     <div class="col-10 ">
                         <div id="carouselExampleIndicators1" class="carousel slide" data-bs-touch="false"
                             data-bs-interval="false">
-                            <div class="carousel-indicators" style="top: 100%;">
+                            <div class="carousel-indicators top-100" >
                                 <button type="button" style="height: 10px; width: 10px; background-color: #0f54ff;"
                                     data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0"
                                     class="active rounded-circle "></button>
@@ -713,14 +652,14 @@
                                             <div class="middle  text-light">
                                                 <h2>How to make trust your competitive advantage</h2>
                                                 <p class="mt-3 text-center">Neyton Burchie</p>
-                                                <img src="mukesh.jpg" class="rounded-circle text-center" width="50px"
-                                                    height="50px">
+                                                <img src="mukesh.jpg" class="rounded-circle text-center d-inline-block" width="50px"
+                                                height="50px" >
                                             </div>
                                         </div>
                                         <div class="col-md-4 mb-3">
                                             <div class="card">
-                                                <div class="card-body card-body1 text-center"
-                                                    style="height:500px; font-size: 1.11rem;">
+                                                <div class="card-body card-body1 text-center fs-6"
+                                                    style="height:500px;">
                                                     <p class="fw-100 size">"How to help your team excel at remote
                                                         collaboration. Here are tips and tools we use on the content
                                                         team at InVision to keep our remote collaboration
@@ -730,8 +669,8 @@
                                                     <img src="bill.jpeg" class="rounded-circle" width="50px"
                                                         height="50px"><br>
                                                     <a href="#"
-                                                        class="btn btn-primary mt-md-4 mt-3 border-0 text-primary"
-                                                        style="padding: 0.6rem 2.3rem; background-color: #cdddf7c9;">Read
+                                                        class="btn btn-primary mt-md-4 mt-3 border-0 text-primary py-2 px-4 fs-6 "
+                                                        style="background-color: #cdddf7c9;">Read
                                                         More</a>
                                                 </div>
                                             </div>
@@ -740,7 +679,7 @@
                                             <div class="bg-dark">
                                                 <img src="bgimg.jpeg" height="500px" class="w-100 image">
                                             </div>
-                                            <div class="middle  text-light">
+                                            <div class="middle text-light">
                                                 <h2>Remote workers, here's how to dodge distractions</h2>
                                                 <p class="mt-3 text-center">Neyton Burchie</p>
                                                 <img src="mukesh.jpg" class="rounded-circle text-center" width="50px"
@@ -766,9 +705,9 @@
                                         </div>
                                         <div class="col-md-4 mb-3">
                                             <div class="card">
-                                                <div class="card-body card-body1 text-center"
-                                                    style="height:500px; font-size: 1.11rem;">
-                                                    <p class="fw-100 size">"How to help your team excel at remote
+                                                <div class="card-body card-body1 text-center fs-6"
+                                                    style="height:500px;">
+                                                    <p class="fw-100 ">"How to help your team excel at remote
                                                         collaboration. Here are tips and tools we use on the content
                                                         team at InVision to keep our remote collaboration
                                                         game strong. Trust is both a complex and nuanced topic. Its very
@@ -777,8 +716,8 @@
                                                     <img src="bill.jpeg" class="rounded-circle" width="50px"
                                                         height="50px"><br>
                                                     <a href="#"
-                                                        class="btn btn-primary mt-md-4 mt-3 border-0 text-primary"
-                                                        style="padding: 0.6rem 2.3rem; background-color: #cdddf7c9;">Read
+                                                        class="btn btn-primary mt-md-4 mt-3 border-0 text-primary py-2 px-4 fs-6"
+                                                        style="background-color: #cdddf7c9;">Read
                                                         More</a>
                                                 </div>
                                             </div>
@@ -813,8 +752,8 @@
                                         </div>
                                         <div class="col-md-4 mb-3">
                                             <div class="card">
-                                                <div class="card-body card-body1 text-center"
-                                                    style="height:500px; font-size: 1.11rem;">
+                                                <div class="card-body card-body1 text-center fs-6"
+                                                    style="height:500px;">
                                                     <p class="fw-100 size">"How to help your team excel at remote
                                                         collaboration. Here are tips and tools we use on the content
                                                         team at InVision to keep our remote collaboration
@@ -824,8 +763,8 @@
                                                     <img src="bill.jpeg" class="rounded-circle" width="50px"
                                                         height="50px"><br>
                                                     <a href="#"
-                                                        class="btn btn-primary mt-md-4 mt-3 border-0 text-primary"
-                                                        style="padding: 0.6rem 2.3rem; background-color: #cdddf7c9;">Read
+                                                        class="btn btn-primary mt-md-4 mt-3 border-0 text-primary py-2 px-4 fs-6"
+                                                        style="background-color: #cdddf7c9;">Read
                                                         More</a>
                                                 </div>
                                             </div>
@@ -860,14 +799,14 @@
 
         </section>
 
-        <section class="pt-5 pb-md-5 pb-4 d-md-none">
+        <section class="pt-5 pb-md-5 pb-4 d-sm-none">
             <div class="container">
                 <div class="row">
 
                     <div class="col-12 ">
                         <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
                             
-                            <div class="carousel-indicators" style="top: 100%;">
+                            <div class="carousel-indicators top-100">
                                 <button type="button" style="height: 10px; width: 10px; background-color: #0f54ff;"
                                     data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
                                     class="active rounded-circle "></button>
@@ -909,8 +848,8 @@
                                     <div class="row">
                                         <div class="col-12 mb-3">
                                             <div class="card">
-                                                <div class="card-body card-body1 text-center"
-                                                    style="height:500px; font-size: 1.11rem;">
+                                                <div class="card-body card-body1 text-center fs-6"
+                                                    style="height:500px; ">
                                                     <p class="fw-100 size">"How to help your team excel at remote
                                                         collaboration. Here are tips and tools we use on the content
                                                         team at InVision to keep our remote collaboration
@@ -920,8 +859,8 @@
                                                     <img src="bill.jpeg" class="rounded-circle" width="50px"
                                                         height="50px"><br>
                                                     <a href="#"
-                                                        class="btn btn-primary mt-md-4 mt-3 border-0 text-primary"
-                                                        style="padding: 0.6rem 2.3rem; background-color: #cdddf7c9;">Read
+                                                        class="btn btn-primary mt-md-4 mt-3 border-0 text-primary py-2 px-4"
+                                                        style=" background-color: #cdddf7c9;">Read
                                                         More</a>
                                                 </div>
                                             </div>
@@ -962,8 +901,8 @@
                                     <div class="row">
                                         <div class="col-12 mb-3">
                                             <div class="card">
-                                                <div class="card-body card-body1 text-center"
-                                                    style="height:500px; font-size: 1.11rem;">
+                                                <div class="card-body card-body1 text-center fs-6"
+                                                    style="height:500px; ">
                                                     <p class="fw-100 size">"How to help your team excel at remote
                                                         collaboration. Here are tips and tools we use on the content
                                                         team at InVision to keep our remote collaboration
@@ -973,8 +912,8 @@
                                                     <img src="bill.jpeg" class="rounded-circle" width="50px"
                                                         height="50px"><br>
                                                     <a href="#"
-                                                        class="btn btn-primary mt-md-4 mt-3 border-0 text-primary"
-                                                        style="padding: 0.6rem 2.3rem; background-color: #cdddf7c9;">Read
+                                                        class="btn btn-primary mt-md-4 mt-3 border-0 text-primary px-4 py-2 " 
+                                                        style="background-color: #cdddf7c9;">Read
                                                         More</a>
                                                 </div>
                                             </div>
@@ -1028,7 +967,7 @@
                         <li class="mb-md-3 mb-2">Projects</li>
                     </ul>
                 </div>
-                <div class="col-3 col-md-2 mb-sm-2 mb-lg-0 " style="text-align: right;">
+                <div class="col-3 col-md-2 mb-sm-2 mb-lg-0 ">
                     <h3 class="h5 mb-sm-4 mb-2 text-center text-lg-start fw-bold">Resource</h3>
                     <ul class="list-unstyled text-center text-lg-start text-muted">
                         <li class="mb-md-3 mb-2">Help</li>
@@ -1038,28 +977,28 @@
                 </div>
                 <div class="col-12 col-md-5 mb-3 mb-lg-0 d-flex justify-content-center">
                     <div class="text-center text-md-start">
-                        <h3 class="h6 fw-bold mb-3 " style="font-size: 1rem;">We are driven to deliver results for all
+                        <h3 class="h6 fw-bold mb-3 fs-6">We are driven to deliver results for all
                             your businesses.</h3>
-                        <button type="button" class="btn btn-dark btn-wide me-2  mb-3" style="text-align: left;">
+                        <button type="button" class="btn btn-dark me-2  mb-3 text-start">
                             <span class="d-flex align-items-center">
-                                <span class="me-3"><i class="fa-brands fa-apple" style="font-size: 2rem;"></i></span>
+                                <span class="me-3"><i class="fa-brands fa-apple fs-5"></i></span>
                                 <span class="media-body">
-                                    <span class="d-block" style="font-size: 0.8rem;">
+                                    <span class="d-block" style="font-size: 13px;">
                                         Download on the
                                     </span>
-                                    <strong style="font-size:1rem">App Store</strong>
+                                    <strong class="fs-6 ">App Store</strong>
                                 </span>
                             </span>
                         </button>
-                        <button type="button" class="btn btn-dark btn-wide me-2 mb-3" style="text-align: left;">
+                        <button type="button" class="btn btn-dark me-2 mb-3 text-start" >
                             <span class="d-flex align-items-center">
-                                <span class="me-3"><i class="fa-brands fa-google-play"
-                                        style="font-size: 2rem;"></i></span>
+                                <span class="me-3"><i class="fa-brands fa-google-play fs-5"
+                                        ></i></span>
                                 <span class="media-body">
-                                    <span class="d-block" style="font-size: 0.8rem;">
+                                    <span class="d-block" style="font-size: 13px;">
                                         Get it on
                                     </span>
-                                    <strong style="font-size:1rem">Google Play</strong>
+                                    <strong class="fs-6">Google Play</strong>
                                 </span>
                             </span>
                         </button>
@@ -1073,7 +1012,7 @@
                 <img src="front.png"  height="55px" class="mb-3 img">
             </div>
             <div class="col-12 text-center">
-                <p class="text-muted">@ Front 2019 Htmlstream. ALl right reserved.</p>
+                <p class="text-muted">@ Front 2019 Htmlstream. All right reserved.</p>
             </div>
         </div>
     </div>
