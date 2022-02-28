@@ -19,6 +19,11 @@
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        @media screen and (max-width:576px) {
+            .text1{
+                font-size: 1rem;
+            }
+        }
         @media screen and (max-width:1024px) {
             .size {
                 font-size: 0.99rem !important;
@@ -26,7 +31,7 @@
         }
 
         .fh-300 {
-            height: 200px;
+            height: 180px;
         }
 
         .nav-link {
@@ -76,7 +81,7 @@
         }
 
         .card-body {
-            padding: 3rem 1.5rem !important
+            padding: 1rem 1.5rem !important
         }
 
         .ulimg {
@@ -231,6 +236,7 @@
 
 <body>
     <!-- for small screen -->
+    <main class="main">
     <div class="container d-md-none">
         <div>
             <div class="dropdown d-flex justify-content-between ">
@@ -256,7 +262,7 @@
                         </a></li>
                 </ul>
 
-                <div class="dropdown d-flex justify-content-end">
+                <!-- <div class="dropdown d-flex justify-content-end">
                     <button class="btn btn-secondary bg-light" type="button" id="dropdownMenuButton1"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <span><i class="fal fa-bars text-dark"></i></span>
@@ -272,10 +278,20 @@
                         </li>
                         <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>Profile</a></li>
                     </ul>
+                </div> -->
+
+                <div class="d-flex row align-items-center text-end text1">
+                    <div class="col-12 me-auto ">
+                        <a href="#" role="button" class="text-decoration-none text-muted ">Help</a>
+                        <a href="#" role="button" class="text-decoration-none text-muted">Contacts</a>
+                    
                 </div>
+                <div class="col-12"><i class="fa fa-search me-sm-4 me-1 text-muted" aria-hidden="true"></i> <i class="fas fa-shopping-cart me-sm-4 me-1 text-muted"></i><i class="fas fa-user text-muted"></i></div>
+                
             </div>
 
         </div>
+    </div>
     </div>
     <!-- for desktop -->
     <div class="container d-none d-sm-block">
@@ -318,11 +334,11 @@
 
 
     <nav class="navbar navbar-expand-lg navbar-light" id="navbar_top">
-        <div class="container d-flex">
+        <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="front.png" width="80" height="60">
             </a>
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -422,9 +438,9 @@
             </div>
         </div>
     </nav>
-    <main class="main">
-        <section class="py-lg-8">
-            <div class="container bg-img">
+   
+        <section class="py-lg-8 bg-img">
+            <div class="container ">
                 <div class="w-100" style="height: 650px;">
                     <div class="row pt-5">
                         <div class="col-lg-5 col-12">
@@ -471,7 +487,7 @@
                         performance fast</p>
                 </div>
             </div>
-            <div class="row mb-5 mb-lg-0 d-flex justify-content-center">
+            <div class="row mb-3 mb-lg-0 d-flex justify-content-center">
                 <div class="col-lg-4 col-sm-6">
                     <div class="card text-center border-0">
                         <div class="card-body">
@@ -528,13 +544,13 @@
                 <div class="col-md-9 col-12">
                     <img src="hello.png" class="img-fluid  w-100 h-100">
                 </div>
-                <div class="col-md-4 col-12 text-center my-5">
+                <div class="col-md-4 col-12 text-center my-3 my-md-5">
                     <p class="text-muted">We are launching soon. Join the priority list for information and early
                         access.</p>
                 </div>
 
             </div>
-            <div class="row mt-5">
+            <div class="row mt-md-5 mt-2">
                 <div class="col-lg-4  col-12">
                     <div class="card border-0">
                         <div class="d-flex justify-content-lg-start justify-content-center mx-4">
@@ -995,29 +1011,29 @@
     </main>
     <footer class="footer px-md-5 py-5 bg-light">
         <div class="container">
-            <div class="row d-flex justify-content-between pb-5">
-                <div class="col-12 col-md-2 mb-3 mb-lg-0">
-                    <h3 class="h5 mb-4 text-center text-lg-start fw-bold">About</h3>
+            <div class="row d-flex justify-content-md-between  pb-sm-5 pb-2">
+                <div class="col-3 col-md-2 mb-2 mb-lg-0">
+                    <h3 class="h5 mb-sm-4 mb-2 text-center text-lg-start fw-bold">About</h3>
                     <ul class="list-unstyled text-center text-lg-start text-muted">
-                        <li class="mb-3">About</li>
-                        <li class="mb-3">Services</li>
-                        <li class="mb-3">Careers</li>
+                        <li class="mb-md-3 mb-2">About</li>
+                        <li class="mb-md-3 mb-2">Services</li>
+                        <li class="mb-md-3 mb-2">Careers</li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-2 mb-3 mb-lg-0 ">
-                    <h3 class="h5 mb-4 text-center text-lg-start fw-bold">Account</h3>
+                <div class=" col-3 col-md-2 mb-2 mb-lg-0 me-3">
+                    <h3 class="h5 mb-sm-4 mb-2 text-center text-lg-start fw-bold">Account</h3>
                     <ul class="list-unstyled text-center text-lg-start text-muted">
-                        <li class="mb-3 ">Account</li>
-                        <li class="mb-3">My tasks</li>
-                        <li class="mb-3">Projects</li>
+                        <li class="mb-md-3 mb-2">Account</li>
+                        <li class="mb-md-3 mb-2">My tasks</li>
+                        <li class="mb-md-3 mb-2">Projects</li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-2 mb-3 mb-lg-0 " style="text-align: right;">
-                    <h3 class="h5 mb-4 text-center text-lg-start fw-bold">Resources</h3>
+                <div class="col-3 col-md-2 mb-sm-2 mb-lg-0 " style="text-align: right;">
+                    <h3 class="h5 mb-sm-4 mb-2 text-center text-lg-start fw-bold">Resource</h3>
                     <ul class="list-unstyled text-center text-lg-start text-muted">
-                        <li class="mb-3">Help</li>
-                        <li class="mb-3">Terms</li>
-                        <li class="mb-3">Privacy </li>
+                        <li class="mb-md-3 mb-2">Help</li>
+                        <li class="mb-md-3 mb-2">Terms</li>
+                        <li class="mb-md-3 mb-2">Privacy </li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-5 mb-3 mb-lg-0 d-flex justify-content-center">
@@ -1064,7 +1080,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", function(){
   window.addEventListener('scroll', function() {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 40) {
         document.getElementById('navbar_top').classList.add('fixed-top');
         document.getElementById('navbar_top').classList.add('bg-light');
         // add padding top to show content behind navbar
