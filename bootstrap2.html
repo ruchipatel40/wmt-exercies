@@ -18,16 +18,14 @@
 
 
     <style>
-        @media only screen and (max-width:960px) {
-            .py-7 {
+        @media only screen and (max-width:992px) {
+            .p-tb-7 {
                 padding-top: 8rem !important;
                 padding-bottom: 8rem !important;
             }
-
-            .fs {
+            .fs{
                 font-size: 60px;
             }
-
             .table> :not(caption)>*>* {
                 padding: 1rem 0 !important;
             }
@@ -35,57 +33,46 @@
 
         @media only screen and (max-width:768px) {
             .fs {
-
                 font-size: 50px;
             }
-
-            .fs-md-5 {
+        }
+        @media only screen and (min-width: 992px) {
+            .fontsize-lg-1 {
                 font-size: 2.5rem !important;
             }
-        }
-        @media only screen and (min-width: 960px) {
-            .fs-md-5 {
-                font-size: 3rem !important;
-            }
 
-            .mx-lg-7 {
-                margin-left: 7rem !important;
-                margin-right: 7rem !important;
-            }
-
-            .px-md-6 {
+            .p-lr-lg-5 {
                 padding-right: 5rem !important;
                 padding-left: 5rem !important;
             }
-
-            .mt-lg-6 {
+            .p-tb-lg-5 {
+                padding-top: 5rem !important;
+                padding-bottom: 5rem !important;
+            }
+            .m-t-lg-5 {
                 margin-top: 5rem !important;
             }
 
             .table> :not(caption)>*>* {
                 padding: 1rem 1.5rem !important;
             }
-
             .fs {
                 font-size: 70px;
             }
+            .p-tb-lg-9 {
+                padding-top: 10rem;
+                padding-bottom: 10rem;
+            }
+            .m-b-lg-6 {
+            margin-bottom: 6rem !important;
         }
-        .py-lg-9 {
-            padding-top: 10rem;
-            padding-bottom: 10rem;
         }
-
+        
         section {
             padding: 7rem 0 7rem 0;
         }
-        .mt-6 {
+        .m-t-6 {
             margin-top: 6rem !important;
-        }
-        .text-dark {
-            color: rgb(28, 10, 61) !important;
-        }
-        .progress-lg {
-            height: 11px !important;
         }
         .fh-400 {
             height: 450px !important;
@@ -107,21 +94,17 @@
             transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
             text-align: center;
+            opacity: 1;
         }
 
         .hover:hover .image {
             opacity: 0.5;
         }
-        .middle {
-            opacity: 1;
-        }
+        
         .bg-light-color {
             background-color: rgba(240, 240, 240, 0.746);
         }
-        .py-lg-6 {
-            padding-top: 5rem !important;
-            padding-bottom: 5rem !important;
-        }
+        
         .shape {
             width: 5rem;
             height: 5rem;
@@ -138,8 +121,8 @@
             color: #6c757d;
         }
 
-        .px-5 {
-            padding: 6rem 0 3rem 0 !important;
+        .f-p-y-6 {
+            padding: 6rem 0 6rem 0 !important;
         }
 
         .bg-footer {
@@ -150,25 +133,26 @@
             list-style-image: url("circle-check-solid.svg");
             margin-left: 30px;
             padding-left: 20px;
+            margin-bottom:1rem !important;
         }
 
         .banner-image {
             background-image: url('hotel3.jpg');
             background-size: cover;
-            image-rendering: high-quality;
+            image-rendering: auto;
         }
 
-        .bottom-50 {
+        .bottom-60 {
             bottom: 60% !important;
         }
 
-        .start-50 {
+        .start-80{
             left: 80% !important;
         }
-
-        .mb-lg-6 {
-            margin-bottom: 6rem !important;
+        .footer-txt-color{
+            color: #a1abdfb3;
         }
+        
     </style>
 
 </head>
@@ -190,7 +174,7 @@
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item py-2 mx-3">
-                            <a class="nav-link active text-light.fs-6" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-light fs-5" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item dropdown py-2 mx-3">
                             <a class="nav-link dropdown-toggle text-light fs-5" href="#" id="navbarDropdown"
@@ -231,14 +215,14 @@
             </div>
         </nav>
         <div class="banner-image w-100 d-flex justify-content-center align-items-center opacity-75">
-            <section class="py-7 py-lg-9">
+            <section class="p-tb-7 p-tb-lg-9">
                 <div class="container ">
                     <div class="row align-items-center justify-content-center mb-4 mb-xl-5">
                         <div class="col-12 col-lg-10 text-center">
-                            <h1 class="fs-md-5 text-light fs-sm-2 mb-lg-3 fw-normal">Find your perfect
+                            <h1 class="fontsize-lg-1 text-light fs-sm-2 mb-lg-3 fw-normal">Find your perfect
                                 <strong>coworking</strong> space.
                             </h1>
-                            <p class="px-md-6 text-light fs-5 fw-normal">
+                            <p class="p-lr-lg-5 text-light fs-5 fw-normal">
                                 <span class="fw-bold">12,000+</span>
                                 coworking spaces with desks, offices & meeting rooms in
                                 <span class="fw-bold">165+</span> countries.
@@ -324,7 +308,7 @@
 
                 <div class="row mt-6">
                     <div class="col-md-4 col-12">
-                        <h1 class="fs-md-5 fs-sm-3 pb-lg-0 pb-3 fw-light">Explore our
+                        <h1 class="fs-1 fontsize-lg-1 pb-lg-0 pb-3 fw-light">Explore our
                             <strong>available</strong> office spaces.
                         </h1>
                     </div>
@@ -391,7 +375,7 @@
                     </div>
 
                 </div>
-                <div class="row mt-6 d-flex flex-wrap">
+                <div class="row m-t-6 d-flex flex-wrap">
                     <div class="col-12">
                         <h4 class="mb-5">Top Cities</h4>
                     </div>
@@ -430,14 +414,14 @@
                     </div>
                 </div>
 
-                <div class="row mt-6 d-flex flex-wrap ">
+                <div class="row m-t-6 d-flex flex-wrap ">
                     <div class="col-12">
                         <h4 class="mb-5">Trending Space</h4>
                     </div>
                     <div class="col-12 col-lg-4 col-md-6 ">
                         <div class="card mb-4 border-light shadow">
                             <span
-                                class="position-absolute p-2 bottom-50 translate-middle start-50 bg-primary badge">Office
+                                class="position-absolute p-2 bottom-60 translate-middle start-80 bg-primary badge">Office
                                 space</span>
                             <img class="card-img-top  w-100" height="200px" src="newyork.jpeg">
 
@@ -513,7 +497,7 @@
                     <div class="col-12 col-lg-4 col-md-6">
                         <div class="card mb-4  border-light shadow">
                             <span
-                                class="position-absolute p-2 bottom-50 translate-middle start-50 bg-success badge">Coworking
+                                class="position-absolute p-2 bottom-60 translate-middle start-80 bg-success badge">Coworking
                                 space</span>
                             <img class="card-img-top  w-100" height="200px" src="coworking.jpeg">
 
@@ -588,7 +572,7 @@
                     </div>
                     <div class="col-12 col-lg-4 col-md-6">
                         <div class="card mb-4  border-light shadow">
-                            <span class="position-absolute p-2 bottom-50 translate-middle start-50 badge"
+                            <span class="position-absolute p-2 bottom-60 translate-middle start-80 badge"
                                 style="background-color: orange;">Meeting space</span>
                             <img class="card-img-top w-100" height="200px" src="meeting.jpg">
 
@@ -665,7 +649,7 @@
                     <div class="col-12 col-lg-4 col-md-6">
                         <div class="card mb-4 border-light shadow">
                             <span
-                                class="position-absolute p-2 bottom-50 translate-middle start-50 bg-primary badge">Conference
+                                class="position-absolute p-2 bottom-60 translate-middle start-80 bg-primary badge">Conference
                                 room</span>
                             <img class="card-img-top w-100" height="200px" src="conference.jpg">
 
@@ -741,7 +725,7 @@
                     <div class="col-12 col-lg-4 col-md-6">
                         <div class="card mb-4 border-light shadow">
                             <span
-                                class="position-absolute p-2 bottom-50 translate-middle start-50 bg-success badge">Lifestyle
+                                class="position-absolute p-2 bottom-60 translate-middle start-80 bg-success badge">Lifestyle
                                 Space</span>
                             <img class="card-img-top w-100" height="200px" src="lifestyle.jpg">
 
@@ -816,7 +800,7 @@
                     </div>
                     <div class="col-12 col-lg-4 col-md-6">
                         <div class="card mb-4 border-light shadow">
-                            <span class="position-absolute p-2 bottom-50 translate-middle start-50 badge"
+                            <span class="position-absolute p-2 bottom-60 translate-middle start-80 badge"
                                 style="background-color: orange;">Private Space</span>
                             <img class="card-img-top  w-100" height="200px" src="private.jpeg">
 
@@ -885,7 +869,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col d-flex flex-column mt-3 mt-lg-6 text-center py-lg-0 py-5">
+                    <div class="col d-flex flex-column mt-3 m-t-lg-6 text-center py-lg-0 py-5">
                         <div>
                             <button type="button" class="btn btn-primary py-2 px-4 mb-3">Browse All</button>
                             <div class="text-muted">142 spaces in 6 countries</div>
@@ -906,7 +890,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-12 col-lg-6 mx-auto py-lg-6 py-4">
+                    <div class="col-12 col-lg-7 mx-auto p-tb-lg-5 py-4">
                         <div class="py-3 text-center">
                             <ul class="list-unstyled flex-column flex-sm-row d-flex justify-content-evenly">
                                 <li class="align-items-center d-flex py-2 justify-content-center mb-lg-0 mb-2">
@@ -937,7 +921,7 @@
                         <div class="row">
                             <div class="col-md-4 col-12">
                                 <div class="card mb-lg-0 mb-4 text-center">
-                                    <div class="card-body px-lg-4 py-lg-6 p-4 ">
+                                    <div class="card-body px-lg-4 p-tb-lg-5 p-4 ">
                                         <div class="mb-5 shape mx-auto rounded-circle">
                                             <svg width="40px" height="40px" class="mb-4 mt-3" fill="#0760ed"
                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -954,7 +938,7 @@
                             </div>
                             <div class="col-md-4 col-12">
                                 <div class="card mb-lg-0 mb-4 text-center">
-                                    <div class="card-body px-lg-4 py-lg-6 p-4 ">
+                                    <div class="card-body px-lg-4 p-tb-lg-5 p-4 ">
                                         <div
                                             class="mb-5 shape mx-auto rounded-circle d-flex align-items-center justify-content-center">
                                             <svg width="40px" height="40px" class="mb-4 mt-3" fill="#0760ed"
@@ -974,7 +958,7 @@
                             </div>
                             <div class="col-md-4 col-12">
                                 <div class="card mb-lg-0 mb-4 text-center">
-                                    <div class="card-body px-lg-4 py-lg-6 p-4 ">
+                                    <div class="card-body px-lg-4 p-tb-lg-5 p-4 ">
                                         <div class="mb-5 shape mx-auto rounded-circle">
                                             <svg width="40px" height="40px" class="mb-4 mt-3" fill="#0760ed"
                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
@@ -991,7 +975,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 mt-lg-6 mt-3 text-center">
+                        <div class="col-12 m-t-lg-5 mt-3 text-center">
                             <button type="button" class="btn btn-primary btn-lg">
                                 <svg width="20px" height="20px" fill="#ffffff" class="me-2"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -1036,10 +1020,10 @@
                                             class="row justify-content-lg-start  justify-content-center px-lg-2 text-muted">
                                             <h5 class="mb-4">Get listed in the directory:</h5>
                                             <ul class="text-left list-unstyled fs-5 ">
-                                                <li class="mb-3 ulimg">Unlimited photos</li>
-                                                <li class="mb-3 ulimg">Unlimited videos</li>
-                                                <li class="mb-3 ulimg">Receive messages</li>
-                                                <li class="mb-3 ulimg">Dispaly your contact info</li>
+                                                <li class="ulimg">Unlimited photos</li>
+                                                <li class="ulimg">Unlimited videos</li>
+                                                <li class="ulimg">Receive messages</li>
+                                                <li class="ulimg">Dispaly your contact info</li>
                                             </ul>
                                         </div>
                                         <div class="row justify-content-center">
@@ -1070,14 +1054,14 @@
                                             class="row justify-content-lg-start  justify-content-center px-lg-2 text-muted">
                                             <h5 class="mb-4">Everything in the free Plane:</h5>
                                             <ul class="text-left list-unstyled fs-5 ">
-                                                <li class="mb-3 ulimg">Rank booster</li>
-                                                <li class="mb-3 ulimg">Lead capturing buttons</li>
-                                                <li class="mb-3 ulimg">Connect your social media</li>
-                                                <li class="mb-3 ulimg">Dispaly your contact info</li>
-                                                <li class="mb-3 ulimg">Link to your website</li>
-                                                <li class="mb-3 ulimg">Promote your best review</li>
-                                                <li class="mb-3 ulimg">Booking & Lead Logs</li>
-                                                <li class="mb-3 ulimg">Priority customer support </li>
+                                                <li class="ulimg">Rank booster</li>
+                                                <li class="ulimg">Lead capturing buttons</li>
+                                                <li class="ulimg">Connect your social media</li>
+                                                <li class="ulimg">Dispaly your contact info</li>
+                                                <li class="ulimg">Link to your website</li>
+                                                <li class="ulimg">Promote your best review</li>
+                                                <li class="ulimg">Booking & Lead Logs</li>
+                                                <li class="ulimg">Priority customer support </li>
 
                                             </ul>
                                         </div>
@@ -1109,13 +1093,13 @@
                                             class="row justify-content-lg-start  justify-content-center px-lg-2 text-muted">
                                             <h5 class="mb-4">Everything in the other Plans:</h5>
                                             <ul class="text-left list-unstyled fs-5 ">
-                                                <li class="mb-3 ulimg">Appear at top of your city's search page</li>
-                                                <li class="mb-3 ulimg">Appear at top of popular spaces page</li>
-                                                <li class="mb-3 ulimg">Receive a special "Popular Now" banner</li>
-                                                <li class="mb-3 ulimg">A custom pin drop on the map</li>
-                                                <li class="mb-3 ulimg">Spaces Instagram takeover (*annual subscriber)
+                                                <li class="ulimg">Appear at top of your city's search page</li>
+                                                <li class="ulimg">Appear at top of popular spaces page</li>
+                                                <li class="ulimg">Receive a special "Popular Now" banner</li>
+                                                <li class="ulimg">A custom pin drop on the map</li>
+                                                <li class="ulimg">Spaces Instagram takeover (*annual subscriber)
                                                 </li>
-                                                <li class="mb-3 ulimg">Advertising campaign</li>
+                                                <li class="ulimg">Advertising campaign</li>
 
                                             </ul>
                                         </div>
@@ -1132,8 +1116,6 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
         </section>
 
@@ -1279,7 +1261,7 @@
 
         <section>
             <div class="container">
-                <div class="row d-flex justify-content-center mb-lg-6 mb-4 ">
+                <div class="row d-flex justify-content-center m-b-lg-6 mb-4 ">
                     <div class="col-md-8 col-12 text-center">
                         <h1 class="fw-normal">Are you ready for your Spaces?</h1>
                         <p class="mt-4 fs-5 text-muted">Check out our offers:</p>
@@ -1370,12 +1352,12 @@
             </div>
         </section>
     </main>
-    <footer class="footer px-5 bg-footer text-light">
+    <footer class="footer f-p-y-6 bg-footer text-light">
         <div class="container pb-3">
             <div class="row">
                 <div class="col-lg-3 mb-3 mb-lg-0">
                     <img src="space.png" width="60" height="40" class="mb-4">
-                    <p class="fs-5 text-lg-start text-center" style="color: #a1abdfb3;">For those seeking the finest in
+                    <p class="fs-5 text-lg-start text-center footer-txt-color">For those seeking the finest in
                         servicesand technology in a dowbtown business center. without the high cost.</p>
                     <div class="d-flex justify-content-lg-start justify-content-center ">
                         <a href="#" class="me-3 text-white fs-5"><i class="fab fa-twitter"></i></a>
@@ -1387,36 +1369,36 @@
                 <div class="col-12 col-lg-2 mb-3 mb-lg-0 ">
                     <h4 class="mb-4 text-center text-lg-start fs-sm-2">About us</h4>
                     <ul class="list-unstyled  text-muted fs-5 text-center text-lg-start">
-                        <li class="mb-3" style="color: #a1abdfb3;">Blog</li>
-                        <li class="mb-3" style="color: #a1abdfb3;">About Us</li>
-                        <li class="mb-3" style="color: #a1abdfb3;">Products</li>
-                        <li class="mb-3" style="color: #a1abdfb3;">Contact Us</li>
+                        <li class="mb-3 footer-txt-color" >Blog</li>
+                        <li class="mb-3 footer-txt-color" >About Us</li>
+                        <li class="mb-3 footer-txt-color" >Products</li>
+                        <li class="mb-3 footer-txt-color" >Contact Us</li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-3 mb-3 mb-lg-0">
                     <h4 class="mb-4 text-center text-lg-start fs-sm-2 ">Market</h4>
                     <ul class="list-unstyled  text-muted fs-5 text-center text-lg-start ">
-                        <li class="mb-3" style="color: #a1abdfb3;">Sales FAQ</li>
-                        <li class="mb-3" style="color: #a1abdfb3;">Hoe to Register</li>
-                        <li class="mb-3" style="color: #a1abdfb3;">Sell Goods</li>
-                        <li class="mb-3" style="color: #a1abdfb3;">Receive Payment</li>
-                        <li class="mb-3" style="color: #a1abdfb3;">Sell Goods</li>
-                        <li class="mb-3" style="color: #a1abdfb3;">Receive Patment</li>
+                        <li class="mb-3 footer-txt-color" >Sales FAQ</li>
+                        <li class="mb-3 footer-txt-color" >Hoe to Register</li>
+                        <li class="mb-3 footer-txt-color" >Sell Goods</li>
+                        <li class="mb-3 footer-txt-color" >Receive Payment</li>
+                        <li class="mb-3 footer-txt-color" >Sell Goods</li>
+                        <li class="mb-3 footer-txt-color" >Receive Patment</li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-4 mb-3 mb-lg-0">
                     <h4 class="mb-4 text-center text-lg-start fs-sm-2">Subscriber</h4>
-                    <p class="fs-5 text-center text-lg-start mb-lg-3 mb-3" style="color: #a1abdfb3;">Join our mailing
+                    <p class="fs-5 text-center text-lg-start mb-lg-3 mb-3 footer-txt-color" >Join our mailing
                         list.We write
                         rarely but only the best content.</p>
                     <input type="email" class="form-control w-100 mb-lg-3 mb-3 text-center text-lg-start py-2"
                         placeholder="Email Address">
                     <button type="button" class="btn btn-success  w-100 py-2 mb-3 mb-lg-2 fs-6">Subscriber</button>
-                    <p style="color: #a1abdfb3;;">We'll never share your details. See our <span
+                    <p class="footer-txt-color">We'll never share your details. See our <span
                             class="text-light">Privacy Policy</span></p>
                 </div>
             </div>
-            <div class="row text-center d-flex py-5">
+            <div class="row text-center d-flex pt-5">
                 <p class="fs-6">@2020 Themesberg. All right reserved.</p>
             </div>
 
