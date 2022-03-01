@@ -18,16 +18,16 @@
     .banner-image {
       background-image: url('bs1temp.png');
       background-size: cover;
+      background-position: center;
     }
 
-    .py-lg-6 {
+    @media only screen and (min-width: 576px) {
+      .px-lr-8 {
+        padding: 0 8rem !important;
+      }
+      .py-tb-8 {
       padding: 8rem 0 !important;
     }
-
-    @media only screen and (min-width: 600px) {
-      .px-lg-6 {
-        padding: 0 7rem !important;
-      }
     }
   </style>
 </head>
@@ -66,7 +66,7 @@
     <!-- Card -->
     <div class="banner-image w-100  d-flex justify-content-center align-items-center">
       <div class="w-100">
-        <div class="row py-lg-6 py-4 mt-5">
+        <div class="row py-tb-8 py-4 mt-5">
           <div class="col-12 col-lg-6 col-sm-8">
             <div class="card text-light bg-transparent border-0 pb-5 px-md-5 px-2">
               <div class="card-body">
@@ -75,9 +75,8 @@
                   page template work on all devices, so you only have
                   to set it up once, and get beautiful results forever.
                 </p>
-                <a href="#" class="btn btn-primary px-4 py-3 fw-bold "
-                 >GET STARTED
-                  NOW</a>
+                <a href="#" class="btn btn-primary px-4 py-3 fw-bold ">
+                  GET STARTED NOW</a>
               </div>
               <div>
               </div>
@@ -120,7 +119,7 @@
         <div class="pt-5 ">
           <div class="py-5 text-center">
             <h1 class="mb-4 text-light fw-bolder">Bulid exclusively for you</h1>
-            <p class="px-lg-6 mx-lg-5 px-sm-2 text-muted  fs-5" >Duis aute
+            <p class=" mx-lg-5 px-sm-2 text-muted  fs-5 px-lr-8">Duis aute
               irure dolor in
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur excepteur sint — occaecat cupidatat non proident, sunt in culpa qui.</p>
