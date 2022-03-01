@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <style>
         .top-50 {
             top: 30% !important;
@@ -36,26 +36,21 @@
             top: 41% !important;
             left: 19% !important;
         }
-
-        /* .card-body {
-            padding: 1rem 1.5rem !important
-        } */
-
         .ulimg {
             list-style-image: url("check.svg");
             margin-left: 30px;
-            padding-left: 10px;
+           
         }
 
         .fs-sm-3 {
             font-size: 3rem;
-            font-weight: 300;
+           
         }
 
         @media screen and (min-width:1024px) {
-            .fs-md-6 {
+            .fs-md-1 {
                 font-size: 4.22rem;
-                font-weight: 300;
+                
             }
 
             .pe-lg-5 {
@@ -89,7 +84,6 @@
 
         @media only screen and (min-width: 960px) {
             .fs {
-
                 font-size: 60px;
             }
 
@@ -97,48 +91,22 @@
                 padding-left: 7.5rem !important;
                 padding-right: 7.5rem !important;
             }
-
-            .padding {
-                padding: 0.5rem 5rem;
-            }
-
         }
 
         @media only screen and (max-width:960px) {
             .fs {
-
                 font-size: 60px;
             }
-
-            .padding {
-                padding: 0.5rem 1.22rem;
-            }
-
-            .px-sm-3 {
-                padding-left: 1.5rem !important;
-                padding-right: 1.5rem !important;
-            }
         }
-
-        @media screen and (max-width:375px) {
-            .px-sm-3 {
-                padding-left: 0.9rem !important;
-                padding-right: 0.9rem !important;
-            }
-        }
-
         .container1 {
             position: relative;
-
         }
-
         .image {
             opacity: 1;
             display: block;
             transition: .5s ease;
             backface-visibility: hidden;
         }
-
         .container1:hover .image {
             opacity: 0.5;
         }
@@ -151,22 +119,17 @@
             left: 50%;
             transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
-
         }
-
         .container1:hover .middle {
             opacity: 1;
         }
-
-        .card-body1 {
-            padding: 1.77rem 1.3rem !important;
-
-        }
-
         .bg-img {
             background-image: url(girl4.jpg);
             background-size: cover;
+            background-position: left;
+            height: 70vh !important;
         }
+    
     </style>
 
 </head>
@@ -251,15 +214,12 @@
 
             </div>
         </div>
-
-
-
         <nav class="navbar navbar-expand-lg navbar-light" id="navbar_top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="front.png" width="80" height="60">
                 </a>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -360,13 +320,13 @@
             </div>
         </nav>
 
-        <section class="py-lg-8 bg-img">
-            <div class="container">
-                <div class="w-100 vh-100 ">
+        <section class="bg-img">
+            <div class="container ">
+                <div class="w-100" >
                     <div class="row pt-5">
-                        <div class="col-lg-6 col-xl-5 col-md-8 col-12">
+                        <div class="col-md-6 col-xl-5 col-12">
                             <div class="mb-4">
-                                <h5 class="fs-md-6 mb-lg-4 fs-sm-3">Introducing Front</h5>
+                                <h1 class="fs-md-1 mb-lg-4 fs-sm-3 fw-light ">Introducing Front</h1>
                                 <p class="text-muted mb-3 fs-6">
                                     Your Company will look Attract more visitors, and win more business with Front
                                     template.
@@ -491,9 +451,9 @@
                                     <div class="btn-group mt-md-5 mt-3 " role="group"
                                         aria-label="Basic outlined example">
                                         <button type="button"
-                                            class="btn btn-primary px-lg-4 px-sm-3 fs-5 rounded-start border-primary padding">Monthly</button>
+                                            class="btn btn-primary px-lg-4 px-sm-3 fs-5 rounded-start border-primary">Monthly</button>
                                         <button type="button"
-                                            class="btn px-lg-4 px-sm-3 fs-5 ml-0 position-relative rounded-end border padding text-muted">Yearly
+                                            class="btn px-lg-4 px-sm-3 fs-5 ml-0 position-relative rounded-end border text-muted">Yearly
                                             <div class="position-absolute top-0 start-100 translate-middle text-light rounded-pill  fs-6 "
                                                 style=" background-color: #2fc288; width: 85px; height: 20px;">
                                                 10% OFF</div>
@@ -519,13 +479,13 @@
                         <div class="card-body">
                             <div class="row justify-content-lg-start  justify-content-center px-lg-2 ">
                                 <ul class="text-left list-unstyled fs-0 ">
-                                    <li class="mb-3 ulimg fw-normal fs-6">Community
+                                    <li class="mb-3 ulimg ps-2  fw-normal fs-6">Community
                                         support</li>
-                                    <li class="mb-3 ulimg fw-normal fs-6">400+ pages
+                                    <li class="mb-3 ulimg ps-2 fw-normal fs-6">400+ pages
                                     </li>
-                                    <li class="mb-3 ulimg fw-normal fs-6">100+ variations
+                                    <li class="mb-3 ulimg ps-2 fw-normal fs-6">100+ variations
                                     </li>
-                                    <li class="mb-3 ulimg text-muted fs-6">20+ home page options
+                                    <li class="mb-3 ulimg ps-2 text-muted fs-6">20+ home page options
                                     </li>
                                 </ul>
                             </div>
@@ -556,15 +516,15 @@
                         <div class="card-body">
                             <div class="row justify-content-lg-start  justify-content-center px-lg-2 ">
                                 <ul class="text-left list-unstyled">
-                                    <li class="mb-3 ulimg fw-normal fs-6">24/7 support
+                                    <li class="mb-3 ulimg ps-2 fw-normal fs-6">24/7 support
                                     </li>
-                                    <li class="mb-3 ulimg fw-normal fs-6">400+ pages
+                                    <li class="mb-3 ulimg ps-2 fw-normal fs-6">400+ pages
                                     </li>
-                                    <li class="mb-3 ulimg fw-normal fs-6">200+ header
+                                    <li class="mb-3 ulimg ps-2 fw-normal fs-6">200+ header
                                         variations</li>
-                                    <li class="mb-3 ulimg fw-normal fs-6">40+ home page
+                                    <li class="mb-3 ulimg ps-2 fw-normal fs-6">40+ home page
                                         options</li>
-                                    <li class="mb-3 ulimg fw-normal fs-6">E-commerce
+                                    <li class="mb-3 ulimg ps-2 fw-normal fs-6">E-commerce
                                     </li>
                                 </ul>
                             </div>
@@ -639,7 +599,7 @@
                                         </div>
                                         <div class="col-md-4 mb-3">
                                             <div class="card">
-                                                <div class="card-body card-body1 text-md-center text-start fs-6"
+                                                <div class="card-body text-md-center text-start fs-6"
                                                     style="height:500px;">
                                                     <p class="fw-100">"How to help your team excel at remote
                                                         collaboration. Here are tips and tools we use on the content
@@ -686,7 +646,7 @@
                                         </div>
                                         <div class="col-md-4 mb-3">
                                             <div class="card">
-                                                <div class="card-body card-body1 text-center fs-6"
+                                                <div class="card-body text-center fs-6"
                                                     style="height:500px;">
                                                     <p class="fw-100 ">"How to help your team excel at remote
                                                         collaboration. Here are tips and tools we use on the content
@@ -733,7 +693,7 @@
                                         </div>
                                         <div class="col-md-4 mb-3">
                                             <div class="card">
-                                                <div class="card-body card-body1 text-center fs-6"
+                                                <div class="card-body text-center fs-6"
                                                     style="height:500px;">
                                                     <p class="fw-100 size">"How to help your team excel at remote
                                                         collaboration. Here are tips and tools we use on the content
@@ -829,7 +789,7 @@
                                     <div class="row">
                                         <div class="col-12 mb-3">
                                             <div class="card">
-                                                <div class="card-body card-body1 text-center fs-6"
+                                                <div class="card-body  text-center fs-6"
                                                     style="height:500px; ">
                                                     <p class="fw-100 size">"How to help your team excel at remote
                                                         collaboration. Here are tips and tools we use on the content
@@ -882,7 +842,7 @@
                                     <div class="row">
                                         <div class="col-12 mb-3">
                                             <div class="card">
-                                                <div class="card-body card-body1 text-center fs-6"
+                                                <div class="card-body text-center fs-6"
                                                     style="height:500px; ">
                                                     <p class="fw-100 size">"How to help your team excel at remote
                                                         collaboration. Here are tips and tools we use on the content
