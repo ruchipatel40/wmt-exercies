@@ -19,87 +19,71 @@
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <style>
-        .top-50 {
+        .play{
             top: 30% !important;
-        }
-
-        .start-50 {
             left: 29% !important;
         }
 
         .position {
-            top: 49% !important;
-            left: 22% !important;
-        }
-
-        .position1 {
             top: 41% !important;
             left: 19% !important;
         }
         .ulimg {
             list-style-image: url("check.svg");
             margin-left: 30px;
-           
         }
-
-        .fs-sm-3 {
-            font-size: 3rem;
-           
-        }
-
-        @media screen and (min-width:1024px) {
-            .fs-md-1 {
-                font-size: 4.22rem;
-                
+        @media screen and (min-width:768px) {
+            .fontsize-md-1 {
+                font-size: 68px !important;  
             }
 
-            .pe-lg-5 {
-                padding-right: 16rem !important;
+            .p-e-md-5 {
+                padding-right: 15rem !important;
             }
 
-            .mt-md-6 {
+            .m-t-md-7 {
                 margin-top: 7rem !important;
             }
 
-            .pb-md-5 {
+            .pb-carousel-md {
                 padding-bottom: 11rem !important;
             }
         }
 
-        @media screen and (min-width:1280px) {
-            .px-lg-4 {
+        @media screen and (min-width:1200px) {
+            .p-x-xl-4 {
                 padding-left: 2.5rem !important;
                 padding-right: 2.5rem !important;
             }
 
-            .px-md-7 {
+            .p-x-xl-7 {
                 padding-left: 24rem !important;
                 padding-right: 24rem !important;
             }
-        }
-
-        .fs {
-            font-size: 70px;
-        }
-
-        @media only screen and (min-width: 960px) {
             .fs {
-                font-size: 60px;
-            }
-
-            .px-md-5 {
+            font-size: 70px;
+             }
+        }
+        @media screen and (min-width:992px) {
+            .p-x-md-7 {
                 padding-left: 7.5rem !important;
                 padding-right: 7.5rem !important;
             }
+            
         }
-
-        @media only screen and (max-width:960px) {
+        @media only screen and (max-width:1200px) {
             .fs {
                 font-size: 60px;
             }
         }
         .container1 {
-            position: relative;
+            position:relative;
+        }
+        .container1:hover .image {
+            opacity: 0.5;
+        }
+        .container1:hover .middle {
+            opacity: 1;
         }
         .image {
             opacity: 1;
@@ -107,10 +91,6 @@
             transition: .5s ease;
             backface-visibility: hidden;
         }
-        .container1:hover .image {
-            opacity: 0.5;
-        }
-
         .middle {
             transition: .5s ease;
             opacity: 0;
@@ -120,20 +100,17 @@
             transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
         }
-        .container1:hover .middle {
-            opacity: 1;
-        }
+        
         .bg-img {
             background-image: url(girl4.jpg);
             background-size: cover;
-            background-position: left;
+            background-position: center;
+        }
+        .vh-70{
             height: 70vh !important;
         }
-    
     </style>
-
 </head>
-
 <body>
     <!-- for small screen -->
     <main class="main">
@@ -214,6 +191,7 @@
 
             </div>
         </div>
+        <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-light" id="navbar_top">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -256,6 +234,7 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
+                        <!-- Blogs -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle px-2 py-3" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -270,6 +249,7 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
+                        <!-- shop -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle px-2 py-3 me-2" href="#" id="navbarDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -284,6 +264,7 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
+                        <!-- Demos -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle px-2 py-3 me-2" href="#" id="navbarDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -298,6 +279,7 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
+                        <!-- Docs -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle px-2 py-3 me-2" href="#" id="navbarDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -320,13 +302,13 @@
             </div>
         </nav>
 
-        <section class="bg-img">
-            <div class="container ">
-                <div class="w-100" >
+        <section class=" bg-img">
+            <div class="container vh-70 ">
+                
                     <div class="row pt-5">
                         <div class="col-md-6 col-xl-5 col-12">
-                            <div class="mb-4">
-                                <h1 class="fs-md-1 mb-lg-4 fs-sm-3 fw-light ">Introducing Front</h1>
+                            <div class="mb-4 ">
+                                <h1 class="fontsize-md-1 mb-lg-4 fs-sm-3 fw-light ">Introducing Front</h1>
                                 <p class="text-muted mb-3 fs-6">
                                     Your Company will look Attract more visitors, and win more business with Front
                                     template.
@@ -341,7 +323,7 @@
                                     class="col-9 col-sm-6  d-flex justify-content-center justify-content-lg-start align-items-center mb-md-0 mb-4">
                                     <div class="rounded-circle position-relative me-3 d-inline-block"
                                         style=" background-color: rgb(211 241 211 / 78%); width: 50px; height: 50px;">
-                                        <span class="position-absolute top-50 start-50  badge rounded-circle "><svg
+                                        <span class="position-absolute play badge rounded-circle "><svg
                                                 width="13px" height="15px" fill="#00c9a7"
                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                                 <path
@@ -389,7 +371,7 @@
                         <div class="card-body">
                             <div style="width: 70px; height: 70px; background-color: rgb(122 196 245 / 54%);"
                                 class="d-inline-block rounded-circle position-relative mb-4">
-                                <div class="position-absolute position1"><img src="sletter.svg" class="rounded-circle">
+                                <div class="position-absolute position"><img src="sletter.svg" class="rounded-circle">
                                 </div>
                             </div>
                             <h4 class="card-title">Front Strategy</h4>
@@ -403,7 +385,7 @@
                         <div class="card-body">
                             <div style="width: 70px; height: 70px; background-color: #b0d5c4de;"
                                 class="d-inline-block rounded-circle position-relative mb-4">
-                                <div class="position-absolute position1"><img src="setting.png" width="50px"
+                                <div class="position-absolute position"><img src="setting.png" width="50px"
                                         height="50px" class="rounded-circle"></div>
                             </div>
                             <h4 class="card-title">Unlimited Power</h4>
@@ -418,7 +400,7 @@
                     <img src="line.png" class=" w-100 h-md-75 h-100">
                 </div>
                 <div class="col-12 d-flex justify-content-center">
-                    <p class="text-center px-md-7 px-4 fs-6"><span class="fw-bold">It is fast and easy.</span> Create
+                    <p class="text-center p-x-xl-7 px-4 fs-6"><span class="fw-bold">It is fast and easy.</span> Create
                         your first and ongoing website
                         with Front.</p>
                 </div>
@@ -451,9 +433,9 @@
                                     <div class="btn-group mt-md-5 mt-3 " role="group"
                                         aria-label="Basic outlined example">
                                         <button type="button"
-                                            class="btn btn-primary px-lg-4 px-sm-3 fs-5 rounded-start border-primary">Monthly</button>
+                                            class="btn btn-primary p-x-xl-4 px-sm-3 fs-5 rounded-start border-primary">Monthly</button>
                                         <button type="button"
-                                            class="btn px-lg-4 px-sm-3 fs-5 ml-0 position-relative rounded-end border text-muted">Yearly
+                                            class="btn p-x-xl-4 px-sm-3 fs-5 ml-0 position-relative rounded-end border text-muted">Yearly
                                             <div class="position-absolute top-0 start-100 translate-middle text-light rounded-pill  fs-6 "
                                                 style=" background-color: #2fc288; width: 85px; height: 20px;">
                                                 10% OFF</div>
@@ -472,20 +454,20 @@
                             <div class="col-4  col-sm-4 col-md-4  align-items-end p-0 position-relative text-light ms-3"
                                 style="color: rgb(24, 114, 197);"><span
                                     class="position-absolute  top-0 start-0 translate-middle-x fs-5">$</span><span
-                                    class="fw-bolder fs">22</span><span
+                                    class="fs fw-bold">22</span><span
                                     class="position-absolute translate-middle-y bottom-0 ">/month</span>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="row justify-content-lg-start  justify-content-center px-lg-2 ">
                                 <ul class="text-left list-unstyled fs-0 ">
-                                    <li class="mb-3 ulimg ps-2  fw-normal fs-6">Community
+                                    <li class="mb-3 ulimg ps-2 fw-normal">Community
                                         support</li>
-                                    <li class="mb-3 ulimg ps-2 fw-normal fs-6">400+ pages
+                                    <li class="mb-3 ulimg ps-2 fw-normal">400+ pages
                                     </li>
-                                    <li class="mb-3 ulimg ps-2 fw-normal fs-6">100+ variations
+                                    <li class="mb-3 ulimg ps-2 fw-normal">100+ variations
                                     </li>
-                                    <li class="mb-3 ulimg ps-2 text-muted fs-6">20+ home page options
+                                    <li class="mb-3 ulimg ps-2 text-muted">20+ home page options
                                     </li>
                                 </ul>
                             </div>
@@ -509,7 +491,7 @@
                             <div class="col-4  col-sm-4 col-md-4  align-items-end p-0 position-relative text-light ms-3"
                                 style="color: rgb(24, 114, 197);"><span
                                     class="position-absolute  top-0 start-0 translate-middle-x fs-5">$</span><span
-                                    class="fs fw-bolder">99</span><span
+                                    class="fs fw-bold">99</span><span
                                     class="position-absolute translate-middle-y bottom-0 ">/month</span>
                             </div>
                         </div>
@@ -540,13 +522,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 d-flex justify-content-lg-end pe-lg-5 justify-content-center">
+                <div class="col-12 d-flex justify-content-lg-end p-e-md-5 pe-4 justify-content-center">
                     <p class="text-muted">* <abbr title="attribute">Teams</abbr> are subject to change.</p>
                 </div>
             </div>
 
 
-            <div class="row d-flex justify-content-center align-items-center mt-md-6 mt-4">
+            <div class="row d-flex justify-content-center align-items-center m-t-md-7 mt-4">
                 <div class="col-md-7 col-12 text-center">
                     <div style=" background-color: rgb(215 251 231 / 40%); width: 150px; height: 40px;"
                         class=" pt-2 d-inline-block rounded-pill text-center text-success mb-3 px-3 pb-2 ">
@@ -559,7 +541,7 @@
 
         </div>
 
-        <section class="pt-5 pb-md-5 pb-4 d-none d-sm-block">
+        <section class="pt-5 pb-carousel-md pb-4 d-none d-sm-block">
             <div class="container">
                 <div class="row">
                     <div class="col-1 d-flex justify-content-center align-items-center">
@@ -695,7 +677,7 @@
                                             <div class="card">
                                                 <div class="card-body text-center fs-6"
                                                     style="height:500px;">
-                                                    <p class="fw-100 size">"How to help your team excel at remote
+                                                    <p class="fw-100 ">"How to help your team excel at remote
                                                         collaboration. Here are tips and tools we use on the content
                                                         team at InVision to keep our remote collaboration
                                                         game strong. <span class="d-md-none d-lg-inline">Trust is both a complex and nuanced topic. Its very
@@ -740,7 +722,7 @@
 
         </section>
 
-        <section class="pt-5 pb-md-5 pb-4 d-sm-none">
+        <section class="pt-5 pb-carousel-md pb-4 d-sm-none">
             <div class="container">
                 <div class="row">
 
@@ -791,7 +773,7 @@
                                             <div class="card">
                                                 <div class="card-body  text-center fs-6"
                                                     style="height:500px; ">
-                                                    <p class="fw-100 size">"How to help your team excel at remote
+                                                    <p class="fw-100 ">"How to help your team excel at remote
                                                         collaboration. Here are tips and tools we use on the content
                                                         team at InVision to keep our remote collaboration
                                                         game strong. Trust is both a complex and nuanced topic. Its very
@@ -844,7 +826,7 @@
                                             <div class="card">
                                                 <div class="card-body text-center fs-6"
                                                     style="height:500px; ">
-                                                    <p class="fw-100 size">"How to help your team excel at remote
+                                                    <p class="fw-100 ">"How to help your team excel at remote
                                                         collaboration. Here are tips and tools we use on the content
                                                         team at InVision to keep our remote collaboration
                                                         game strong. Trust is both a complex and nuanced topic. Its very
@@ -889,7 +871,7 @@
 
 
     </main>
-    <footer class="footer px-md-5 py-5 bg-light">
+    <footer class="footer p-x-md-7 py-5 bg-light">
         <div class="container">
             <div class="row d-flex justify-content-md-between  pb-sm-5 pb-2">
                 <div class="col-3 col-md-2 mb-2 mb-lg-0">
