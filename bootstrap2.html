@@ -91,12 +91,16 @@
             -ms-transform: translate(-50%, -50%);
             text-align: center;
             opacity: 1;
+            
         }
 
-        .hover:hover .image {
+        .hover:hover .image ,.navitems{
             opacity: 0.5;
         }
-        
+        .navitems:hover {
+            opacity: 1;
+        }
+       
         .bg-light-color {
             background-color: rgba(240, 240, 240, 0.746);
         }
@@ -1113,15 +1117,15 @@
                         <div class="py-3 ">
                             <ul class="nav nav-pills nav-pill-circle list-unstyled d-flex flex-sm-row justify-content-center"
                                 role="tablist">
-                                <li class="me-4 nav-item"><a href="#girlreview1content"
+                                <li class="me-4 nav-item navitems"><a href="#girlreview1content"
                                         class="nav-link active bg-light rounded-circle" id="girl1review" data-bs-toggle="tab"
                                         data-bs-target="#girlreview1content" aria-controls="girlreview1content"><img
                                             src="girl1.jpeg" width="60px" height="60px" class="rounded-circle"></a></li>
-                                <li class="me-4 nav-item"><a href="#girlreview2content" class="nav-link  bg-light rounded-circle"
+                                <li class="me-4 nav-item navitems"><a href="#girlreview2content" class="nav-link  bg-light rounded-circle"
                                         id="girl2review" data-bs-toggle="tab" data-bs-target="#girlreview2content"
                                         aria-controls="girlreview2content"><img src="girl2.jpeg" width="60px"
                                             height="60px" class="rounded-circle"></a></li>
-                                <li class="me-4 nav-item"><a href="#girlreview3content" class="nav-link  bg-light rounded-circle"
+                                <li class="me-4 nav-item navitems"><a href="#girlreview3content" class="nav-link  bg-light rounded-circle"
                                         id="girl3review" data-bs-toggle="tab" data-bs-target="#girlreview3content"
                                         aria-controls="girlreview3content"><img src="girl3.jpg" width="60px"
                                             height="60px" class="rounded-circle"></a></li>
@@ -1353,7 +1357,7 @@
                         <a href="#" class="me-3 text-white fs-5"><i class="fas fa-globe"></i></a>
                     </div>
                 </div>
-                <div class="col-12 col-lg-2 col-sm-4 mb-3 mb-lg-0 ">
+                <div class="col-12 col-lg-2 col-sm-3 mb-3 mb-lg-0 ">
                     <h4 class="mb-4 text-center text-lg-start fs-sm-2">About us</h4>
                     <ul class="list-unstyled  text-muted fs-5 text-center text-lg-start">
                         <li class="mb-3 footer-txt-color" >Blog</li>
@@ -1373,7 +1377,7 @@
                         <li class="mb-3 footer-txt-color" >Receive Patment</li>
                     </ul>
                 </div>
-                <div class="col-12 col-lg-4 col-sm-4 mb-3 mb-lg-0">
+                <div class="col-12 col-lg-4 col-sm-5 mb-3 mb-lg-0">
                     <h4 class="mb-4 text-center text-lg-start fs-sm-2">Subscriber</h4>
                     <p class="fs-5 text-center text-lg-start mb-lg-3 mb-3 footer-txt-color" >Join our mailing
                         list.We write
