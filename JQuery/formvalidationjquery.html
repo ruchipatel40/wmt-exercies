@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<head>
+    <title>Form Page</title>
+    <style>
+        #eml{
+            padding-right: 7px;
+            margin-left: 30px;
+        }
+       span{
+           margin-left: 11.3%;
+       }
+       input{
+           width: 270px;
+           margin-left: 20px;
+           border: 1px solid black;
+       }
+       #dobirth{
+           padding:30px;
+           text-align: end;
+          
+       }
+       #gen{
+           padding:30px;
+           margin-left: 40px;
+       }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+    <script>
+        $(document).ready(function() {
+            
+                $("input").hover(function(){
+                    $(this).css({"background-color":"lightgrey","border":"1px solid black"});
+                    }, function(){
+                    $(this).css({"background-color": "white","border":"1px solid black"});
+                });
+
+                 // validate firstname
+                 $("#firstnamevalidate").hide();
+                    $('#fname').keyup(function () {
+                        validatefirstname(); 
+                    });
+                    
+                    function validatefirstname() {
+                        let firstnameValue = $('#fname').val();
+
+                        if (firstnameValue.length == '') {
+                            $('#firstnamevalidate').show(); 
+                            
+                        }
+                        else if((firstnameValue.length < 3)||
+                                (firstnameValue.length > 10)) {
+                            $('#firstnamevalidate').show();
+                            $('#firstnamevalidate').html
+                            ("please re-enter your firstname length between 3 to 10");
+                           
+                        }
+                        else {
+                            $('#firstnamevalidate').hide();
+                            
+                        }
+                    }
+                    //validate lastname
+                    $("#lastnamevalidate").hide();
+                    $('#lname').keyup(function () {
+                        validatelastname(); 
+                    });
+                    
+                    function validatelastname() {
+                        let lastnameValue = $('#lname').val();
+
+                        if (lastnameValue.length == '') {
+                            $('#lastnamevalidate').show(); 
+                            
+                        }
+                        else if((lastnameValue.length < 3)||
+                                (lastnameValue.length > 10)) {
+                            $('#lastnamevalidate').show();
+                            $('#lastnamevalidate').html("please re-enter your lastname length between 3 to 10");
+                        }
+                        else {
+                            $('#lastnamevalidate').hide();
+                           
+                        }
+                    }
+                    // validate dob
+                    $("#validatedob").hide();
+                    $('#month').click(function () {
+                        dobvalidate();
+                    });
+                    function dobvalidate(){
+                       var monthval = $("#month");
+                       var dayval = $("#day");
+                       var yearval = $("#year");
+
+                       if ((monthval.val() == "") || (yearval.val() == "") || (dayval.val() == "")){
+                            $("#validatedob").show().html("select date of birth...");
+                         }
+                        else{
+                            $("#validatedob").hide();
+                        }
+                    
+                    }
+
+                    // validate gender
+                     $("#validategender").hide();
+                    $('#gender').click(function () {
+                        gendervalidate();
+                    });
+                    function gendervalidate(){
+                        
+                       var genderval = $("#gender");
+                       if (genderval.val() == "") {
+                            $("#validategender").show().html("please select gender ...");
+                         }
+
+                        else{
+                            $("#validategender").hide();
+                            
+                        }
+                    }
+                  
+                   // validate emailid 
+                    $("#emailvalidate").hide();
+                    $('#email').keyup(function () {
+                        validateemailid(); 
+                    });
+                    function validateemailid(){
+                            
+                            var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{3,4})?$/;
+                    
+                            var emailaddressVal = $("#email").val();
+                            if(emailaddressVal == '') {
+                                $("#emailvalidate").show();
+                                
+                            }
+                    
+                            else if(!emailReg.test(emailaddressVal)) {
+                                $("#emailvalidate").show();
+                                $('#emailvalidate').html("please enter valid email id.");
+                            }
+                    else{
+                        $("#emailvalidate").hide();
+                    }
+                        
+                    }
+                // validate re emailid
+                $("#reemailvalidate").hide();
+                    $('#retypeemail').keyup(function () {
+                        revalidateemailid(); 
+                    });
+                    function revalidateemailid(){
+                            
+                            var reemailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{3,4})?$/;
+                    
+                            var reemailaddressVal = $("#retypeemail").val();
+                            if(reemailaddressVal == '') {
+                                $("#reemailvalidate").show();
+                                
+                            }
+                    
+                            else if(!reemailReg.test(reemailaddressVal)) {
+                                $("#reemailvalidate").show();
+                                $('#reemailvalidate').html("please enter valid email id.");
+                            }
+                            else{
+                                $("#reemailvalidate").hide();
+                            }
+                            
+                    }
+                   // emailid and re emailid are equal or not check
+                    $('#retypeemail').keyup(function () {
+                        validateemail(); 
+                    });
+                    function validateemail(){
+
+                        if(reemailaddressVal != emailaddressVal){
+                                    $("#reemailvalidate").show();
+                                    $('#reemailvalidate').html("your emailid is not valid .");
+                        }
+                    }
+                    // password validation
+                    $("#passwordvalidate").hide();
+                    $('#password').keyup(function () {
+                        validatepassword(); 
+                    });
+                    function validatepassword(){
+                            
+                            var passwordVal = $("#password").val();
+                            if(passwordVal == '') {
+                                $("#passwordvalidate").show();
+                                
+                            }
+                            else{
+                                $("#passwordvalidate").hide();
+                            }
+                    }
+                     // confirm password validation
+                     $("#confirmpasswordvalidate").hide();
+                    $('#retypepassword').keyup(function () {
+                        validateconfirmpassword(); 
+                    });
+                    function validateconfirmpassword(){
+                            
+                            var confirmpasswordVal = $("#retypepassword").val();
+                            if(confirmpasswordVal == '') {
+                                $("#confirmpasswordvalidate").show();
+                                
+                            }
+                            else{
+                                $("#confirmpasswordvalidate").hide();
+                            }
+                    }
+                 // password and confirm password are equal or not check
+                 $('#retypepassword').keyup(function () {
+                        validatetwopassword(); 
+                    });
+                    function validatetwopassword(){
+                        var passwordVal = $("#password").val();
+                        var confirmpasswordVal = $("#retypepassword").val();
+                        if((confirmpasswordVal == '') && (passwordVal == '')){
+                             $("#confirmpasswordvalidate").show();
+                            //  $('#confirmpasswordvalidate').html("Password  match.").css("color", "red");
+                        }
+                       else if(confirmpasswordVal == passwordVal){
+                             $("#confirmpasswordvalidate").show();
+                             $('#confirmpasswordvalidate').html("Password  match.").css("color", "green");
+                        }
+                        else{
+                            $("#confirmpasswordvalidate").show();
+                             $("#confirmpasswordvalidate").html("Password does not  match !").css("color", "red");
+                        }
+                }
+
+                //validate address
+                $("#validateaddress").hide();
+                $('#address').keyup(function () {
+                        validateaddress(); 
+                    });
+                    
+                    function validateaddress() {
+                        let addressVal = $('#address').val();
+
+                        if (addressVal.length == '') {
+                            $('#validateaddress').show(); 
+                            
+                        }
+                        else if((addressVal.length < 10)||
+                                (addressVal.length > 500)) {
+                            $('#validateaddress').show();
+                            $('#validateaddress').html("please enter your right address.");
+                           
+                        }
+                        else {
+                            $('#validateaddress').hide();
+                        }
+                    }
+                    //validate city
+                    $("#cityvalidate").hide();
+                    $('#city').keyup(function () {
+                        validatecity();
+                    });
+                    function validatecity() {
+                       var cityReg = /^[a-z]+$/i;
+                        let cityValue = $('#city').val();
+
+                        if (cityValue.length == '') {
+                            $('#cityvalidate').show(); 
+                            
+                        }
+                        else if((!cityReg.test(cityValue)) || (cityValue.length < 3)) {
+                            $('#cityvalidate').show();
+                            $('#cityvalidate').html("city name is more than 3 letter");
+                           
+                        }
+                        else {
+                            $('#cityvalidate').hide();
+                        }
+                    }
+                    // zipcode validation
+                    $("#validatezipcode").hide();
+                    $('#zipcode').keyup(function () {
+                        zipcodeValidate();
+                    });
+                    function zipcodeValidate(){   
+                        let zipcodeVal = $('#zipcode').val(); 
+                        if(zipcodeVal.length == ''){	 
+                            $('#validatezipcode').show();
+                        }   
+                        else if(zipcodeVal.length < 6){	 
+                            $('#validatezipcode').show();
+                            $('#validatezipcode').html("zip code must have 6 digits");
+                           
+                        }   
+                        else{
+                            $("#validatezipcode").hide();
+                        } 
+                    }
+                     //validate phone number
+                     $("#validatephonenumber").hide();
+                    $('#phone').keyup(function () {
+                        phonenumbervalidate();
+                    });
+
+                    function phonenumbervalidate() {
+                        var phoneReg = /^[0-9]+$/i;
+                        let phoneValue = $('#phone').val();
+
+                        if (phoneValue.length == '') {
+                            $('#validatephonenumber').show(); 
+                            
+                        }
+                        else if((!phoneReg.test(phoneValue)) || (phoneValue.length < 10)) {
+                            $('#validatephonenumber').show();
+                            $('#validatephonenumber').html("Phone number is not less than 10");
+                        }
+                        else {
+                            $('#validatephonenumber').hide();
+                        }
+                    }     
+                    // validate state
+                    $("#validatestate").hide();
+                    $('#state').click(function () {
+                        statevalidate();
+                    });
+                    function statevalidate(){
+                        
+                       var stateval = $("#state");
+                       if (stateval.val() == "") {
+                            $("#validatestate").show().html("please select state ...");
+                         }
+
+                        else{
+                            $("#validatestate").hide();
+                            
+                        }
+                    }
+                    $("#submitButton").click(function () {
+                        validatefirstname();
+                        validatelastname(); 
+                        dobvalidate();
+                        gendervalidate();
+                        validateemailid(); 
+                        revalidateemailid(); 
+                        validatepassword(); 
+                        validatetwopassword(); 
+                        validateaddress(); 
+                        validatecity();
+                        zipcodeValidate();
+                        phonenumbervalidate();
+                        statevalidate();
+                    });
+              
+        });
+
+    </script>
+</head>
+<body>
+    <form name="myform" id="myform">
+    <div>
+    <h3>Personal Information</h3>
+    <label for="fname" style="text-align: end; margin-left: 50px; padding-right: 10px;" >First Name:</label>
+    <input id="fname" type="text" autocomplete="name">
+    <span id="firstnamevalidate" style="color:red; margin-left: 40px;">Please enter firstname</span><br><br>
+
+    <label for="lname"  style="text-align: end; margin-left: 50px; padding-right: 10px;">Last Name:</label>
+    <input id="lname" type="text" autocomplete="name">
+    <span id="lastnamevalidate" style="color:red; margin-left: 40px;">Please enter lastname</span><br><br>
+
+    <label for="dob" id="dobirth">Date Of Birth:</label>
+    <select class="dob" id="month" name="Month" style="padding-right: 30px;"  >
+        <option value="" name="Month" >Month</option>
+        <option value="January" name="Month" >January</option>
+        <option value="February" name="Month" >February</option>
+        <option value="March" name="Month" >March</option>
+        <option value="April" name="Month" >April</option>
+        <option value="May" name="Month" >May</option>
+        <option value="June" name="Month" >June</option>
+        <option value="July" name="Month" >July</option>
+        <option value="August" name="Month" >August</option>
+        <option value="September" name="Month" >September</option>
+    </select>
+    <select class="dob" id="day" name="day" style="margin-left: 10px; padding-right: 20px;" >
+        <option value="">Day</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+
+    </select>
+    <select class="dob" id="year" name="Year" style="margin-left: 10px;" >
+        <option value="">Year</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+        <option value="2004">2004</option>
+        <option value="2005">2005</option>
+        <option value="2006">2006</option>
+    </select>
+    <span id="validatedob" style="color:red; margin-left: 40px;">Please select month</span><br><br>
+
+    <label for="gender" id="gen" >Gender:</label>
+    <select id="gender" class="gendr" name="gender" style="padding-right: 100px;" onclick="gendervalidate()" >
+        <option value="" name="gender" class="gender">Choose a gender</option>
+        <option value="female" name="gender" class="gender">Female</option>
+        <option value="male"  name="gender" class="gender">Male</option>
+    </select>
+    <span id="validategender" style="color:red; margin-left: 40px;">Please select gender</span><br><br>
+    </div>
+    <div>
+        <h3>Account Information</h3>
+        <label for="email" style="text-align: end; margin-left: 90px;">Email:</label>
+        <input id="email" type="email" name="email" aria-describedby="emil">
+        <span id="emailvalidate" style="color:red; margin-left: 40px;">(Your email address will be your username)</span><br><br>
+
+        <label for="Re-type-email" style="text-align: end; margin-left: 35px;">Re-type Email:</label>
+        <input id="retypeemail" type="email" name="retypeemail" >
+        <span id="reemailvalidate" style="color:red; margin-left: 40px;">(please re-enter email address )</span><br><br>
+
+
+        <label for="password" style="text-align: end; margin-left: 65px;">Password:</label>
+        <input id="password" type="password" name="password" aria-describedby="passwrd" >
+        <span id="passwordvalidate" style="color:red; margin-left: 40px;">(please enter password)</span><br><br>
+
+        <label for="re-type-password" style="text-align: end; margin-left: 10px;">Re-type Password:</label>
+        <input id="retypepassword" type="password" name="retypepassword" >
+        <span id="confirmpasswordvalidate" style="color:red; margin-left: 40px;">(please re-enter password)</span><br><br>
+
+        <label for="security-qun" style="text-align: end; margin-left: 10px; padding-right: 20px;">Security Question:</label>
+        <select id="security-qun" style="padding-right: 70px;" required>
+            <option >Choose a security Question:</option>
+        </select><br><br>
+
+        <label for="security-ans" style="text-align: end; margin-left: 17px;">Security Answer:</label>
+        <input id="security-ans" type="text" name="securityanswer" aria-describedby="securityans"><br>
+        <span id="securityans">(Not case-sensitive)</span><br><br>
+    </div>
+
+    <div>
+        <h3>Contact Information</h3>
+        <label for="address" style="text-align: end; margin-left: 65px;">Address:</label>
+        <input id="address" type="text"name="your_addresss" aria-required="true" >
+        <span id="validateaddress" style="color:red; margin-left: 40px;">Please enter address</span><br><br>
+
+        <label for="city" style="text-align: end; margin-left: 90px;">City:</label>
+        <input id="city" type="text"name="your_city"  >
+        <span id="cityvalidate" style="color:red; margin-left: 40px;">Please enter city</span><br><br>
+
+        <label for="state"  style="text-align: end; margin-left: 85px; padding-right: 20px;" >State:</label>
+        <select id="state" class="select" name="state" >
+            <option value="">Choose a state:</option>
+            <option value="gujarat">Gujarat</option>
+            <option value="hariyana">Hariyana</option>
+            <option value="panjab">Panjab</option>
+        </select>
+        <span id="validatestate" style="color:red; margin-left: 40px;">Please select state</span><br><br>
+        
+        <label for="zipcode"  style="text-align: end; margin-left: 58px;">Zip Code:</label>
+        <input id="zipcode" type="number" name="zipnum"  >
+        <span id="validatezipcode" style="color:red; margin-left: 40px;">Please enter zipcode</span><br><br>
+        
+        <label for="phone"  style="text-align: end; margin-left: 75px;">Phone:</label>
+        <input id="phone" type="text" name="phonenum" aria-describedby="phonenumber" pattern="\d{10}" maxlength="10" required>
+        <span id="validatephonenumber" style="color:red; margin-left: 40px;">Please enter phone number</span><br><br>
+
+        <button type="submit" value="submit" id="submitButton"  style="margin-left: 140px; margin-top: 20px;background-color: green; color: white; padding: 10px;" >Submit</button>
+        
+    </div>
+</form>
+</body>
+</html>
