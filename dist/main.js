@@ -1,0 +1,1 @@
+(()=>{"use strict";console.warn("Other function...","App.js file"),console.log("Other function...")})();
