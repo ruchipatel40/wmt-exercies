@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+   
+    <h2>Write a JavaScript program to capitalize the first letter of each word of a given string.</h2>
+    <p id="capitalize_text"></p>
+    <script>
+        
+        // function call
+        
+        var capitaletterstring = capitalize_first_letter("my name is ruchi patel");
+        document.getElementById("capitalize_text").innerHTML =  capitaletterstring;
+        
+        // create function 
+
+        function capitalize_first_letter(string) {
+                var separate_Word = string.split(' ');
+                for (var i = 0; i < separate_Word.length; i++) {
+                    separate_Word[i] = separate_Word[i].charAt(0).toUpperCase() + separate_Word[i].substring(1);
+                }
+                return separate_Word.join(' ');
+                }
+    </script>
+</body>
+</html>

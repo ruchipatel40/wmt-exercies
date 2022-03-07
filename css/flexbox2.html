@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox 2</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+        font-size: 21px;
+        overflow-x: hidden;
+        background-color: #000;
+        }
+        .container {
+        border: 2px solid black;
+        width: 100vw;
+        }
+        .box {
+        border: 2px solid black ;
+        /* border-bottom: 1px solid black ; */
+        height: 50px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white !important;
+        }
+      /* hello  */
+        .box1 {
+        background: rgb(255, 201, 101);
+        height: 330px;
+        font-size: 21px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 32px;
+        border: 1px solid black; 
+        z-index: -1;
+        }
+        .search {
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        margin-right: 32px;
+        flex: 2;
+        text-align: center;
+        flex-wrap: wrap;
+        
+       
+        }
+        .button {
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        border: 2px solid black;
+        padding: 0 16px;
+        text-align: center;
+        flex: 1;
+        }
+       @media (max-width: 330px){
+            .box{
+                height: 40px;
+                font-size: 25px;
+            }
+
+            .spacebox{
+            width: 40px;
+            height: 40px;
+
+           }
+        }
+        @media (max-width: 450px){
+            .box1{
+                flex-direction: column;
+            }
+            .search{
+                margin-bottom: 1.5rem;
+            }
+            .search, .button{
+                flex: 1;
+                width: 100%;
+               
+            }
+            .parent3{
+                padding: 10px;
+                
+            }
+            .spacebox{
+            width: 40px;
+            height: 40px;
+
+            }
+        }
+        @media (max-width: 850px){
+            .spacebox{
+                width: 85px;
+                height: 85px;
+               
+        }
+        .box1{
+            height: 300;
+        }
+        .parent3{
+          height: 400px;
+          
+        }        
+      }
+      
+.parent2{
+        background-color: rgb(221, 216, 216);
+        height: 340px;
+        font-size: 21px;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        border: 1px solid black; 
+        align-items: center;
+}
+.leftside ,.rightside{
+  flex-direction:column;
+  justify-content: space-around;
+ 
+}
+.b1 , .b3 {
+  align-items: center;
+  display: flex;
+  height: 80px;
+  width: 80px;
+  background-color: rgb(192, 226, 238);
+  border: 3px solid rgb(136, 136, 253);
+  justify-content: space-around;
+ 
+  
+}
+.b2 , .b4 {
+  align-items: center;
+  display: flex;
+  height: 80px;
+  width: 80px;
+  background-color: rgb(192, 226, 238);
+  border: 3px solid rgb(136, 136, 253);
+  justify-content: space-around;
+  
+
+}
+.b1top,.b2top{
+  display: flex;
+  padding: 10px 0px 70px 0px;
+  justify-content: space-around;
+}
+.a{
+ align-self: center;
+  color: black;
+  font-weight: bold;
+  }
+
+.parent3{
+        background-color: rgb(24, 177, 24);
+        height: 340px;
+        font-size: 21px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 32px;
+        border: 1px solid black; 
+}
+.spacebox{
+        align-items: center;
+        display: flex;
+        width: 100px;
+        height: 100px;
+        background: #eee;
+        border: 1px solid black;
+        justify-content: space-evenly;
+       margin: 70px 0px;
+
+}
+   </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="box">Design 2</div>
+      <div class="box1">
+        <div class="search">
+          <p>Search Text</p>
+        </div>
+        <div class="button">Button</div>
+       
+      </div>
+    
+        <div class="parent2">
+          <div class="leftside">
+            <div class="b1top">
+                <div class="b1">B1</div>
+            </div>
+              <div class="b3">B3</div>
+          </div>
+          <div class="a">A</div>
+          <div class="rightside">
+            <div class="b2top">
+              <div class="b2">B2</div>
+          </div>
+            <div class="b4">B4</div>
+          </div>
+        </div>
+      
+       <div class="parent3">
+          <div class="spacebox"></div>
+          <div class="spacebox"></div>
+          <div class="spacebox"></div>
+       </div>
+    </div>
+  </body>
+</html>

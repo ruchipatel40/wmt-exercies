@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desktop</title>
+</head>
+<style>
+           
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap:30px ;
+            padding: 10px 5px;
+        }
+        .header ,.navigation ,.sidebar,.main ,.ads ,.footer{
+            display: grid;
+            padding: 15px 15px;
+            font-size: 25px;
+            border: 5px solid red;
+            border-radius: 10px;
+        }
+        .header{
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+        .sidebar{
+           grid-area: 2 / 1 /span 18/ span 1;
+        }
+        .navigation{
+            grid-area:2 / 2 /span 1/span 3;
+        }
+        .ads{
+           grid-area: 2 / 5 /span 18/span 1;
+          
+        }
+        .main{
+            grid-area: 3 / 2 / span 17/ span 3;
+        }
+        .footer{
+            grid-area: 20 / 1 / span 1/ span 5;
+        }
+        @media screen and (max-width:768px) {
+            /* .header{
+                background-color: blue;
+            } */
+            .navigation{
+                grid-area:2 / 1 /span 1/ span 5;
+            }
+            .sidebar{
+                grid-area: 3 / 1 /span 22/ span 1;
+            }
+            .main{
+                grid-area: 3 / 2 / span 22/ span 4;
+            }
+            .ads{
+                grid-area: 25 / 1 /span 1/ span 1;
+            }
+            .footer{
+                grid-area:  25 / 2 / span 1/ span 4;
+            }
+        }
+        @media screen and (max-width:575px) {
+            /* .header{
+                background-color: rgb(42, 42, 85);
+            } */
+            .main{
+                grid-area: 3 / 1 /span 10/ span 5;
+            }
+            .sidebar{
+                grid-area: 13 / 1 /span 1/ span 5;
+            }
+            .ads{
+                grid-area: 14 / 1 /span 1/ span 5;
+            }
+            .footer{
+                grid-area: 15 / 1 /span 1/ span 5;
+            }
+        }
+</style>
+<body>
+    <div class="container"> 
+        <div class="header">header</div>
+        <div class="navigation">navigation</div>
+        <div class="main">main</div>
+        <div class="sidebar">sidebar</div>
+        <div class="ads">ads</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>
